@@ -1,0 +1,160 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;  
+    -os-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    // perspective: 400px; 
+  }
+
+  body{
+    // overflow: hidden;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+a{
+  text-decoration: none;
+}
+  }
+  body button{
+   outline-color: transparent;
+
+  }
+  // *span, p, a, li{
+  //   font-size: $font-paragraph; 
+  // }
+
+ // import fonts link
+  @import url(https://fonts.googleapis.com/css?family=Halant:400,500,300,600,700|Josefin+Sans:400,100italic,100,300,300italic,400italic,600,600italic,700|Playfair+Display:400,400italic,700,700italic,900,900italic);
+ /*start fixed variable's*/
+  $font-title: 'Josefin Sans', sans-serif;
+  $font-sans: 'Josefin Sans', sans-serif;
+  $font-serif: 'Playfair Display', serif;
+  $font-paragraph: 'Halant', serif;
+  $font-drop-cap: 'Playfair Display', serif;
+  // color && fonts
+  $pry: #82a344;
+  $sec: #31313c;
+  $p-color: #464343;
+  $h-color: #ffffff;
+  $m-font: 16px;
+  
+  %main{
+    position: relative;
+    margin-top:0;
+    margin-left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  %over{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba($pry, .7); 
+  }
+%tit_style{
+  font-size: 5 * $m-font;
+  position: relative;
+  display: inline-block;
+  text-align: center;  
+  margin: 0 auto;
+  color:$h-color;
+  text-transform: capitalize;
+  padding-bottom: 13px;
+  font-family:'Playfair Display', serif;
+  &::after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 30px;
+      background-color: rgba($h-color, .3);
+      z-index: 100;
+      bottom: 25px;
+      left: 0px;
+      border-radius: 25px 8px;
+      transform:rotate(-4deg);
+      //@includeborder-r(10px):;
+      -webkit-transform:rotate(-4deg);
+      -moz-transform:rotate(-4deg);
+      -ms-transform:rotate(-4deg);
+      -o-transform:rotate(-4deg);
+      @media(max-width:991px){
+          height: 20px;
+          bottom: 20px;
+      }
+} 
+}
+
+  %button{
+   
+    background-color:transparent;
+    border:2px solid $h-color;
+    position: relative;
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $h-color;
+        font-weight: bold;
+        
+    }
+    &::before{
+    position: absolute;
+    content:'';
+    height: 100%;
+    width: 0;
+    background-color:$h-color;
+    left: 0;
+    top: 0;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+  &:hover{
+      &::before{
+          width: 100%;
+      }
+      a{
+          color:$p-color; 
+          position: relative;
+       }
+  }
+  
+  }
+  
+  @mixin transition($t){
+     -webkit-transition:all $t ease-in-out;
+     -moz-transition: all $t ease-in-out;
+     -ms-transition:all $t ease-in-out;
+     -o-transition:all $t ease-in-out;
+     transition:all $t ease-in-out; 
+  }
+  
+  @mixin border-r($b){
+     -webkit-border-radius:$b;
+     -moz-border-radius:$b;
+     -ms-border-radius:$b;
+     -o-border-radius:$b;
+     border-radius:$b;
+  }
+  
+  /*this style for ffbar*/
+  ::-webkit-scrollbar { 
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: $sec; 
+     border: 1px solid $pry;   
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $pry;      
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: $sec; 
+    @include transition(1s);
+  }

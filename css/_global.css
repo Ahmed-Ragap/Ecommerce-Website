@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Halant:400,500,300,600,700|Josefin+Sans:400,100italic,100,300,300italic,400italic,600,600italic,700|Playfair+Display:400,400italic,700,700italic,900,900italic);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -os-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+
+body button {
+  outline-color: transparent;
+}
+
+/*start fixed variable's*/
+/*this style for ffbar*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #31313c;
+  border: 1px solid #82a344;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #82a344;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #31313c;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}

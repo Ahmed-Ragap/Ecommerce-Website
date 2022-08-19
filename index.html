@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/hom_header/logo.png" type="image/x-icon" />
+<!-- owl-carousel slider  CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome  CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.css" rel="stylesheet" media="all">
+    <!-- Bootstrap 5 CDN-->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <!-- AOS.js css CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- css styles -->
+<link rel="stylesheet" href="./css/style.css">
+  <!-- swiper CDN-->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+
+    <title>Senior Ecommerce Website</title>
+</head>  
+<body>
+
+<!-- start coding  -->
+<section class="header"> 
+    <div class="top_info p-1 pb-2">
+ <div class="container  container-fluid">
+     <div class="row ">
+         <div class=" col-md-7 d-flex justify-content-center justify-content-md-start justify-content-lg-start  left_content d-block-sm">
+               <i class="fa-solid fa-bullhorn me-1 me-2 mt-1"></i>
+             <span
+             >whatever you`ve got in mind . we`ve got inside</span>
+           </div>
+         <div class=" col-md-5 d-flex justify-content-center justify-content-md-end justify-content-lg-end  right_content">
+             <div class="item">
+                 <a href="">
+                   <i class="fa-brands fa-app-store"></i>
+                    <span class=" d-none d-lg-inline">app store</span>
+                 </a>
+             </div>
+             <div class="item mx-3">
+                 <a href="">
+                 <i class="fa-brands fa-google-play"></i>
+                  <span class=" d-none d-lg-inline">google play</span>
+                 </a>
+           </div>
+          <div class="item lang ">
+       <!-- <label for="dropdownMenuButton1"></label> -->
+             <div class="dropdown ">
+                 <a class=" dropdown-toggle outline-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class=" d-none d-lg-inline"> lang</span>
+                 <i class="fa-solid fa-language d-inline d-lg-none"></i>
+                 </a>
+                 <ul class="dropdown-menu outline-none item_drop " aria-labelledby="dropdownMenuButton1">
+                   <li><a class="dropdown-item" href="#">english (eng)</a></li>
+                   <li><a class="dropdown-item" href="#">russian (ru) action</a>
+                 </li>
+                   <li><a class="dropdown-item" href="#">french (fr) else here</a></li>
+                 </li>
+                 <li><a class="dropdown-item" href="#">spanish (es) else here</a></li>
+                 </ul>
+               </div>
+          </div>
+          <div class="item currncy ms-3">
+             <div class="dropdown ">
+                 <a class="outline-none dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                     <span class=" d-none d-lg-inline"> usd</span>
+                     <i class="fa-solid fa-dollar-sign  d-inline d-lg-none"></i>
+                 </a>
+               
+                 <ul class="dropdown-menu item_drop" aria-labelledby="dropdownMenuLink">
+                   <li><a class="dropdown-item" href="#">usd ($)</a></li>
+                   <li><a class="dropdown-item" href="#">eur (€)</a></li>
+               
+                 </ul>
+               </div>
+          </div>
+         </div>
+     </div>
+ </div>
+ </div>
+ <!-- start middle top nav -->
+
+<div class="middle_top_navbar "> 
+ <div class="container container-fluid">
+     <div class="row d-flex justify-content-space-evenly align-items-center">
+         <div class=" col-sm-12 col-lg-7 main_col d-flex justify-content-lg-start justify-content-sm-center align-items-center py-1 ">
+             <a href="#"> 
+                 <img class="logo d-none d-lg-block " src="./imgs/hom_header/logo.png" alt="">
+               </a>
+         <div class="input-group ms-3">
+             <select class="form-select w-auto flex-grow-0   d-none d-md-block ">  
+               <option value="US +1">woman clothes</option>
+               <option value="AE +971">men clothes</option>
+               <option value="GB +44">computer & office</option>
+               <option value="IN +91">gallery & watches</option>
+             </select>
+             <!-- <input type="text" class="form-control" aria-label="Mobile Number">
+             <input type="text"> -->
+       <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+       <button type="submit" class="btn btn-light search"> Search</button>
+       </div> 
+         </div>
+         <div class=" col-sm-12 col-lg-5 d-flex main_col justify-content-center  justify-content-lg-end  py-2 ">
+             <div class="flexed_chiled account d-flex justify-content-center align-items-center">
+                 <a class="style_ " href="#">
+                     <i class="fa-solid fa-user "></i>
+                 </a>
+                 <!-- account -->
+                 <div class="my_accu mx-2">
+                     <span>my account </span>
+                       <div class="log_goin d-flex my-0  py-0">
+                         <a href=""> login / </a>
+                         <a href="">  join</a>
+                     </div>
+                 </div>
+
+             </div>
+             <!-- cart -->
+             <div class="flexed_chiled my_cart d-flex justify-content-center align-items-center ms-3">
+                 <a class="style_ afte" href="">
+                     <i class="fa-solid fa-cart-shopping "></i>
+                     </a>
+                     <div class="cart_info ms-2 ">
+                     <span class="cart">my cart</span>
+                     <span class="price d-block">43.6 egp</span>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>
+</section>
+
+<!-- start end top_nav -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+ <div class="container container-fluid">
+    <a class="navbar-brand d-lg-none " href="#">
+     <img class="logo h-40 " src="./imgs/hom_header/logo.png" alt=""> 
+    </a> 
+   <button class="navbar-toggler my-2"  type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+   <!-- <span class="navbar-toggler-icon"></span> -->
+   <i class="fa-solid fa-bars navbar-toggler-icon "></i>
+   </button>
+   <div class="collapse navbar-collapse" id="main_nav">
+     <ul class="navbar-nav right_drop_menu "> 
+       <li class=" nav-item dropdown my-2  my-lg-0  cato">
+         <a class="nav-link category   " href="#"  data-bs-toggle="dropdown">  <span class="ps-2">category </span>
+             <i class="fa-solid fa-bars ms-4 d-none d-lg-inline "></i>
+             <i class="fa-solid fa-sort-down me-2  d-inline d-lg-none"></i>
+          </a>
+         <ul class="dropdown-menu">
+           <li class="has-submenu">
+             <a class="dropdown-item " href="#"> woman clothes <i class="fa-solid fa-angle-right"></i> </a>
+             <div class="megasubmenu dropdown-menu">
+                 <!--  -->
+     <!-- hover list -->
+         <div class="list_paralex">
+             <div class="container">
+                 <div class="row">
+                 <div class="col-md-4 ">
+                     <div class="min">
+                         <h4>category</h4>
+                     <ul class="">
+                     <li><a href="">woman clothes</a></li>
+                     <li><a href="">men clothes</a></li>
+                     <li><a href=""> gallery & watches</a></li>
+                     <li><a href="">Bags & shoes</a></li>
+                     <li><a href="">computer & office</a></li> 
+                 </ul>
+                     </div>
+                 
+                 </div>
+                 <div class="col-md-4 my-2">
+                     <div class="min">
+                         <h4>category</h4>
+                 <ul class="">
+                     <li><a href="">woman clothes</a></li>
+                     <li><a href="">men clothes</a></li>
+                     <li><a href=""> gallery & watches</a></li>
+                     <li><a href="">Bags & shoes</a></li>
+                     <li><a href="">computer & office</a></li> 
+                 </ul>
+                 </div>
+                 </div>
+                 <div class="col-md-4">
+                     <div class="min">
+                         <h4>category</h4>
+                 <ul class="">
+                     <li><a href="">woman clothes</a></li>
+                     <li><a href="">men clothes</a></li>
+                     <li><a href=""> gallery & watches</a></li>
+                     <li><a href="">Bags & shoes</a></li>
+                     <li><a href="">computer & office</a></li> 
+                 </ul>
+                 </div>
+                 </div>
+                 <hr>
+                 <div class="col-sm-12">
+                     <img class=" img-fluid " src="./imgs/hom_header/banner07.jpg" alt="">
+                 </div>
+             </div>
+         </div> 
+     </div>
+     <!-- end-->
+     <!--  -->
+</div>
+</li>
+<li><a class="dropdown-item" href="#"> men clothes </a></li>
+<li class="has-submenu"><a class="dropdown-item " href="#"> phons & accessories <i class="fa-solid fa-angle-right"></i></a>
+<div class="megasubmenu dropdown-menu">
+<div class="list_paralex">
+<div class="container">
+<div class="row">
+<div class=" col-md-8 ">
+ <!-- row 1 -->
+ <div class="row">
+     <div class="col-md-6">
+         <div class="min">
+             <h4>category</h4>
+         <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+        </div>
+     </div>
+     <div class="col-md-6">
+         <div class="min">
+             <h4>category</h4>
+         <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+        </div>
+     </div>
+ </div>
+ <!-- row 2 -->
+ <hr>
+ <div class="row">
+     <div class="col-md-6">
+         <div class="min">
+             <h4>category</h4>
+         <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+        </div>
+     </div>
+     <div class="col-md-6">
+         <div class="min">
+             <h4>category</h4>
+         <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+        </div>
+     </div>
+ </div>
+
+</div>
+<!-- start right image columan -->
+<div class="col-md-4   colitem">
+ 
+<div class="image img-fluid height"></div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</li>
+ <li><a class="dropdown-item" href="#"> computer & office </a></li>
+ <li class="has-submenu">
+ <a class="dropdown-item " href="#"> gallery & watches <i class="fa-solid fa-angle-right"></i></a>
+ <div class="megasubmenu dropdown-menu">
+               <!-- hover list -->
+   <div class="list_paralex">
+     <div class="container">
+         <div class="row">
+         <div class="col-md-6 col-lg-3 ">
+             <div class="min">
+                  <h4>category</h4>
+              <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+             </div>
+            
+         </div>
+         <div class="col-md-6 col-lg-3 ">
+             <div class="min">
+                 <h4>category</h4>
+            <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-3">
+             <div class="min">
+                 <h4>category</h4>
+            <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+            </div>
+         </div>
+         
+         <div class="col-md-6 col-lg-3">
+             <div class="min">
+                 <h4>category</h4>
+            <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+            </div>
+         </div>
+         <hr class="mt-4">
+         <div class="col-md-4 col-lg-3">
+             <div class="min">
+                 <h4>category</h4>
+            <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+            </div>
+         </div>
+         <div class="col-md-4 col-lg-3">
+             <div class="min">
+                 <h4>category</h4>
+            <ul class="">
+                <li><a href="">woman clothes</a></li>
+                <li><a href="">men clothes</a></li>
+                <li><a href=""> gallery & watches</a></li>
+                <li><a href="">Bags & shoes</a></li>
+                <li><a href="">computer & office</a></li> 
+            </ul>
+            </div>
+         </div>
+         <div class="col-md-4 col-lg-6 ">
+             <div class="min">
+                 <h4>category</h4>
+           <img class="w-100 h-100 height " src="./imgs/hom_header/banner06.jpg" alt="">
+            </div>
+         </div>
+     </div>
+ </div>
+</div>
+<!-- end-->
+   </div>
+     </li>
+         <li><a class="dropdown-item" href="#"> Bags & shoes </a></li>
+           <li><a class="dropdown-item" href="#">view all </a></li>
+         </ul>
+       </li>
+       <li class="nav-item "> <a class="nav-link ms-lg-5 ps-lg-5 fix" href="#">home</a> </li>
+       <li class="nav-item fix"><a class="nav-link" href="#"> about  </a></li>
+       <li class="nav-item dropdown dropdown-hover position-static fix">
+        <a class=" nav-link dropdown-toggle " href="#"  data-bs-toggle="dropdown" > woman  </a>
+        <div class="megasubmenu down dropdown-menu middel_mega_menu  ">
+             <!--  -->
+<!-- hover list -->
+<div class="list_paralex">
+ <div class="container">
+     <div class="row">
+     <div class="col-md-4">
+         <div class="min">
+              <h4>category</h4>
+          <ul class="">
+            <li><a href="">woman clothes</a></li>
+            <li><a href="">men clothes</a></li>
+            <li><a href=""> gallery & watches</a></li>
+            <li><a href="">Bags & shoes</a></li>
+            <li><a href="">computer & office</a></li> 
+        </ul>
+         </div>
+     </div>
+     <div class="col-md-4 my-2">
+         <div class="min">
+             <h4>category</h4>
+        <ul class="">
+            <li><a href="">woman clothes</a></li>
+            <li><a href="">men clothes</a></li>
+            <li><a href=""> gallery & watches</a></li>
+            <li><a href="">Bags & shoes</a></li>
+            <li><a href="">computer & office</a></li> 
+        </ul>
+        </div>
+     </div>
+     <div class="col-md-4">
+         <div class="min">
+             <h4>category</h4>
+        <ul class="">
+            <li><a href="">woman clothes</a></li>
+            <li><a href="">men clothes</a></li>
+            <li><a href=""> gallery & watches</a></li>
+            <li><a href="">Bags & shoes</a></li>
+            <li><a href="">computer & office</a></li> 
+        </ul>
+        </div>
+     </div>
+     <hr>
+     <div class="col-sm-12 ">
+         <div class="image img-fluid">
+           
+         </div>
+     </div>
+ </div>
+</div>
+</div>
+<!-- end-->
+<!--  --> 
+</div>
+</li>
+<li class="nav-item dropdown dropdown-hover position-static fix">
+    <a class=" nav-link dropdown-toggle " href="#"  data-bs-toggle="dropdown" > men  </a>
+    <div class="megasubmenu down dropdown-menu middel_mega_menu  ">
+     <!--  -->
+<!-- hover list -->
+<div class="list_paralex">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-lg-3 ">
+ <div class="min">
+     <div class="card">
+         <img src="./imgs/hom_header/banner08.jpg" alt="">
+         <div class="over">woman's  </div>
+             </div>
+      <h4 class="card_title">category</h4>
+  <ul class="">
+    <li><a href="">woman clothes</a></li>
+    <li><a href="">men clothes</a></li>
+    <li><a href=""> gallery & watches</a></li>
+    <li><a href="">Bags & shoes</a></li>
+    <li><a href="">computer & office</a></li> 
+</ul>
+ </div>
+
+</div>
+<div class="col-md-6 col-lg-3 ">
+ <div class="min">
+     <div class="card">
+         <img src="./imgs/hom_header/banner07.jpg" alt="">
+         <div class="over">woman's  </div>
+             </div>
+      <h4 class="card_title">category</h4>
+  <ul class="">
+    <li><a href="">woman clothes</a></li>
+    <li><a href="">men clothes</a></li>
+    <li><a href=""> gallery & watches</a></li>
+    <li><a href="">Bags & shoes</a></li>
+    <li><a href="">computer & office</a></li> 
+</ul>
+ </div>
+
+</div>
+<div class="col-md-6 col-lg-3 ">
+ <div class="min">
+     <div class="card"> 
+         <img src="./imgs/hom_header/banner06.jpg" alt="">
+         <div class="over">woman's  </div>
+             </div>
+      <h4 class="card_title">category</h4>
+  <ul class="">
+    <li><a href="">woman clothes</a></li>
+    <li><a href="">men clothes</a></li>
+    <li><a href=""> gallery & watches</a></li>
+    <li><a href="">Bags & shoes</a></li>
+    <li><a href="">computer & office</a></li> 
+</ul>
+ </div>
+
+</div>
+<div class="col-md-6 col-lg-3 ">
+ <div class="min">
+     <div class="card">
+         <img src="./imgs/hom_header/banner09.jpg" alt="">
+         <div class="over">woman's  </div>
+             </div>
+      <h4 class="card_title">category</h4>
+  <ul class="">
+    <li><a href="">woman clothes</a></li>
+    <li><a href="">men clothes</a></li>
+    <li><a href=""> gallery & watches</a></li>
+    <li><a href="">Bags & shoes</a></li>
+    <li><a href="">computer & office</a></li> 
+</ul>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<!-- end-->
+<!--  -->
+</div>
+</li>
+       <li class="nav-item fix"><a class="nav-link" href="#"> contact  </a></li>
+       <li class="nav-item dropdown dropdown-hover position-static fix">
+         <a class=" nav-link dropdown-toggle " href="#"  data-bs-toggle="dropdown" > pages  </a>
+         <div class="megasubmenu down dropdown-menu middel_mega_menu  ">
+             <!--  -->
+     <!-- hover list -->
+     <div class="list_paralex">
+     <div class="container">
+     <div class="row">
+     <div class="col-md-8  ">
+         <div class="min">                   
+              <h4 class="card_title">bags</h4>
+                     <p class="my-1 style_tit">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quaerat hic libero unde tempora, deserunt eligendi quibusdam dolore dolor ut ea, aut facere id asperiores esse? Voluptates 
+                         <br>
+                         <br>sapiente harum delectus iusto beatae consequuntur blanditiis itaque et, cupiditate officiis voluptatibus earum minus veritatis quos iste, nemo inventore obcaecati sint eum natus.
+                     </p>
+        </div>
+ </div>
+     <div class="col-md-4  ">
+         <div class="min last_min overflow-hidden">
+               <img src="./imgs/hom_header/bg9.jpg" alt="">
+               </div>
+             </div>        
+            </div>
+         </div>
+     </div>
+     <!-- end-->
+     <!--  -->
+     </div>
+     </li>
+     </ul>
+   </div>
+   <!-- navbar-collapse.// -->
+ </div>
+ <!-- container-fluid.// -->
+</nav>
+<!--  -->
+
+<!-- bootstrap5 carousel -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-interval="2000"  data-bs-pause="false">
+ <div class="carousel-inner ">
+     <div class="carousel-item active dark-overlay">
+         <img src="./imgs/hom_header/bg14.jpg" class="height d-block w-100" alt="...">
+         <div class="carousel-caption ">
+             <h2 class="">Shop With Us</h2>
+             <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod minus delectus consequatur fugit atque, ut consequuntur in assumenda voluptas porro?</p>
+             <button class="py-2 px-3"><a href="">shop now</a></button>
+             <button class="py-2 px-3 style"><a href="">club membership</a></button>
+           </div>
+       </div> 
+   <div class="carousel-item   dark-overlay">
+     <img src="./imgs/hom_header/bg10.jpg" class=" height d-block w-100" alt="...">
+     <div class="carousel-caption text-center">
+         <h2 class="">subscribe </h2>
+         <p class="subscribe">Lorem   <span>discount</span> sit amet consectetur adipisicing elit. Odit error nihil neque minima doloribus inventore. Suscipit quae maxime necessitatibus quo!</p>
+         <div class="sub_info text-center">
+               <input class="m-auto" type="email" placeholder="Example@Example.com" >
+         <input class=" " type="submit" value="submit">
+         </div>
+       </div>
+   </div> 
+    <div class="carousel-item  dark-overlay">
+     <img src="./imgs/hom_header/bg12.jpg" class="height d-block w-100" alt="...">
+     <div class="carousel-caption ">
+         <h2 class="">70% discount</h2> 
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod minus delectus consequatur fugit atque, ut consequuntur in assumenda voluptas porro?</p>
+         <button class="py-2 px-3"><a class="" href="">get discount</a></button>
+       
+       </div>  
+   </div>  
+  <div class="carousel-item  dark-overlay">
+     <img  src="./imgs/hom_header/bg13.jpg"  class=" height d-block w-100" alt="...">
+     <div class="carousel-caption ">
+         <h2 class="">Shop gallery</h2>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod minus delectus consequatur fugit atque, ut consequuntur in assumenda voluptas porro?</p>
+        
+         <div class="gallery">
+             <div class="row_">
+                 <img  class="galla" src="./imgs/hom_header/bg13.jpg" alt="image">
+             <img  class="galla"src="./imgs/hom_header/bg12.jpg" alt="image">
+             </div>
+             <div class="row_">
+                  <img class="galla" src="./imgs/hom_header/bg10.jpg" alt="image">
+             <img class="galla" src="./imgs/hom_header/bg15.jpg" alt="image">
+             </div>
+         </div>
+       </div>
+   </div> 
+ <button class="carousel-control-prev arrow" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+   <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+   <!-- <span class="visually-hidden">Previous</span> -->
+ </button>
+ <button class="carousel-control-next arrow" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+   <span class="carousel-control-next-icon " aria-hidden="true"> <i class="fa-solid fa-angle-right"></i></span>
+   <!-- <span class="visually-hidden">Next</span> -->
+ </button> 
+</div> <!-- end bootstrap carousel -->
+
+
+<!-- start advertise section-->
+<div class="advertise my-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 my-2" data-aos="zoom-out-up"  data-aos-duration="500"  data-aos-delay="200">
+                <div class="min">
+                    <div class="img"></div>
+                    <div class="overlay">
+                    <div class="info">  
+                        <h5>discount</h5>
+                        <div class="rate mt-0 mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                       
+                    </div>
+                </div>
+                <button><a href="">Get it</a></button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-2" data-aos="zoom-in-up"  data-aos-duration="500"  data-aos-delay="400">
+                <div class="min">
+                    <div class="img"></div>
+                    <div class="overlay">
+                   
+                    <div class="info"> 
+                        <h5>discount</h5>
+                        <div class="title mb-3">
+                          <span>  Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button><a href="">Get it</a></button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-2" data-aos="zoom-out-down"  data-aos-duration="600"  data-aos-delay="500">
+                <div class="min">
+                    <div class="img"></div>
+                    <div class="overlay">
+                   
+                    <div class="info"> 
+                        <h5>discount</h5>
+                        <div class="singh">
+                            <img src="./imgs/home_ad/singh.png" alt="">
+                        </div>
+                   
+                    </div>
+                </div>
+                <button><a href="">Get it</a></button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-2" data-aos="zoom-out-right"  data-aos-duration="800"  data-aos-delay="500">
+                <div class="min">
+                    <div class="img"></div>
+                    <div class="overlay">
+                   
+                    <div class="info"> 
+                        <!-- <h5>discount</h5> -->
+                   
+                    </div>
+                </div>
+                <button><a href="">Get it</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- main_slider_visit  -->
+
+<div class="main_slider_visit "  data-aos="fade-in"  data-aos-duration="600" >
+
+<div class="heading-info text-center pt-5 "  data-aos="fade-out-down"  data-aos-duration="500"  data-aos-delay="500"> 
+    <h4>mall shops</h4>
+    <h2>Browse our products</h2>
+    <p>Lorem ipsum dolor sit amet <span   class="edit">consectetur</span>  adipisicing elit.<br> Pariatur ea  rerum dolorem!Soluta</p>
+</div> 
+<!-- start swiper jquery plugin --> 
+<!-- Swiper -->
+<div class="swiper mySwiper"  data-aos="zoom-in-up"  data-aos-duration="600"  data-aos-delay="800">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">  
+        
+         <img src="./imgs/gallary/gl8.jpg" alt="gl8.jpg" />
+        </div>
+      <div class="swiper-slide">
+         <img src="./imgs/gallary/gl1.jpg" alt="gl1.jpg" />
+       
+      </div>
+      <div class="swiper-slide">
+        <img src="./imgs/gallary/gl4.jpg" alt="gl4.jpg"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="./imgs/gallary/gl5.jpg" alt="gl5.jpg"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="./imgs/gallary/gl6.jpg" alt="gl6.jpg"/>
+      </div>
+      <div class="swiper-slide">
+         <img src="./imgs/gallary/gl7.jpg" alt="gl7.jpg"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="./imgs/gallary/gl8.jpg" alt="gl8.jpg"/>
+      </div>
+      <div class="swiper-slide">
+         <img src="./imgs/gallary/gl9.jpg" alt="gl9.jpg"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="./imgs/gallary/gl20.jpg" alt="gl20.jpg"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="./imgs/gallary/gl5.jpg" alt="gl21.jpg"/>
+      </div>
+   
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- start new arrival -->
+<div class="new_arrival my-5">
+    <div class="container">
+        <div class="top_info text-center mt-5 mb-4">
+            <h4 class=""  data-aos="fade-in-up"  data-aos-duration="500"  >products</h4>
+            <h2   data-aos="fade-in-down"  data-aos-duration="500" data-aos-delay="300">new arrival</h2>
+            <span   data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="500">Lorem ipsum dolor, sit amet consectetur adipisicing <br>elit. Explicabo non consequuntur exercitationem!</span>
+        </div>
+        <!-- row-1 -->
+        <div class="row">
+            <div class="col-md-7 col-lg-4 main_col d-flex" data-aos="fade-in"  data-aos-duration="500" data-aos-delay="500">
+                <div class="img">
+                    <div class="overlay"> 
+                        <div class="info px-3" data-aos="fade-in"  data-aos-duration="500" >
+                            <h3 class=" ">Hurry up to get <span>70%</span> off!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem alias sint perspiciatis provident delectus necessitatibus blanditiis ad magni <br>odit inventore fuga explicabo, earum </p>  
+                            <button><a href=""> get now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-8 main_col mt-4 mt-lg-0"   data-aos="fade-in-right"  data-aos-duration="500" >
+                <!-- slick_slid -->
+            <div class="owl-carousel owl-theme">
+            <div class="item_slid">
+               <a href="">
+                <img src="./imgs/home_new-arrival/pr2.jpg" alt=""></a>
+              
+            <div class="info">
+            <button>  <i class="fa-solid fa-share-nodes"></i></button>
+            <button>  <i class="fa-solid fa-retweet"></i> </button> 
+            <button>  <i class="fa-solid fa-heart"></i> </button> 
+            </div>
+            <div class="footer_info mt-3 text-center">  
+              <h5>T-shirt </h5>
+             <span>
+                Nike unisex club fleece <br>t-shirt </span>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <h6 class="price">$66.00</h6>
+              <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+            </div>
+            </div>
+            
+             <!-- second slide item -->
+             <div class="item_slid">
+                <a href="">
+                    <img src="./imgs/home_new-arrival/pr3.jpg" alt=""></a>
+            <div class="info">
+            <button>  <i class="fa-solid fa-share-nodes"></i></button>
+            <button>  <i class="fa-solid fa-retweet"></i> </button> 
+            <button>  <i class="fa-solid fa-heart"></i> </button> 
+            </div>
+            <div class="footer_info mt-3 text-center">  
+              <h5>men's craft </h5>
+              <span>
+                Nike unisex club fleece men's craft in citron blue</span>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <h6 class="price">$28.00</h6>
+              <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+            </div>
+            </div>
+                 <!-- item number 3 -->
+                 <div class="item_slid">
+                    <a href="">
+                        <img src="./imgs/home_new-arrival/pr4.jpg" alt=""></a>
+                <div class="info">
+                <button>  <i class="fa-solid fa-share-nodes"></i></button>
+                <button>  <i class="fa-solid fa-retweet"></i> </button> 
+                <button>  <i class="fa-solid fa-heart"></i> </button> 
+                </div>
+                <div class="footer_info mt-3 text-center">  
+                  <h5>T-shirt </h5>
+                  <span>
+                    Nike unisex club fleece t-shirt in citron yellow</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <h6 class="price">$74.00</h6>
+                  <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                </div>
+                </div>
+                 <!-- item number 4 -->
+                 <div class="item_slid">
+                    <a href="">
+                        <img src="./imgs/home_new-arrival/pr5.jpg" alt=""></a>
+                <div class="info">
+                <button>  <i class="fa-solid fa-share-nodes"></i></button>
+                <button>  <i class="fa-solid fa-retweet"></i> </button> 
+                <button>  <i class="fa-solid fa-heart"></i> </button> 
+                </div>
+                <div class="footer_info mt-3 text-center">  
+                  <h5>Men's jeans </h5>
+                  <span>
+                    Nike unisex club fleece Men's jeans in citron blue</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h6 class="price">$23.00</h6>
+                  <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                </div>
+                </div>
+                 <!-- item number 5 -->
+                 <div class="item_slid">
+                    <a href="">
+                        <img src="./imgs/home_new-arrival/pr6.jpg" alt=""></a>
+                <div class="info">
+                <button>  <i class="fa-solid fa-share-nodes"></i></button>
+                <button>  <i class="fa-solid fa-retweet"></i> </button> 
+                <button>  <i class="fa-solid fa-heart"></i> </button> 
+                </div>
+                <div class="footer_info mt-3 text-center">  
+                  <h5>T-shirt </h5>
+                  <span>
+                    Nike unisex club fleece t-shirt in citron yellow</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <h6 class="price">$50.00</h6>
+                  <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                </div>
+                </div>
+                 <!-- item number 6 -->
+                 <div class="item_slid">
+                    <a href="">
+                        <img src="./imgs/home_new-arrival/pr8.jpg" alt=""> </a>
+                <div class="info">
+                <button>  <i class="fa-solid fa-share-nodes"></i></button>
+                <button>  <i class="fa-solid fa-retweet"></i> </button> 
+                <button>  <i class="fa-solid fa-heart"></i> </button> 
+                </div>
+                <div class="footer_info mt-3 text-center">  
+                  <h5>T-shirt </h5>
+                  <span>
+                    Nike unisex club fleece t-shirt in citron black</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <h6 class="price">$99.00</h6>
+                  <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                </div>
+                </div>
+            </div> 
+            </div>
+        </div>
+        <!-- row-2 -->
+       <div class="row ">
+            <div class="col-md-6"   data-aos="zoom-in-up"  data-aos-duration="600"  data-aos-delay="300"> 
+                <div class="owl-carousel owl-carousel_2 owl-theme">
+                    <div class="item">
+                        <div class="min">
+                            <a href="">
+                            <img src="./imgs/home_new-arrival/pr20.jpg" alt="">
+                            </a>
+                            <div class="footer_info mt-3 text-center">  
+                                <h5>Sunglasses </h5>
+                                <span>
+                                    Lorem ipsum, dolor <br>sit amet  </span> 
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <!-- <i class="fa-solid fa-star"></i> -->
+                                        <i class="fa-solid fa-star-half"></i>
+                                    </div>
+                                    <h6 class="price">$123.00</h6>
+                                <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                              </div>
+                        </div>
+                        <div class="min">
+                            <a href="">
+                                <img src="./imgs/home_new-arrival/pr21.jpg" alt="">
+                                </a>
+                            <div class="footer_info mt-3 text-center">  
+                            <h5> wrist watch</h5>
+                            <span>
+                Lorem ipsum, dolor <br>sit amet  </span> 
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <!-- <i class="fa-solid fa-star-half"></i> -->
+                </div>
+                <h6 class="price">$103.00</h6> 
+              <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+            </div>
+                        </div>
+                    </div>
+                        <div class="item">
+                        <div class="min">
+                            <a href="">
+                                <img src="./imgs/home_new-arrival/pr22.jpg" alt="">
+                                </a>
+                            <div class="footer_info mt-3 text-center">  
+                        <h5>  backpack</h5>
+                        <span>
+                Lorem ipsum, dolor <br>sit amet  </span> 
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h6 class="price">$77.00</h6>
+              <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+            </div>
+                        </div>
+                        <div class="min">
+                            <a href="">
+                                <img src="./imgs/home_new-arrival/pr23.jpg" alt="">
+                                </a>
+                            <div class="footer_info mt-3 text-center">  
+                                <h5> backpack</h5>
+                                <span>
+                                    Lorem ipsum, dolor <br>sit amet  </span> 
+                                    <div class="rate">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half"></i>
+                             </div>
+                         <h6 class="price">$29.00</h6> 
+                    <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+               </div>
+                        </div>
+                    </div>
+                
+                    
+                </div>
+
+        </div>
+        <div class="col-md-6"   data-aos="zoom-in-up"  data-aos-duration="600"  data-aos-delay="600"> 
+            <div class="owl-carousel owl-carousel_3 owl-theme">
+               
+                <div class="item">
+                    <div class="min">
+                        <a href="">
+                            <img src="./imgs/home_new-arrival/pr16.jpg" alt="">
+                            </a>
+                         <div class="footer_info mt-3 text-center">  
+              <h5>T-shirt </h5>
+              <span>
+                Nike unisex club fleece <br>t-shirt </span>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <!-- <i class="fa-solid fa-star-half"></i> -->
+                </div>
+                <h6 class="price">$78.00</h6>
+              <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+            </div>
+                    </div>
+                    <div class="min">
+                        <a href="">
+                            <img src="./imgs/home_new-arrival/pr15.jpg" alt="">
+                            </a>
+                         <div class="footer_info mt-3 text-center">  
+              <h5>T-shirt </h5>
+             <span>
+                Nike unisex club fleece <br>t-shirt </span>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h6 class="price">$101.00</h6>
+              <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+            </div>
+                    </div>
+                </div>
+                    <div class="item">
+                    <div class="min">
+                        <a href="">
+                            <img src="./imgs/home_new-arrival/pr13.jpg" alt="">
+                            </a>
+                         <div class="footer_info mt-3 text-center">  
+              <h5>T-shirt </h5>
+             <span>
+                Nike unisex club fleece <br>t-shirt </span>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h6 class="price">$81.00</h6>
+              <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+            </div>
+                    </div>
+                    <div class="min">
+                        <a href="">
+                            <img src="./imgs/home_new-arrival/pr18.jpg" alt="">
+                            </a>
+                         <div class="footer_info mt-3 text-center">  
+              <h5>T-shirt </h5>
+             <span>
+                Nike unisex club fleece <br>t-shirt </span>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h6 class="price">$88.00</h6>
+              <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+ 
+
+<!-- start pest price section -->
+<div class="pest_price" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
+    
+    <div class="overlay"></div>
+        <video  loop  autoplay muted>
+            <source src="./vedios/deal of the month.mp4" type="video/mp4">
+            <!-- <source src="./vedios/deal of the month.mp4" type="video/ogg">  -->
+         
+          </video>
+    <div class="min_container ">
+       
+                <div class="head_info text-center " data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="500">
+                    <h5 class="">best  price</h5>
+                    <h3>deal of the month </h3>
+                    <span>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Cum.</span>
+                    <h4>buy now and get <span>70%</span> off</h4>
+                </div>
+                <hr> 
+                <ul id="countdown" class="  ps-0 " data-aos="fade-in"  data-aos-duration="500" data-aos-delay="500">
+            
+
+                    <div class=" block">
+                    <li id="days">
+                        <div class="number">00</div>
+                        <div class="label">Days</div>
+                      </li>
+                      <li id="hours">
+                        <div class="number">00</div>
+                        <div class="label">Hours</div>
+                      </li>
+                  </div>
+                  <div class=" block block_2">
+                    <li id="minutes">
+                        <div class="number">00</div>
+                        <div class="label">Minutes</div>
+                      </li>
+                      <li id="seconds">
+                        <div class="number">00</div>
+                        <div class="label">Seconds</div>
+                      </li>
+                  </div>
+                  </ul>
+                  <form action="" data-aos="fade-in-down"  data-aos-duration="500" data-aos-delay="300">
+                    <input id="form-email" name="form-email" type="email" placeholder="Your email address" />
+                    <input type="submit" value="Notify me" />
+                  </form>
+                  <footer  data-aos="fade-in-down"  data-aos-duration="500" data-aos-delay="300">
+                    <button><a href=""><i class="fa-brands fa-github"></i></a></button>
+                    <button><a href=""><i class="fa-brands fa-twitter"></i></a></button>
+                    <button><a href=""><i class="fa-brands fa-facebook-f"></i></a></button>
+                    <button><a href=""><i class="fa-brands fa-google-plus-g"></i></a></button>
+                    <button><a href=""><i class="fa-brands fa-pinterest"></i></a></button>
+
+                  </footer>
+            </div>
+        </div>
+
+<!-- start best offers -->
+<div class="best_offers my-5" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
+    <div class="container">
+        <div class="top_info" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
+            <h2>best offers</h2>
+        <span class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, vero?</span>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 col-lg-3 min" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="200">
+                <div class="card" >
+                    <img src="./imgs/home_new-arrival/pr8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <div class="card-info">  
+                        <h5>T-shirt </h5>
+                        <span>
+                           Nike unisex club fleece <br>t-shirt </span>
+                           <div class="rate">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i> 
+                          
+                           </div>
+                           <h6 class="price">$88.00</h6>
+                           <div class="inline_item "> 
+                            <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                            <i class="fa-solid fa-heart ms-4 "></i>
+                           </div>
+                         
+                       </div>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-3 min" data-aos="fade-in-down"  data-aos-duration="500" data-aos-delay="400">
+                <div class="card" >
+                    <img src="./imgs/home_new-arrival/pr12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <div class="card-info">  
+                        <h5>T-shirt </h5>
+                        <span>
+                           Nike unisex club fleece <br>t-shirt </span>
+                           <div class="rate">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i> 
+                          
+                           </div>
+                           <h6 class="price">$88.00</h6>
+                           <div class="inline_item "> 
+                            <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                            <i class="fa-solid fa-heart ms-4 "></i>
+                           </div>
+                         
+                       </div>
+
+                    </div>
+                  </div>
+            </div>
+              <div class="col-md-6 col-lg-3 min" data-aos="fade-in-right"  data-aos-duration="500" data-aos-delay="600">
+                <div class="card" >
+                    <img src="./imgs/home_new-arrival/pr10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <div class="card-info">  
+                        <h5>T-shirt </h5>
+                        <span>
+                           Nike unisex club fleece <br>t-shirt </span>
+                           <div class="rate">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i> 
+                          
+                           </div>
+                           <h6 class="price">$88.00</h6>
+                           <div class="inline_item "> 
+                            <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                            <i class="fa-solid fa-heart ms-4 "></i>
+                           </div>
+                         
+                       </div>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-3 min" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="800">
+                <div class="card" >
+                    <img src="./imgs/home_new-arrival/pr13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <div class="card-info">  
+                        <h5>T-shirt </h5>
+                        <span>
+                           Nike unisex club fleece <br>t-shirt </span>
+                           <div class="rate">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i> 
+                          
+                           </div>
+                           <h6 class="price">$88.00</h6>
+                           <div class="inline_item "> 
+                            <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                            <i class="fa-solid fa-heart ms-4 "></i>
+                           </div>
+                         
+                       </div>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-3 min" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="200">
+                <div class="card" >
+                    <img src="./imgs/home_new-arrival/pr15.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <div class="card-info">  
+                        <h5>T-shirt </h5>
+                        <span>
+                           Nike unisex club fleece <br>t-shirt </span>
+                           <div class="rate">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i> 
+                          
+                           </div>
+                           <h6 class="price">$68.00</h6>
+                           <div class="inline_item "> 
+                            <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                            <i class="fa-solid fa-heart ms-4 "></i>
+                           </div>
+                         
+                       </div>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-3 min" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="400">
+                <div class="card" >
+                    <img src="./imgs/home_new-arrival/pr16.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <div class="card-info">  
+                        <h5>T-shirt </h5>
+                        <span>
+                           Nike unisex club fleece <br>t-shirt </span>
+                           <div class="rate">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i> 
+                          
+                           </div>
+                           <h6 class="price">$59.00</h6>
+                           <div class="inline_item "> 
+                            <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                            <i class="fa-solid fa-heart ms-4 "></i>
+                           </div>
+                         
+                       </div>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-3 min" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="600">
+                <div class="card" >
+                    <img src="./imgs/home_new-arrival/pr4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <div class="card-info">  
+                        <h5>T-shirt </h5>
+                        <span>
+                           Nike unisex club fleece <br>t-shirt </span>
+                           <div class="rate">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i> 
+                          
+                           </div>
+                           <h6 class="price">$39.59</h6>
+                           <div class="inline_item "> 
+                            <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                            <i class="fa-solid fa-heart ms-4 "></i>
+                           </div>
+                         
+                       </div>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-3 min" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="800">
+                <div class="card" >
+                    <img src="./imgs/home_new-arrival/pr19.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <div class="card-info">  
+                        <h5>T-shirt </h5>
+                        <span>
+                           Nike unisex club fleece <br>t-shirt </span>
+                           <div class="rate">
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i>
+                               <i class="fa-solid fa-star"></i> 
+                          
+                           </div>
+                           <h6 class="price">$84.00</h6>
+                           <div class="inline_item "> 
+                            <button><a href="">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                            <i class="fa-solid fa-heart ms-4 "></i>
+                           </div>
+                         
+                       </div>
+
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- start advertisement  -->
+<div class="advertisement my-5 py-5" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="0">
+    <div class="container">
+        <!-- <h2 data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="400">ads</h2> -->
+      
+        <div class="row">
+            <div class=" col-lg-7 min " data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="200">
+                <div class="min_content">
+                    <div class="over shape">
+                        <span class="ads">70%<span class="font-sm">discount</span> </span>
+                    <div class="info info-1"> 
+                        <h5 class="shape ">advertisement</h5>
+                        <p class="mt-3">Lorem, ipsum dolor sit amet cupiditate voluptatem quasi odit id ullam reiciendis temporibus.  <br> aut rem ab cupiditate quaerat  </p> 
+                        <button><a href="#">shop now</a></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class=" col-lg-5 min mt-3 mt-lg-0" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="400">
+                <div class="parent "> 
+                <div class="min_content">
+                    <div class="over">
+                    <div class="info">
+                        <h5>advertisement</h5> 
+                        <button><a href="#">shop now</a></button>
+                    </div>
+                </div>
+            </div>
+                <!--  -->
+                <div class="min_content" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="200">
+                    <div class="over">
+                    <div class="info">
+                        <h5>advertisement</h5>
+                        <button><a href="#">shop now</a></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- coming soon  _______________________________________-->
+<div class="coming_soon my-5" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay=""> 
+    <div class="container">
+      <div class="heading_title"  data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="200">
+        <h4 class="head_small_title">new products</h4>
+        <h2>coming soon</h2>
+         <span class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, vero?</span>
+      </div>
+         <div class="row mt-2">
+            <div class="col-lg-6 min_parent mt-4" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="100">
+                <div class="min">
+                <div class="img_preview"></div>
+                <div class="card_info">
+                    <span>Brand New Glasses</span>
+                    <h3 class="price">99.344 $ <span class="ps-3"> 117.56 $</span></h3> 
+                    <h5 class="product_name"> Apple Watch Strap
+                       </h5>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="more_details">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatem similique deserunt atque ab neque eveniet ipsam vitae praesentium animi saepe quo voluptas ducimus 
+                        <br>exercitationem odit provident suscipit amet, repellendus blanditiis quibusdam doloribus?
+                      </p>
+                      <h6>size</h6>
+                    <div class="size">
+                        <button><span class="style">s</span></button>
+                        <button><span>m</span></button>
+                        <button><span>l</span></button>
+                        <button><span>xl</span></button>
+                      </div>
+                      <h6 class="mt-3">color</h6>
+                    <div class="color mb-3">
+                        <span class="gray"></span>
+                        <span class="gray"></span>
+                        <span class="yellow"></span>
+                      </div>
+                    <div class="action">
+                        <button class="heart"><a href=""><i class="fa-solid fa-heart "></i> </a></button>
+                        <button class="add"><a href=""><i class="fa-solid fa-cart-arrow-down"></i>  add to cart </a></button>
+                    </div>
+                  </div>
+                </div>
+                    </div>
+            </div>
+            <div class="col-lg-6 min_parent mt-4" data-aos="fade-in-right"  data-aos-duration="500" data-aos-delay="300">
+                <div class="min">
+                <div class="img_preview"></div>
+                <div class="card_info">
+                    <span>Brand New Glasses</span>
+                    <h3 class="price">111.354 $ <span class="ps-3"> 140.57 $</span></h3> 
+                    <h5 class="product_name"> Suede Tote</h5>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="more_details">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatem similique deserunt atque ab neque eveniet ipsam vitae praesentium animi saepe quo voluptas ducimus 
+                        <br>exercitationem odit provident suscipit amet, repellendus blanditiis quibusdam doloribus?
+                      </p>
+                      <h6>size</h6>
+                    <div class="size">
+                        <button><span>s</span></button>
+                        <button><span class="style">m</span></button>
+                        <button><span>l</span></button>
+                        <button><span>xl</span></button>
+                      </div>
+                      <h6 class="mt-3">color</h6>
+                    <div class="color mb-3">
+                        <span class="gray"></span>
+                        <span class="gray"></span>
+                        <span class="yellow"></span>
+                      </div>
+                    <div class="action">
+                        <button class="heart"><a href=""><i class="fa-solid fa-heart "></i> </a></button>
+                        <button class="add"><a href=""><i class="fa-solid fa-cart-arrow-down"></i>  add to cart </a></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-6 min_parent mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="100">
+                <div class="min">
+                <div class="img_preview"></div>
+                <div class="card_info">
+                    <span>Brand New Glasses</span>
+                    <h3 class="price">99.344 $ <span class="ps-3"> 117.56 $</span></h3> 
+                    <h5 class="product_name">The Dome Backpack</h5>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="more_details">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatem similique deserunt atque ab neque eveniet ipsam vitae praesentium animi saepe quo voluptas ducimus 
+                        <br>exercitationem odit provident suscipit amet, repellendus blanditiis quibusdam doloribus?
+                      </p>
+                      <h6>size</h6>
+                    <div class="size">
+                        <button><span>s</span></button>
+                        <button><span class="style">m</span></button>
+                        <button><span>l</span></button>
+                        <button><span>xl</span></button>
+                      </div>
+                      <h6 class="mt-3">color</h6>
+                    <div class="color mb-3">
+                        <span class="gray"></span>
+                        <span class="gray"></span>
+                        <span class="yellow"></span>
+                      </div>
+                    <div class="action">
+                        <button class="heart"><a href=""><i class="fa-solid fa-heart "></i> </a></button>
+                        <button class="add"><a href=""><i class="fa-solid fa-cart-arrow-down"></i>  add to cart </a></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+                <div class="col-lg-6 min_parent mt-4" data-aos="fade-in-left"  data-aos-duration="500" data-aos-delay="300">
+                    <div class="min">
+                <div class="img_preview"></div>
+                <div class="card_info">
+                    <span>Brand New Glasses</span>
+                    <h3 class="price">93.344 $ <span class="ps-3"> 117.56 $</span></h3> 
+                    <h5 class="product_name">Apple Watch Strap</h5>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="more_details">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatem similique deserunt atque ab neque eveniet ipsam vitae praesentium animi saepe quo voluptas ducimus 
+                        <br>exercitationem odit provident suscipit amet, repellendus blanditiis quibusdam doloribus?
+                      </p>
+                      <h6>size</h6>
+                    <div class="size">
+                        <button><span>s</span></button>
+                        <button><span class="style">m</span></button>
+                        <button><span>l</span></button>
+                        <button><span>xl</span></button>
+                      </div>
+                      <h6 class="mt-3">color</h6>
+                    <div class="color mb-3">
+                        <span class="gray"></span>
+                        <span class="gray"></span>
+                        <span class="yellow"></span>
+                      </div>
+                    <div class="action">
+                        <button class="heart"><a href=""><i class="fa-solid fa-heart "></i> </a></button>
+                        <button class="add"><a href=""><i class="fa-solid fa-cart-arrow-down"></i>  add to cart </a></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            
+         </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="test">
+    <div class="item"></div>
+    <div class="it"></div>
+</div> -->
+<!-- page loading ____________________________________-->
+<div class="loading_container">
+<div class="loading-spinner">
+    <div class="main_content">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+ </div>
+</div>
+
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- AOS.js CDN -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- font-awesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <!-- Bootstrap 5 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <!-- Swiper JS CDN-->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- owl-carousel slider  CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- import swiper js plugin  CDN-->
+<script>
+   var swiper = new Swiper();
+</script>
+<!-- custom js style -->
+    <script src="./js/min.js"></script>
+</body>
+</html> 
