@@ -132,7 +132,7 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
   position: relative;
 }
 .header .top_info {
-  z-index: 1000;
+  z-index: 100;
   background-color: #82a344;
   position: relative;
 }
