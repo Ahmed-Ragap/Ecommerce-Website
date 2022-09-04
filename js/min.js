@@ -2,9 +2,16 @@
 $(window).on('load', function () {
   $('.loading_container').hide();
 }) 
+// scroll to top button
+let scrollToTop = document.querySelector(".scroll_to_top");
+window.onscroll = function(){
+  const scroll = window.scrollY > 400 ? scrollToTop.style.opacity= '1':   scrollToTop.style.opacity= '0';
+
+}  
+
 
 document.addEventListener("DOMContentLoaded", function(){
-     /////// Prevent closing from click inside dropdown
+ //Prevent closing from click inside dropdown
      document.querySelectorAll('.dropdown-menu').forEach(function(element){
        element.addEventListener('click', function (e) {
          e.stopPropagation();
@@ -27,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
        document.querySelectorAll('.has-submenu a').forEach(function(element){
          element.addEventListener('click', function (e) {
              let nextEl = this.nextElementSibling;
-             if(nextEl && nextEl.classList.contains('megasubmenu')) {	
+             if(nextEl && nextEl.classList.contains('megasubmenu_custom_js')) {	
                // prevent opening link if link needs to open dropdown
                e.preventDefault();
                if(nextEl.style.display == 'block'){
@@ -98,8 +105,98 @@ document.addEventListener("DOMContentLoaded", function(){
     });
     
   });
+    //start team_member (slider custom style)
+    $(document).ready(function(){
+      $('.team_slide').owlCarousel({
+        lazyLoad:true,
+           mobileFirst:true,
+            infinite: true,
+            dots:true,
+            autoplay:true,
+           loop:true,
+         mouseWel:true,
+         navigation : false,
+         nav:false,
+         margin:10,
+         responsiveClass:true,
+         autoplaySpeed: 1200,
+         animateOut: 'fadeOut',
+         animateIn: 'fadeIn',
+         navSpeed:1500,
+        
+        responsive:{
+          0:{
+              items:1,
+              loop:true
+          },
+          992:{
+              items:2,
+              loop:true
+          },
+          1200:{
+              items:3,
+              loop:true
+          }
+      }
+      });
+      
+    });
+    //start team_member (slider custom style)
+    $(document).ready(function(){
+      $('.suggested_product').owlCarousel({
+        // items : 7,
+        lazyLoad:true,
+           mobileFirst:true,
+            infinite: true,
+            dots:false,
+            autoplay:true,
+           loop:true,
+         mouseWel:true,
+         navigation : false,
+         nav:false,
+         margin:10,
+         responsiveClass:true,
+         autoplaySpeed: 1200,
+         animateOut: 'fadeOut',
+         animateIn: 'fadeIn',
+         navSpeed:1500,
+         centeredSlides: true,
+      // responsive 
+        responsive:{
+          0:{
+              items:1,
+              loop:true 
+          },
+          425:{
+            items:2,
+            loop:true
+        },
+          575:{
+            items:3,
+            loop:true
+        },
+        767:{
+          items:4,
+          loop:true
+      },
+
   
-   
+          992:{
+              items:5,
+              loop:true
+          },
+          1200:{
+              items:7, 
+              loop:true
+          },
+          1400:{
+            items:8, 
+            loop:true
+        }
+      }
+      });
+      
+    });
   //  start AOS Animation----------------
   AOS.init();
 
@@ -108,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function(){
  * GLOBAL VARS
  * -------------------------- */
 // The date you want to count down to
-var targetDate = new Date("2022/9/10 00:00:00");   
+var targetDate = new Date("2022/10/1 00:00:00");   
 
 // Other date related variables
 var days;
