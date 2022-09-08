@@ -3150,30 +3150,3 @@ section.lastSeen .img .overlay {
   height: 70px;
   transform: rotate(-45deg);
 }
-}
-
-section.lastSeen {
-  background-color: transparent !important;
-}
-section.lastSeen .img {
-  background-image: none !important;
-  background-color: #82a344;
-}
-section.lastSeen .img .overlay {
-  background-color: transparent !important;
-}
-
-.scroll_to_top {
-  position: fixed;
-  opacity: 0;
-  bottom: 50px;
-  right: 50px;
-  z-index: 100;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.scroll_to_top a img {
-  height: 70px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
