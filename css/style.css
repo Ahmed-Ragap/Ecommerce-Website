@@ -1,9 +1,5 @@
 @charset "UTF-8";
 /*
-265
-html 387
-*/
-/*
 start javascript  classes
 */
 @import url(https://fonts.googleapis.com/css?family=Halant:400,500,300,600,700|Josefin+Sans:400,100italic,100,300,300italic,400italic,600,600italic,700|Playfair+Display:400,400italic,700,700italic,900,900italic);
@@ -28,7 +24,7 @@ body button {
 }
 
 /*start fixed variable's*/
-.login_page .container .row .min_col .create_acc .overlay, section.team_member .container .row .min_col .parent .overlay, .advertisement .container .row .min .min_content .over, .pest_price .overlay, .new_arrival .container .row .main_col .img .overlay, .swiper-slide-active:hover, .advertise .container .row .col-md-6 .min .overlay, #carouselExampleFade .carousel-inner .dark-overlay:after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .img-fluid::after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .min .card .over {
+section.shopAllProduct .colMin .imgFilter .over, .shopHomeSlider .minCol .cardImg .over, .shopHomeSlider .minCol #carouselExampleControls .over, .login_page .container .row .min_col .create_acc .overlay, section.team_member .container .row .min_col .parent .overlay, .advertisement .container .row .min .min_content .over, .pest_price .overlay, .new_arrival .container .row .main_col .img .overlay, .swiper-slide-active:hover, .advertise .container .row .col-md-6 .min .overlay, #carouselExampleFade .carousel-inner .dark-overlay:after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .img-fluid::after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .min .card .over {
   position: absolute;
   top: 0;
   left: 0;
@@ -71,18 +67,18 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
   }
 }
 
-.advertisement .container .row .min .min_content .info button, .new_arrival .container .row .main_col .img .overlay .info button, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:nth-of-type(1) {
+.shopHomeSlider .minCol #carouselExampleControls .centerContent button.shop, .advertisement .container .row .min .min_content .info button, .new_arrival .container .row .main_col .img .overlay .info button, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:nth-of-type(1) {
   background-color: transparent;
   border: 2px solid #ffffff;
   position: relative;
 }
-.advertisement .container .row .min .min_content .info button a, .new_arrival .container .row .main_col .img .overlay .info button a, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:nth-of-type(1) a {
+.shopHomeSlider .minCol #carouselExampleControls .centerContent button.shop a, .advertisement .container .row .min .min_content .info button a, .new_arrival .container .row .main_col .img .overlay .info button a, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:nth-of-type(1) a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: bold;
 }
-.advertisement .container .row .min .min_content .info button::before, .new_arrival .container .row .main_col .img .overlay .info button::before, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:nth-of-type(1)::before {
+.shopHomeSlider .minCol #carouselExampleControls .centerContent button.shop::before, .advertisement .container .row .min .min_content .info button::before, .new_arrival .container .row .main_col .img .overlay .info button::before, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:nth-of-type(1)::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -96,10 +92,10 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
-.advertisement .container .row .min .min_content .info button:hover::before, .new_arrival .container .row .main_col .img .overlay .info button:hover::before, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:hover:nth-of-type(1)::before {
+.shopHomeSlider .minCol #carouselExampleControls .centerContent button.shop:hover::before, .advertisement .container .row .min .min_content .info button:hover::before, .new_arrival .container .row .main_col .img .overlay .info button:hover::before, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:hover:nth-of-type(1)::before {
   width: 100%;
 }
-.advertisement .container .row .min .min_content .info button:hover a, .new_arrival .container .row .main_col .img .overlay .info button:hover a, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:hover:nth-of-type(1) a {
+.shopHomeSlider .minCol #carouselExampleControls .centerContent button.shop:hover a, .advertisement .container .row .min .min_content .info button:hover a, .new_arrival .container .row .main_col .img .overlay .info button:hover a, #carouselExampleFade .carousel-inner .carousel-item .carousel-caption button:hover:nth-of-type(1) a {
   color: #464343;
   position: relative;
 }
@@ -132,7 +128,7 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
   position: relative;
 }
 .header .top_info {
-  z-index: 1000;
+  z-index: 10;
   background-color: #82a344;
   position: relative;
 }
@@ -232,7 +228,7 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
 nav.navbar {
   background-color: #31313c;
   padding: 6px 0;
-  z-index: 100 !important;
+  z-index: 6 !important;
   top: 0;
 }
 nav.navbar .container a img.logo {
@@ -2665,22 +2661,6 @@ section.register_page .container .row .min_col button {
   font-family: "Halant", serif;
 }
 
-.scroll_to_top {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 100;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.scroll_to_top a img {
-  height: 70px;
-  transform: rotate(-45deg);
-}
-
 #congrat {
   position: fixed;
   top: 49%;
@@ -2712,4 +2692,461 @@ section.register_page .container .row .min_col button {
 
 .hide_pass {
   display: none !important;
+}
+
+.shopHomeSlider .minCol {
+  position: relative;
+}
+.shopHomeSlider .minCol .details {
+  margin-top: 2rem;
+}
+.shopHomeSlider .minCol .details h3, .shopHomeSlider .minCol .details span, .shopHomeSlider .minCol .details a {
+  text-transform: capitalize;
+}
+.shopHomeSlider .minCol .details h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+.shopHomeSlider .minCol .details span {
+  font-family: "Halant", serif;
+  color: #31313c;
+}
+.shopHomeSlider .minCol .details .categoryLinks a {
+  display: block;
+  margin: 7px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: rgba(49, 49, 60, 0.5);
+  font-family: "Josefin Sans", sans-serif;
+}
+.shopHomeSlider .minCol .details .categoryLinks a:hover {
+  margin-left: 10px;
+}
+.shopHomeSlider .minCol .details .socialLink a {
+  margin: 0 6px;
+}
+.shopHomeSlider .minCol .details .socialLink a svg {
+  color: #1da1f2;
+}
+.shopHomeSlider .minCol .details .socialLink a:nth-of-type(2) svg {
+  color: #3b5998;
+}
+.shopHomeSlider .minCol .details .socialLink a:nth-of-type(3) svg {
+  color: #ea4335 !important;
+}
+.shopHomeSlider .minCol #carouselExampleControls .over {
+  background-color: rgba(49, 49, 60, 0.5) !important;
+}
+.shopHomeSlider .minCol #carouselExampleControls img {
+  max-height: 450px;
+}
+.shopHomeSlider .minCol #carouselExampleControls .centerContent {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 70%;
+}
+.shopHomeSlider .minCol #carouselExampleControls .centerContent h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.shopHomeSlider .minCol #carouselExampleControls .centerContent p {
+  text-transform: capitalize;
+  font-family: "Halant", serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+.shopHomeSlider .minCol #carouselExampleControls .centerContent button.shop {
+  padding: 5px 10px;
+}
+.shopHomeSlider .minCol #carouselExampleControls .centerContent button.shop a {
+  color: #ffffff !important;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+.shopHomeSlider .minCol #carouselExampleControls .centerContent button.shop:hover a {
+  color: #31313c !important;
+}
+.shopHomeSlider .minCol #carouselExampleControls button.carouselControl {
+  background-color: #82a344;
+  width: 60px;
+  height: 40px;
+  top: calc(50% - 20px) !important;
+}
+.shopHomeSlider .minCol .cardImg {
+  padding: 120px 0;
+  background-image: url("../imgs/coming_soon/cs2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.shopHomeSlider .minCol .cardImg .over {
+  background-color: rgba(49, 49, 60, 0.5) !important;
+}
+.shopHomeSlider .minCol .cardImg h5 {
+  position: relative;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+.shopHomeSlider .minCol .cardImg {
+  background-image: url("../imgs/coming_soon/cs2.webp");
+  padding: 100px 0;
+}
+.shopHomeSlider .minCol .cardImg:hover {
+  background-image: url("../imgs/coming_soon/cs2-2.webp");
+}
+.shopHomeSlider .minCol:nth-of-type(2) .cardImg {
+  background-image: url("../imgs/coming_soon/cs4.webp");
+}
+.shopHomeSlider .minCol:nth-of-type(2) .cardImg:hover {
+  background-image: url("../imgs/coming_soon/cs4-4.webp");
+}
+.shopHomeSlider .minCol:nth-of-type(3) .cardImg {
+  background-image: url("../imgs/coming_soon/cs8.webp");
+}
+.shopHomeSlider .minCol:nth-of-type(3) .cardImg:hover {
+  background-image: url("../imgs/coming_soon/cs8-8.webp");
+}
+.shopHomeSlider .minCol:nth-of-type(4) .cardImg {
+  background-image: url("../imgs/coming_soon/cs1-1.webp");
+}
+.shopHomeSlider .minCol:nth-of-type(4) .cardImg:hover {
+  background-image: url("../imgs/coming_soon/cs1.webp");
+}
+
+section.shopAllProduct .colMin .filterlinks h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+section.shopAllProduct .colMin .filterlinks a {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  color: rgba(49, 49, 60, 0.8);
+  margin: 4px 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+section.shopAllProduct .colMin .filterlinks a:hover {
+  margin-left: 8px;
+}
+section.shopAllProduct .colMin h5 {
+  margin: 25px 0 10px 0;
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+}
+section.shopAllProduct .colMin h5:after {
+  position: absolute;
+  content: "";
+  border: 2px solid #82a344;
+  width: 60px;
+  left: 0;
+  bottom: -4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+section.shopAllProduct .colMin .colorFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section.shopAllProduct .colMin .colorFilter div {
+  display: flex;
+  justify-content: center;
+}
+section.shopAllProduct .colMin .colorFilter div span {
+  width: 17px;
+  height: 17px;
+  background: red;
+  margin: 4px;
+  cursor: pointer;
+}
+section.shopAllProduct .colMin .colorFilter div span:hover {
+  opacity: 0.6;
+}
+section.shopAllProduct .colMin .colorFilter div.top span:nth-of-type(2) {
+  background: #ff00d9;
+}
+section.shopAllProduct .colMin .colorFilter div.top span:nth-of-type(3) {
+  background: #B22222;
+}
+section.shopAllProduct .colMin .colorFilter div.top span:nth-of-type(4) {
+  background: #FF69B4;
+}
+section.shopAllProduct .colMin .colorFilter div.top span:nth-of-type(5) {
+  background: #FFFACD;
+}
+section.shopAllProduct .colMin .colorFilter div.top span:nth-of-type(6) {
+  background: #00b0a5;
+}
+section.shopAllProduct .colMin .colorFilter div.top span:nth-of-type(7) {
+  background: #c3918c;
+}
+section.shopAllProduct .colMin .colorFilter div.top span:nth-of-type(8) {
+  background: #ff80ed;
+}
+section.shopAllProduct .colMin .colorFilter div.bottom span:nth-of-type(1) {
+  background: #8a2be2;
+}
+section.shopAllProduct .colMin .colorFilter div.bottom span:nth-of-type(2) {
+  background: #752653;
+}
+section.shopAllProduct .colMin .colorFilter div.bottom span:nth-of-type(3) {
+  background: #f5b3ce;
+}
+section.shopAllProduct .colMin .colorFilter div.bottom span:nth-of-type(4) {
+  background: #b38078;
+}
+section.shopAllProduct .colMin .colorFilter div.bottom span:nth-of-type(5) {
+  background: #9fff2f;
+}
+section.shopAllProduct .colMin .colorFilter div.bottom span:nth-of-type(6) {
+  background: #ffc0cb;
+}
+section.shopAllProduct .colMin .colorFilter div.bottom span:nth-of-type(7) {
+  background: #ff4040;
+}
+section.shopAllProduct .colMin .colorFilter div.bottom span:nth-of-type(8) {
+  background: #666479;
+}
+section.shopAllProduct .colMin .sizeFilter button {
+  width: 30px;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid #31313c;
+  font-size: 13px;
+}
+section.shopAllProduct .colMin .moreSizeFilter {
+  height: 100px;
+  overflow-y: scroll;
+}
+section.shopAllProduct .colMin .moreSizeFilter h6 {
+  color: #31313c;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+section.shopAllProduct .colMin .minColParent {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+section.shopAllProduct .colMin .minColParent .searchItem {
+  margin-right: auto;
+}
+section.shopAllProduct .colMin .minColParent .selectItem {
+  width: 140px;
+}
+section.shopAllProduct .colMin .minColParent .pageLinkItem a {
+  color: #31313c;
+}
+section.shopAllProduct .colMin .imgFilter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+section.shopAllProduct .colMin .imgFilter .item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+section.shopAllProduct .colMin .imgFilter .item:hover .over {
+  left: 0;
+}
+section.shopAllProduct .colMin .imgFilter .item:hover .action {
+  opacity: 1;
+}
+section.shopAllProduct .colMin .imgFilter .item:hover {
+  box-shadow: 0 0 11px rgba(49, 49, 60, 0.2);
+}
+section.shopAllProduct .colMin .imgFilter .topImg {
+  background-image: url("../imgs/home_new-arrival/pr5.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  position: relative;
+}
+section.shopAllProduct .colMin .imgFilter span.discount {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  background: #82a344;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
+section.shopAllProduct .colMin .imgFilter .over {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: grid;
+  place-items: center;
+  left: 100%;
+}
+section.shopAllProduct .colMin .imgFilter .over a {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+}
+section.shopAllProduct .colMin .imgFilter .info {
+  padding: 0 10px 10px 10px;
+}
+section.shopAllProduct .colMin .imgFilter .info h6 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  color: #31313c;
+  margin: 15px 0 0 0;
+}
+section.shopAllProduct .colMin .imgFilter .info h6 span {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #82a344;
+}
+section.shopAllProduct .colMin .imgFilter .info .rate {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+}
+section.shopAllProduct .colMin .imgFilter .info .rate span {
+  font-size: 14px;
+  font-family: "Halant", serif;
+  text-transform: capitalize;
+}
+section.shopAllProduct .colMin .imgFilter .info .review svg {
+  color: #82a344;
+  font-size: 13px;
+}
+section.shopAllProduct .colMin .imgFilter .info .action {
+  margin-top: 15px;
+  display: flex;
+  gap: 5px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+section.shopAllProduct .colMin .imgFilter .info .action button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(49, 49, 60, 0.6);
+  gap: 5px;
+  background-color: transparent;
+}
+section.shopAllProduct .colMin .imgFilter .info .action button:hover {
+  border-color: #82a344;
+}
+section.shopAllProduct .colMin .imgFilter .info .action button:hover svg {
+  color: #82a344;
+}
+section.shopAllProduct .colMin .imgFilter .info .action button svg {
+  color: rgba(49, 49, 60, 0.6);
+}
+
+section.custom_arrival {
+  background-color: rgba(245, 243, 213, 0.3);
+}
+section.custom_arrival h5 {
+  padding-top: 25px;
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+}
+section.custom_arrival .img {
+  background-image: url("../imgs/gallary/gl2.jpg") !important;
+}
+section.custom_arrival button.order {
+  background-color: #ffffff !important;
+  padding: 5px 15px !important;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+section.custom_arrival button.order:before {
+  display: none;
+}
+section.custom_arrival button.order a {
+  color: #82a344 !important;
+}
+
+section.lastSeen {
+  background-color: transparent !important;
+}
+section.lastSeen .img {
+  background-image: none !important;
+  background-color: #82a344;
+}
+section.lastSeen .img .overlay {
+  background-color: transparent !important;
+}
+
+.scroll_to_top {
+  position: fixed;
+  opacity: 0;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.scroll_to_top a img {
+  height: 70px;
+  transform: rotate(-45deg);
 }
