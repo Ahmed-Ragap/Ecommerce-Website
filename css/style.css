@@ -128,7 +128,11 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
   position: relative;
 }
 .header .top_info {
+<<<<<<< HEAD
   z-index: 10;
+=======
+  z-index: 100;
+>>>>>>> 01509b4bcc551a8d8fcc8e73df1f025f444b665c
   background-color: #82a344;
   position: relative;
 }
@@ -2693,6 +2697,7 @@ section.register_page .container .row .min_col button {
 .hide_pass {
   display: none !important;
 }
+<<<<<<< HEAD
 
 .shopHomeSlider .minCol {
   position: relative;
@@ -3150,3 +3155,5 @@ section.lastSeen .img .overlay {
   height: 70px;
   transform: rotate(-45deg);
 }
+=======
+>>>>>>> 01509b4bcc551a8d8fcc8e73df1f025f444b665c
