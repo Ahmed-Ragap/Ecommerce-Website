@@ -124,6 +124,17 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
   transition: all 1s ease-in-out;
 }
 
+* input:focus, *.form-select:focus {
+  border-color: #82a344 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(130, 163, 68, 0.4) !important;
+}
+
+*.form-check-input:checked {
+  background-color: #82a344 !important;
+  border-color: #82a344 !important;
+}
+
 .header {
   position: relative;
 }
@@ -2721,9 +2732,11 @@ section.register_page .container .row .min_col button {
   text-decoration: none;
   color: rgba(49, 49, 60, 0.5);
   font-family: "Josefin Sans", sans-serif;
+  padding: 5px;
 }
 .shopHomeSlider .minCol .details .categoryLinks a:hover {
-  margin-left: 10px;
+  padding-left: 10px;
+  background-color: rgba(130, 163, 68, 0.3);
 }
 .shopHomeSlider .minCol .details .socialLink a {
   margin: 0 6px;
@@ -2844,7 +2857,9 @@ section.register_page .container .row .min_col button {
 section.shopAllProduct .colMin .filterlinks h3 {
   font-family: "Josefin Sans", sans-serif;
   text-transform: capitalize;
-  margin-top: 20px;
+}
+section.shopAllProduct .colMin .filterlinks .custom {
+  margin-top: 36px;
 }
 section.shopAllProduct .colMin .filterlinks a {
   text-decoration: none;
@@ -2962,22 +2977,64 @@ section.shopAllProduct .colMin .moreSizeFilter h6 {
 }
 section.shopAllProduct .colMin .minColParent {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  section.shopAllProduct .colMin .minColParent {
+    justify-content: center;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  section.shopAllProduct .colMin .minColParent .input-group {
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 section.shopAllProduct .colMin .minColParent .searchItem {
   margin-right: auto;
 }
+@media (max-width: 991px) {
+  section.shopAllProduct .colMin .minColParent .searchItem {
+    margin-top: 50px;
+  }
+}
+section.shopAllProduct .colMin .minColParent .searchItem input {
+  font-family: "Halant", serif;
+  text-transform: capitalize;
+  color: #31313c;
+}
+section.shopAllProduct .colMin .minColParent .searchItem svg.fa-magnifying-glass {
+  color: #82a344;
+}
+section.shopAllProduct .colMin .minColParent .right {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+section.shopAllProduct .colMin .minColParent span.inlinTit {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  color: #31313c;
+}
 section.shopAllProduct .colMin .minColParent .selectItem {
   width: 140px;
+}
+section.shopAllProduct .colMin .minColParent .selectItem option {
+  font-family: "Halant", serif;
+  text-transform: capitalize;
+  color: #31313c;
+}
+section.shopAllProduct .colMin .minColParent .selectItem option:hover {
+  background-color: #82a344 !important;
 }
 section.shopAllProduct .colMin .minColParent .pageLinkItem a {
   color: #31313c;
 }
 section.shopAllProduct .colMin .imgFilter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -3104,8 +3161,19 @@ section.custom_arrival h5 {
   text-transform: capitalize;
   font-family: "Josefin Sans", sans-serif;
 }
+@media (max-width: 767px) {
+  section.custom_arrival .row_slider img {
+    max-width: 300px !important;
+  }
+}
 section.custom_arrival .img {
   background-image: url("../imgs/gallary/gl2.jpg") !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 section.custom_arrival button.order {
   background-color: #ffffff !important;
@@ -3129,9 +3197,170 @@ section.lastSeen {
 section.lastSeen .img {
   background-image: none !important;
   background-color: #82a344;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
 section.lastSeen .img .overlay {
   background-color: transparent !important;
+}
+
+section.review .minCol span, section.review .minCol svg {
+  color: rgba(49, 49, 60, 0.8);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
+section.review .details {
+  justify-content: flex-start;
+  gap: 15px;
+}
+section.review .item svg {
+  color: #82a344;
+  font-size: 13px;
+}
+section.review p.disc {
+  color: rgba(49, 49, 60, 0.6);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+section.review h5 {
+  color: #31313c;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
+section.review input, section.review textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid rgba(49, 49, 60, 0.7);
+  outline: none;
+}
+section.review input[type=submit] {
+  width: 100px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  background-color: rgba(49, 49, 60, 0.7);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+section.review input[type=submit]:hover {
+  background-color: #31313c;
+  border: 1px solid #31313c;
+}
+section.review textarea {
+  min-height: 190px;
+  max-height: 250px;
+  margin-bottom: 0;
+  height: 230px;
+}
+section.review .inlineItem {
+  margin-bottom: 15px;
+  gap: 9px;
+}
+section.review .rating svg {
+  color: #82a344;
+}
+
+.shopADS .over {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+.shopADS .min_content {
+  background-image: url(" ../imgs/shop/ads3.jpg") !important;
+}
+.shopADS .im_g2 {
+  background-image: url("../imgs/shop/ads2.jpg") !important;
+}
+.shopADS .im_g3 {
+  background-image: url("../imgs/shop/ads1.jpg") !important;
+}
+.shopADS .shape_style {
+  width: 270px !important;
+}
+.shopADS .shape_style:after {
+  display: none;
+}
+
+section.aboutCompany h4, section.aboutCompany p, section.aboutCompany label {
+  text-transform: capitalize;
+  font-family: "Halant", serif;
+}
+section.aboutCompany h4 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #31313c;
+}
+section.aboutCompany .form-check-input:checked {
+  background-color: #82a344 !important;
+  border-color: #82a344 !important;
+}
+section.aboutCompany .form-check-input:focus {
+  border-color: #82a344 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(130, 163, 68, 0.4) !important;
+}
+section.aboutCompany form textarea:focus, section.aboutCompany form input.form-control:focus {
+  outline: 0;
+  border: 1px solid rgba(49, 49, 60, 0.1);
+  box-shadow: 0 0 0 0.25rem rgba(130, 163, 68, 0.4) !important;
+}
+section.aboutCompany form input, section.aboutCompany form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid rgba(49, 49, 60, 0.7);
+  outline: none;
+}
+section.aboutCompany form input:hover, section.aboutCompany form textarea:hover {
+  background-color: rgba(49, 49, 60, 0.1);
+  border: 1px solid rgba(49, 49, 60, 0.1);
+}
+section.aboutCompany form input[type=submit] {
+  width: 100px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  background-color: rgba(49, 49, 60, 0.7);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+section.aboutCompany form input[type=submit]:hover {
+  background-color: #31313c;
+  border: 1px solid #31313c;
+}
+section.aboutCompany form textarea {
+  min-height: 190px;
+  max-height: 250px;
+  margin-bottom: 0;
+  height: 230px;
 }
 
 .scroll_to_top {

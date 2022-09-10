@@ -8,6 +8,15 @@ start javascript  classes
 // *span, p, a, li{
 //     font-size: $font-paragraph !important; 
 //   }
+*input:focus, *.form-select:focus {
+    border-color: $pry !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba($pry, .4) !important;
+}
+*.form-check-input:checked {
+    background-color: $pry !important;
+    border-color: $pry!important;;
+}
 
 .header{
     position: relative;   
@@ -3157,9 +3166,11 @@ section.register_page{
                         text-decoration:none;
                         color:rgba($sec, .5);
                         font-family:$font-title;
+                        padding:5px;
 
                         &:hover{
-                            margin-left:10px;
+                            padding-left:10px;
+                            background-color:rgba($pry, .3);
                         }
 
                     }
@@ -3309,9 +3320,12 @@ section.shopAllProduct{
              h3{
                 font-family:$font-title;
                 text-transform:capitalize;
-                margin-top: 20px;
+                // margin-top: 20px;
 
 
+        }
+        .custom{
+            margin-top: 36px;
         }
         a{
             text-decoration:none;
@@ -3442,29 +3456,58 @@ section.shopAllProduct{
     .minColParent{
         
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: baseline;
-        flex-wrap:wrap;
+        flex-wrap:wrap; 
+        // margin:0 auto;
+         @media(min-width:991px) and(max-width:1199px){
+             justify-content:center;
+            //  margin:0 auto;
+         }
         // search
+        .input-group{
+            @media(min-width:991px) and(max-width:1199px){
+                     justify-content:center;
+                     margin:0 auto;
+                 }
+        } 
         .searchItem{
-            margin-right: auto;
+          margin-right: auto;
+             @media(max-width:991px){
+                 margin-top: 50px;
+             }
             input{
-
+                font-family:$font-paragraph;
+                text-transform:capitalize;
+                color:$sec;
             }
             span{ }
                 a{}
                     svg.fa-magnifying-glass{
-
+          color:$pry;
             }
         }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
         span.inlinTit{
-
+            font-family:$font-title;
+            text-transform:capitalize;
+            color:$sec;
 
         }
         // select
         .selectItem{
-            width:140px;
+            width:140px; 
             option{
+                font-family:$font-paragraph;
+                text-transform:capitalize;
+                color:$sec;
+                &:hover{
+                    background-color:$pry !important;
+                }
 
             }
         }
@@ -3480,7 +3523,7 @@ section.shopAllProduct{
     // start imgFilter
     .imgFilter{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         gap:10px;
         .item{
@@ -3615,17 +3658,17 @@ section.custom_arrival{
     font-family: $font-title;
    }
     .row_slider{
-    
+    img{
+        @media(max-width:767px){ 
+            max-width: 300px !important;
+          }
+    }
       }
     .img{
-        background-image:url('../imgs/gallary/gl2.jpg') !important; 
-        // &:hover{
-        //     background:$pry !important; 
+        background-image:url('../imgs/gallary/gl2.jpg') !important;
+        @include border-r(10px) ;
+        overflow: hidden;
       
-        // } 
-          //     .overlay{
-        //        background-color:transparent !important; 
-        //     }
 
     }
     button.order{
@@ -3647,6 +3690,7 @@ section.lastSeen{
     .img{ 
         background-image:none !important; 
         background-color:$pry; 
+        @include border-r(10px) ;
      .overlay{
        background-color:transparent !important;  
      }
@@ -3657,51 +3701,203 @@ section.lastSeen{
 // start section.review
 section.review{
     .minCol{
-
+        span, svg{ 
+            color: rgba($sec, .8);
+            font-family:$font-title;
+            text-transform:capitalize;
+        }
     }
     .details{
+        justify-content:flex-start;
+        gap:15px;
+        
 
     }
     .item{
+      
         svg{
-
+            color:$pry;
+            font-size: $m-font - 3px;
         }
     }
     span{
 
     }
     p.disc{
-
+        color: rgba($sec, .6);
+        font-family:$font-title;
+        text-transform:capitalize;
+        font-size: $m-font - 2px;
+        margin-bottom:25px;
     }
     // second content
     h5{
+        color:$sec;
+        font-family:$font-title;
+        text-transform:capitalize;
 
     }
     form{
 
     }
-    input{
+    input, textarea{
+        width:100%;
+        padding:12px;
+        margin-bottom: 10px;
+        background-color:transparent;
+        @include border-r(7px);
+        border:1px solid rgba($sec, .7);
+        outline:none;
 
     }
     input[type="submit"]{
-        
+        width:100px;
+        padding:10px 15px;
+        border:1px solid transparent;
+        background-color:rgba($sec, .7);
+        font-family:$font-title;
+        text-transform:capitalize;
+        @include transition(.2s);
+        color:$h-color;
+        &:hover{
+            background-color:$sec;
+            border:1px solid $sec;
+            
+        }
     }
     textarea{
+        min-height:190px;
+        max-height:250px;
+        margin-bottom: 0;
+        height:230px;
 
     }
     .inlineItem{
+        margin-bottom: 15px;
+        gap:9px;
 
     }
     .rating{
         svg{
-            
+            color:$pry;
         }
     }
 }
 
+//  start shopADS repeated section style
 
+.shopADS{ //advertisement
+    .over{
+        width:100%!important;
+        height:100%!important;
+        top:0!important;
+        left:0!important;
+    }
+    .min_content{
+        background-image:url(' ../imgs/shop/ads3.jpg') !important;
+    }
+.im_g2{
+    background-image:url('../imgs/shop/ads2.jpg') !important;
+}
+.im_g3{
+    background-image:url('../imgs/shop/ads1.jpg') !important;
+} 
+.shape_style{
+        width: 270px !important;
+        &:after{
+            display: none;
+        }
+    }
+}
 
+// aboutCompany  section 
+section.aboutCompany{
+    .item{
 
+    }
+    h4, p, label{
+        text-transform:capitalize;
+        font-family: $font-paragraph;
+        
+    }
+    h4{
+        font-family:$font-title;
+        color:$sec;
+             }
+    .form-check-input:checked {
+        background-color: $pry !important;
+        border-color: $pry!important;;
+    }
+    .form-check-input:focus {
+        border-color: $pry !important;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba($pry, .4) !important;
+    }
+    .checkBottom{
+         input{
+
+    }
+    label{
+
+    } 
+    }
+    p{
+
+    }
+    // right content
+    form{
+        label{
+
+        } 
+        textarea:focus, input.form-control:focus {
+            // border-color: transparent !important;
+            outline: 0;
+            border:1px solid rgba($sec, .1);
+            box-shadow: 0 0 0 0.25rem rgba($pry, .4) !important;
+        }
+        input, textarea{
+            width:100%;
+            padding:10px;
+            margin-bottom: 10px;
+            background-color:transparent;
+            @include border-r(7px);
+            border:1px solid rgba($sec, .7);
+            outline:none;
+            
+            &:hover{
+                background-color:rgba($sec, .1);
+                border:1px solid rgba($sec, .1);
+                // color:$h-color;
+                
+            }
+    
+        }
+        
+        input[type="submit"]{
+            width:100px;
+            padding:10px 15px;
+            border:1px solid transparent;
+            background-color:rgba($sec, .7);
+            font-family:$font-title;
+            text-transform:capitalize;
+            @include transition(.2s);
+            color:$h-color;
+            &:hover{
+                background-color:$sec;
+                border:1px solid $sec;
+                
+            }
+        }
+        textarea{
+            min-height:190px;
+            max-height:250px;
+            margin-bottom: 0;
+            height:230px;
+    
+        }
+    }
+  
+}
 
 
 
