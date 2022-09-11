@@ -896,19 +896,28 @@ nav.navbar .container .collapse ul.navbar-nav li.cato ul li a {
   overflow: hidden;
   margin: 0 10px !important;
 }
-.new_arrival .container .row .main_col .owl-carousel .item_slid:hover .info {
-  left: 0 !important;
+@media (min-width: 768px) {
+  .new_arrival .container .row .main_col .owl-carousel .item_slid:hover .info {
+    left: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .new_arrival .container .row .main_col .owl-carousel .item_slid:hover .info {
+    bottom: 0px !important;
+    opacity: 1;
+  }
 }
 .new_arrival .container .row .main_col .owl-carousel .item_slid img {
-  width: 95%;
+  width: 100%;
   height: 300px;
+  margin: auto;
   background-size: cover;
   background-position: center;
 }
 .new_arrival .container .row .main_col .owl-carousel .item_slid .info {
   margin: 0 auto;
   display: grid;
-  left: -56px;
+  left: -50px;
   position: absolute;
   top: 50px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -916,6 +925,15 @@ nav.navbar .container .collapse ul.navbar-nav li.cato ul li a {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+@media (max-width: 767px) {
+  .new_arrival .container .row .main_col .owl-carousel .item_slid .info {
+    left: calc(50% - 50px) !important;
+    position: relative;
+    margin-top: -80px;
+    display: flex;
+    opacity: 0;
+  }
 }
 .new_arrival .container .row .main_col .owl-carousel .item_slid .info button {
   width: 50px;
@@ -927,6 +945,13 @@ nav.navbar .container .collapse ul.navbar-nav li.cato ul li a {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+@media (max-width: 767px) {
+  .new_arrival .container .row .main_col .owl-carousel .item_slid .info button {
+    width: 30px;
+    margin: -5px 3px;
+    height: 30px;
+  }
 }
 .new_arrival .container .row .main_col .owl-carousel .item_slid .info button:hover {
   background-color: #82a344;
@@ -947,6 +972,11 @@ nav.navbar .container .collapse ul.navbar-nav li.cato ul li a {
   font-family: "Josefin Sans", sans-serif;
   margin: 0 auto;
   text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .new_arrival .container .row .main_col .owl-carousel .footer_info h5 {
+    margin-top: 40px;
+  }
 }
 .new_arrival .container .row .main_col .owl-carousel .footer_info span {
   font-family: "Halant", serif;
@@ -2738,6 +2768,11 @@ section.register_page .container .row .min_col button {
   padding-left: 10px;
   background-color: rgba(130, 163, 68, 0.3);
 }
+@media (max-width: 767px) {
+  .shopHomeSlider .minCol .details .socialLink {
+    margin-bottom: 40px;
+  }
+}
 .shopHomeSlider .minCol .details .socialLink a {
   margin: 0 6px;
 }
@@ -2755,6 +2790,11 @@ section.register_page .container .row .min_col button {
 }
 .shopHomeSlider .minCol #carouselExampleControls img {
   max-height: 450px;
+}
+@media (max-width: 767px) {
+  .shopHomeSlider .minCol #carouselExampleControls img {
+    height: 500px;
+  }
 }
 .shopHomeSlider .minCol #carouselExampleControls .centerContent {
   text-align: center;
@@ -3011,7 +3051,13 @@ section.shopAllProduct .colMin .minColParent .searchItem svg.fa-magnifying-glass
 section.shopAllProduct .colMin .minColParent .right {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: baseline;
+}
+@media (max-width: 574px) {
+  section.shopAllProduct .colMin .minColParent .right {
+    gap: 10px 0;
+  }
 }
 section.shopAllProduct .colMin .minColParent span.inlinTit {
   font-family: "Josefin Sans", sans-serif;
@@ -3219,6 +3265,12 @@ section.review .details {
   justify-content: flex-start;
   gap: 15px;
 }
+@media (max-width: 424px) {
+  section.review .details {
+    flex-direction: column;
+    gap: 3px;
+  }
+}
 section.review .item svg {
   color: #82a344;
   font-size: 13px;
@@ -3297,6 +3349,11 @@ section.review .rating svg {
 }
 .shopADS .shape_style {
   width: 270px !important;
+}
+@media (max-width: 574px) {
+  .shopADS .shape_style {
+    width: 200px !important;
+  }
 }
 .shopADS .shape_style:after {
   display: none;
@@ -3381,88 +3438,4 @@ section.aboutCompany form textarea {
 .scroll_to_top a img {
   height: 70px;
   transform: rotate(-45deg);
-}
-
-.priceSlider {
-  width: 200px;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 10px 20px;
-  box-shadow: 0px 0px 3px 1px #888;
-}
-
-.priceSlider h1 {
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.priceSlider p {
-  font-size: 10px;
-  margin-top: 20px;
-}
-
-.min-max label {
-  font-size: 14px;
-  float: left;
-  margin-right: 5px;
-  line-height: 1.6;
-}
-
-.min_ {
-  float: left;
-}
-
-.max {
-  float: right;
-}
-
-.min-max {
-  width: 90%;
-  max-width: 200px;
-  margin: 0 auto;
-  padding: 25px 0px 15px 0px;
-}
-
-.min-max span {
-  font-size: 10px;
-  text-align: center;
-  display: inline-block;
-  width: 30px;
-}
-
-.min-max-range {
-  padding: 30px 0px 20px 0px;
-}
-
-.range {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 50%;
-  height: 10px;
-  max-width: 400px;
-  background-color: #dedede;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  float: left;
-}
-
-.range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #0070BF;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.range::moz-range-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #0070BF;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  cursor: pointer;
 }
