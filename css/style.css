@@ -124,7 +124,7 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
   transition: all 1s ease-in-out;
 }
 
-* input:focus, *.form-select:focus {
+* input:focus, * textarea:focus, *.form-select:focus {
   border-color: #82a344 !important;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(130, 163, 68, 0.4) !important;
@@ -755,7 +755,7 @@ nav.navbar .container .collapse ul.navbar-nav li.cato ul li a {
 .main_slider_visit {
   background-color: rgba(49, 49, 60, 0.1);
   width: 100vw !important;
-  height: 120vh !important;
+  min-height: 130vh !important;
   margin: 50px auto;
 }
 .main_slider_visit .heading-info h4 {
