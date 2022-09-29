@@ -24,7 +24,7 @@ body button {
 }
 
 /*start fixed variable's*/
-section.shopAllProduct .colMin .imgFilter .over, .shopHomeSlider .minCol .cardImg .over, .shopHomeSlider .minCol #carouselExampleControls .over, .login_page .container .row .min_col .create_acc .overlay, section.team_member .container .row .min_col .parent .overlay, .advertisement .container .row .min .min_content .over, .pest_price .overlay, .new_arrival .container .row .main_col .img .overlay, .swiper-slide-active:hover, .advertise .container .row .col-md-6 .min .overlay, #carouselExampleFade .carousel-inner .dark-overlay:after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .img-fluid::after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .min .card .over {
+.acountPage_heading_discount .overlay, section.shopAllProduct .colMin .imgFilter .over, .shopHomeSlider .minCol .cardImg .over, .shopHomeSlider .minCol #carouselExampleControls .over, .login_page .container .row .min_col .create_acc .overlay, section.team_member .container .row .min_col .parent .overlay, .advertisement .container .row .min .min_content .over, .pest_price .overlay, .new_arrival .container .row .main_col .img .overlay, .swiper-slide-active:hover, .advertise .container .row .col-md-6 .min .overlay, #carouselExampleFade .carousel-inner .dark-overlay:after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .img-fluid::after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .min .card .over {
   position: absolute;
   top: 0;
   left: 0;
@@ -755,7 +755,7 @@ nav.navbar .container .collapse ul.navbar-nav li.cato ul li a {
 .main_slider_visit {
   background-color: rgba(49, 49, 60, 0.1);
   width: 100vw !important;
-  min-height: 130vh !important;
+  min-height: 140vh !important;
   margin: 50px auto;
 }
 .main_slider_visit .heading-info h4 {
@@ -3423,6 +3423,272 @@ section.aboutCompany form textarea {
   height: 230px;
 }
 
+.acountPage_heading_discount .min {
+  position: relative;
+  background-attachment: fixed;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  overflow: hidden;
+  min-height: 200px;
+  background-image: url("../imgs/shop/discountPrev3.jpg");
+}
+.acountPage_heading_discount .min .content_ {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 50px 0 0 0;
+}
+.acountPage_heading_discount .min .min__ {
+  position: relative;
+}
+.acountPage_heading_discount .min .min__ h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin: 0;
+}
+.acountPage_heading_discount .min .min__ span, .acountPage_heading_discount .min .min__ p {
+  font-family: "Halant", serif;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+}
+.acountPage_heading_discount .min .min__ span {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 11.2px;
+}
+.acountPage_heading_discount .min .min__ p {
+  max-width: 600px;
+}
+.acountPage_heading_discount .min .min__ p::first-letter {
+  font-size: 32px;
+  line-height: 1;
+}
+.account_data {
+  display: none;
+}
+
+.account_dataActivation {
+  background-color: red;
+}
+
+.acountPage_acountInfo .sideCategoryItem ul {
+  list-style: none;
+}
+.acountPage_acountInfo .sideCategoryItem li {
+  color: #31313c;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+.acountPage_acountInfo .sideCategoryItem li:hover svg {
+  margin-left: 12px;
+}
+.acountPage_acountInfo .sideCategoryItem svg {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  color: #31313c;
+  margin-top: 5px;
+  margin-left: 7px;
+  position: absolute;
+}
+.acountPage_acountInfo .account_data {
+  display: none;
+}
+.acountPage_acountInfo .account_data h4 {
+  background-color: #82a344;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 8px 5px;
+}
+.acountPage_acountInfo .account_data .topFilter {
+  justify-content: end;
+  align-items: baseline;
+}
+.acountPage_acountInfo .account_data select {
+  width: 140px;
+  height: 37px;
+}
+.acountPage_acountInfo .account_data option {
+  font-family: "Halant", serif;
+  text-transform: capitalize;
+  color: #31313c;
+}
+.acountPage_acountInfo .account_data option:hover {
+  background-color: #82a344 !important;
+}
+.acountPage_acountInfo .account_data span.pages {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  color: #31313c;
+}
+.acountPage_acountInfo .account_data nav.pageLink a {
+  color: #82a344;
+}
+.acountPage_acountInfo .account_data .item {
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.acountPage_acountInfo .account_data .item:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.acountPage_acountInfo .account_data .item span, .acountPage_acountInfo .account_data .item div {
+  text-transform: capitalize;
+}
+.acountPage_acountInfo .account_data .item img {
+  height: 120px;
+}
+.acountPage_acountInfo .account_data .item .discr span {
+  color: #31313c;
+  font-family: "Halant", serif;
+  display: block;
+  max-width: 400px;
+  text-transform: capitalize;
+}
+.acountPage_acountInfo .account_data .item .discr .date, .acountPage_acountInfo .account_data .item .discr .case {
+  color: #31313c;
+  font-family: "Halant", serif;
+}
+.acountPage_acountInfo .account_data .item .discr .date svg, .acountPage_acountInfo .account_data .item .discr .case svg {
+  color: #82a344;
+}
+.acountPage_acountInfo .account_data .item .discr .favorites .item_ {
+  color: #31313c;
+  font-family: "Halant", serif;
+}
+.acountPage_acountInfo .account_data .item .discr .favorites .item_ svg {
+  color: #82a344;
+}
+.acountPage_acountInfo .account_data .item .otherDetai .info {
+  font-family: "Josefin Sans", sans-serif;
+}
+.acountPage_acountInfo .account_data .item .otherDetai .price {
+  color: #82a344;
+}
+.acountPage_acountInfo .account_data .item .action {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.acountPage_acountInfo .account_data .item .action button {
+  border: 1px solid #82a344;
+  background-color: #82a344;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  line-height: 1.4;
+}
+.acountPage_acountInfo .account_data .item .action button a {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+}
+.acountPage_acountInfo .account_data .item .action button:nth-of-type(2) {
+  border: 1px solid #31313c;
+  background-color: #31313c;
+}
+.acountPage_acountInfo .account_data .item .notifi_con h5 {
+  color: #31313c;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
+.acountPage_acountInfo .account_data .item .notifi_con h5 svg {
+  color: #82a344;
+}
+.acountPage_acountInfo .account_data .item .notifi_con span {
+  color: #31313c;
+  font-family: "Halant", serif;
+  text-transform: capitalize;
+  display: block;
+  max-width: 400px;
+}
+.acountPage_acountInfo .account_data .item button.noti_remove {
+  border: 1px solid #31313c;
+  background-color: #31313c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  line-height: 1.4;
+}
+.acountPage_acountInfo .account_data .item button.noti_remove a {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+}
+.acountPage_acountInfo .accountDetails {
+  display: block;
+}
+.acountPage_acountInfo .accountDetails .det {
+  margin: 10px 0;
+}
+.acountPage_acountInfo .accountDetails .det label, .acountPage_acountInfo .accountDetails .det input, .acountPage_acountInfo .accountDetails .det span {
+  color: #31313c;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
+.acountPage_acountInfo .accountDetails .det label {
+  width: 100px;
+}
+.acountPage_acountInfo .accountDetails .det label.ID {
+  width: 50%;
+}
+.acountPage_acountInfo .accountDetails .det input {
+  border: none;
+  outline: none;
+  font-size: 16px -4px;
+  font-family: "Halant", serif;
+  padding: 7px 10px;
+}
+.acountPage_acountInfo .accountDetails .det input:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+.acountPage_acountInfo .accountDetails .det button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.acountPage_acountInfo .favoritesDetails nav {
+  display: flex;
+  justify-content: end;
+}
+.acountPage_acountInfo .notificationsDetails nav {
+  display: flex;
+  justify-content: end;
+}
+
 .scroll_to_top {
   position: fixed;
   opacity: 0;
@@ -3438,4 +3704,45 @@ section.aboutCompany form textarea {
 .scroll_to_top a img {
   height: 70px;
   transform: rotate(-45deg);
+}det input:focus {
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.acountPage_acountInfo .accountDetails .det button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.acountPage_acountInfo .favoritesDetails nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.acountPage_acountInfo .notificationsDetails nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.scroll_to_top {
+  position: fixed;
+  opacity: 0;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.scroll_to_top a img {
+  height: 70px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }

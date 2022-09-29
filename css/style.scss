@@ -876,7 +876,7 @@ button.navbar-toggler{
     min-height:140vh !important;
     margin: 50px auto; 
   
-.heading-info{
+.heading-info{ 
     h4{
         font-family: $font-paragraph;
     }
@@ -3894,10 +3894,23 @@ section.aboutCompany{
     } 
     }
     p{
-
+       
     }
+    // .accordion-button:not(.collapsed){
+    //     color: $sec;
+    //     text-transform:capitalize;
+    //     font-family:$font-title;
+    //     background-color: rgba($pry, .6);
+    // }
+    // .accordion-button .collapsed{
+    //     border:1px solid red;
+    // }
+    // .accordion-button:focus{ 
+    //     border-color:$pry !important;
+    //     background-color: rgba($pry, .6);
+    // }
     // right content
-    form{
+    form{.accordion-button:focus
         label{
 
         } 
@@ -3950,6 +3963,336 @@ section.aboutCompany{
     }
   
 }
+
+// start acount page
+.acountPage_heading_discount{
+    .min{
+        position:relative;
+        background-attachment:fixed;
+     border-bottom-right-radius:15px;
+     border-bottom-left-radius:15px;
+        overflow:hidden;
+        min-height:200px;
+        background-image:url('../imgs/shop/discountPrev3.jpg');
+        .content_{
+            display:flex;
+            flex-flow: row wrap;
+            gap:20px;
+            justify-content:space-evenly;
+            padding: 50px 0 0 0;
+        }
+        .min__{
+            position: relative;
+            h3{
+                font-family:$font-title;
+                text-transform:capitalize;
+                color:$h-color;
+                margin:0;
+
+            }
+            span, p{
+                 font-family:$font-paragraph;
+                text-transform:capitalize;
+                color:rgba($h-color ,.8);
+            }
+            span{
+               
+                color:$h-color;
+                text-transform:uppercase;
+                font-size:.7 * $m-font; 
+            }
+            p{
+                max-width: 600px;
+    
+                &::first-letter{
+                    font-size:2 * $m-font; 
+                   line-height: 1;
+                    // height:30px;
+                }
+
+            }
+        }
+
+    }
+    .overlay{
+        @extend %over;
+
+    }
+}
+
+ .account_data{
+     display:none;
+ }
+
+.account_dataActivation{
+  background-color:red;
+    
+    // display:inline;
+
+}
+
+// start acountPage_acountInfo
+.acountPage_acountInfo{
+    .sideCategoryItem{
+        ul{
+            list-style: none;
+        }
+        li{
+            color:$sec;
+            font-family:$font-title;
+            cursor:pointer;
+            font-size:$m-font + 2px;
+            text-transform: capitalize;
+            margin:10px 0 ;
+            
+            &:hover{
+                svg{
+                    margin-left:12px;    
+                }
+            }
+         
+        }
+        // .item2{
+        //     display:block !important;
+        // }
+        svg{
+            @include transition(.2s); 
+            font-size:$m-font ;
+            color:$sec; 
+            margin-top: 5px;
+            margin-left:7px; 
+            position: absolute;
+        }
+    }
+    .account_data{
+        display:none;
+        h4{
+            background-color:$pry;
+            color:$h-color;
+            font-family:$font-title;
+            text-transform: capitalize;
+            @include border-r(5px);
+            padding:8px 5px;
+
+        }
+        .minCont{
+        }
+    
+       
+    
+        
+        .topFilter{
+            justify-content: end;
+            align-items: baseline;
+        }
+        select{
+            width:140px; 
+            height: 37px;    
+        }
+        option{
+            font-family:$font-paragraph;
+            text-transform:capitalize;
+            color:$sec;
+            &:hover{
+                background-color:$pry !important;
+            }
+        }
+        span.pages{
+            font-family:$font-title;
+            text-transform:capitalize;
+            color:$sec;
+        }
+        nav.pageLink{
+            ul{
+
+
+            }
+            li{
+
+            }
+            a{
+                color:$pry;
+            }
+        }
+        .item{
+            // justify-content: space-around;
+            flex-wrap:wrap;
+            gap: 15px;
+            padding: 5px;
+            @include border-r(5px);
+            align-items: center;
+            @include transition(.2s);
+            &:hover{
+                box-shadow: 0 0 11px rgba(33,33,33,.2); 
+            }
+            span, div {
+                text-transform:capitalize ;
+            }
+            img{
+                height: 120px;
+            }
+            .discr{
+                span{
+                    color:$sec;
+                    font-family:$font-paragraph;
+                    display:block;
+                    max-width: 400px;
+                    text-transform:capitalize;
+                    
+                }
+                .date, .case{
+                    color:$sec;
+                    font-family:$font-paragraph;
+                    svg{
+                        color:$pry;
+                    }
+                }
+                .favorites{
+                    .item_{
+                        color:$sec;
+                        font-family:$font-paragraph;
+                        svg{
+                            color:$pry;
+                        }
+                    }
+                }
+            }
+            .otherDetai{
+                .info{
+                    font-family:$font-title;
+
+                }
+                .price{
+                    color:$pry; 
+                }
+            }
+            .action{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                button{
+                    border:1px solid $pry;
+                    background-color:$pry;
+                    @include border-r(5px);
+                    padding: 5px 10px;
+                    line-height: 1.4;
+                    a{
+                        color:$h-color;
+                        font-family:$font-title;
+                        font-size:$m-font - 2px;
+
+                    }
+                }
+                button:nth-of-type(2){
+                    
+                        border:1px solid $sec;
+                        background-color:$sec;
+                    
+                }
+            }
+            .notifi_con{
+                h5{
+                    color:$sec;
+                    font-family:$font-title;
+                    text-transform:capitalize;
+                    svg{
+                        color:$pry;
+                    }
+                }
+                span{
+                    color:$sec;
+                    font-family:$font-paragraph;
+                    text-transform:capitalize;
+                    display:block;
+                    max-width: 400px;
+                }
+            }
+            button.noti_remove{
+                border:1px solid $sec;
+                background-color:$sec;
+                @include border-r(5px);
+                padding: 5px 10px;
+                line-height: 1.4;
+                a{
+                    color:$h-color;
+                    font-family:$font-title;
+                    font-size:$m-font - 2px;
+
+                }
+            }
+        }
+
+    }
+    .accountDetails{
+        display:block;
+        .det{
+        margin:10px 0;
+        label, input, span{
+            color:$sec;
+            font-family:$font-title;
+            text-transform:capitalize;
+        }
+            label{
+                width: 100px;
+            }
+            label.ID{
+                width: 50%;
+            }
+            span{
+
+            }
+            input{ 
+                border:none;
+                outline:none;
+                font-size:$m-font -4px;
+                font-family:$font-paragraph;
+                padding:7px 10px;
+                &:focus{
+                    border-color:none;
+                    outline: 0;
+                    box-shadow:none!important;
+                    
+                }
+
+
+            }
+            button{
+                background-color:transparent;
+                border:none;
+                padding:0;
+
+              svg{
+                
+            }  
+            }
+            .action_save{
+                // display:none;
+            }
+            
+        }
+}
+    
+    .favoritesDetails{
+       
+        nav{
+            display: flex;
+            justify-content: end;
+        }
+    }
+    .notificationsDetails{
+        // display:block;
+        nav{
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+
+
+
+
+
 
 
 
