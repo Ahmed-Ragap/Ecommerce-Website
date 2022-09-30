@@ -1,19 +1,26 @@
 let account_data = document.querySelectorAll('.account_data');
 let sideCategoryItem  = document.querySelectorAll('.sideCategoryItem li');
+let Item1  = document.querySelector('.item1');
 
 sideCategoryItem.forEach((e)=>{
-    // e.classList.remove('account_dataActivation');
+
     e.addEventListener("click", (e) => {
-        // document.querySelector('.sideCategoryItem.account_dataActivation').remove('account_dataActivation')
+        e.stopPropagation();
+      action();
         e.target.classList.add('account_dataActivation')
-           this.style.display = 'block'
     })
-    // e.addEventListener("click", remo)
     e.addEventListener("click", items)
     e.classList.remove("account_dataActivation")
-    //alert(',dfjkfj')
+
+    function action() {
+        sideCategoryItem.forEach((ele) => {
+            ele.classList.remove('account_dataActivation');
+        })
+      
+    }
     })
-// function for adding and remove account_dataActivation class 
+    // active class for first element
+    Item1.classList.add('account_dataActivation')
 
 
 // function for  hide all elements 
@@ -35,28 +42,29 @@ const AllInpu = document.querySelectorAll('.inp');
 const InpName = document.querySelector('#name');
 editBtn.forEach(e => {
      e.addEventListener('click', () => {
-        // e.style.display = 'none';
-          InpName.disabled = false;
-                InpName.focus();
-                InpName.select();
-          saveBtn[0].classList.add('d-block');
+        e.style.display ='none';
+        e.parentNode.querySelector('.action_save').style.display = 'block'
+        const  EditAction = e.parentNode.querySelector('.inp');
+        EditAction.disabled = false;
+        EditAction.focus();
+        EditAction.select();
+        console.log(EditAction )
         //  
     
         // 
       
      });
  });
- saveBtn.forEach(e => {
-    e.addEventListener('click', () => {
-       // e.style.display = 'none';
-         InpName.disabled = true;
-            //    InpName.focus();
-            //    InpName.select();
-        //  saveBtn[0].classList.add('d-block');
-       //  
+  saveBtn.forEach(e => {
+     e.addEventListener('click', () => {
+         e.style.display ='none';
+         e.parentNode.querySelector('.action_edit').style.display = 'block'
+         const  EditAction = e.parentNode.querySelector('.inp');
+         EditAction.disabled = true;
+        console.log(EditAction )
    
-       // 
+         
      
-    });
-});
+     });
+ });
 

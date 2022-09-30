@@ -4025,10 +4025,9 @@ section.aboutCompany{
  }
 
 .account_dataActivation{
-  background-color:red;
-    
-    // display:inline;
-
+    border-color: $pry !important;
+    color:$pry !important;
+    opacity:.8!important;
 }
 
 // start acountPage_acountInfo
@@ -4038,6 +4037,10 @@ section.aboutCompany{
             list-style: none;
         }
         li{
+            border-bottom:1px solid transparent;
+            // display:initial;
+            opacity:.8;
+            max-width:140px;
             color:$sec;
             font-family:$font-title;
             cursor:pointer;
@@ -4266,8 +4269,12 @@ section.aboutCompany{
             }  
             }
             .action_save{
-                // display:none;
+              display:none;
             }
+            .action_edit{
+
+            }
+
             
         }
 }
@@ -4316,6 +4323,13 @@ section.aboutCompany{
       }
    }
 }
+
+
+
+
+
+
+
 
 
 

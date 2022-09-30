@@ -3470,13 +3470,18 @@ section.aboutCompany form textarea {
 }
 
 .account_dataActivation {
-  background-color: red;
+  border-color: #82a344 !important;
+  color: #82a344 !important;
+  opacity: 0.8 !important;
 }
 
 .acountPage_acountInfo .sideCategoryItem ul {
   list-style: none;
 }
 .acountPage_acountInfo .sideCategoryItem li {
+  border-bottom: 1px solid transparent;
+  opacity: 0.8;
+  max-width: 140px;
   color: #31313c;
   font-family: "Josefin Sans", sans-serif;
   cursor: pointer;
@@ -3680,6 +3685,9 @@ section.aboutCompany form textarea {
   border: none;
   padding: 0;
 }
+.acountPage_acountInfo .accountDetails .det .action_save {
+  display: none;
+}
 .acountPage_acountInfo .favoritesDetails nav {
   display: flex;
   justify-content: end;
@@ -3704,45 +3712,4 @@ section.aboutCompany form textarea {
 .scroll_to_top a img {
   height: 70px;
   transform: rotate(-45deg);
-}det input:focus {
-  border-color: none;
-  outline: 0;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-.acountPage_acountInfo .accountDetails .det button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-.acountPage_acountInfo .favoritesDetails nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-.acountPage_acountInfo .notificationsDetails nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.scroll_to_top {
-  position: fixed;
-  opacity: 0;
-  bottom: 50px;
-  right: 50px;
-  z-index: 100;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.scroll_to_top a img {
-  height: 70px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
