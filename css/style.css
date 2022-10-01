@@ -3460,6 +3460,7 @@ section.aboutCompany form textarea {
 }
 .acountPage_heading_discount .min .min__ p {
   max-width: 600px;
+  padding: 0 15px;
 }
 .acountPage_heading_discount .min .min__ p::first-letter {
   font-size: 32px;
@@ -3655,6 +3656,7 @@ section.aboutCompany form textarea {
   display: block;
 }
 .acountPage_acountInfo .accountDetails .det {
+  flex-wrap: wrap;
   margin: 10px 0;
 }
 .acountPage_acountInfo .accountDetails .det label, .acountPage_acountInfo .accountDetails .det input, .acountPage_acountInfo .accountDetails .det span {
@@ -3671,9 +3673,15 @@ section.aboutCompany form textarea {
 .acountPage_acountInfo .accountDetails .det input {
   border: none;
   outline: none;
-  font-size: 16px -4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 16px -2px;
   font-family: "Halant", serif;
   padding: 7px 10px;
+  min-width: 245px;
 }
 .acountPage_acountInfo .accountDetails .det input:focus {
   border-color: none;

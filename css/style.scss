@@ -4003,6 +4003,7 @@ section.aboutCompany{
             }
             p{
                 max-width: 600px;
+                padding:0 15px;
     
                 &::first-letter{
                     font-size:2 * $m-font; 
@@ -4229,6 +4230,7 @@ section.aboutCompany{
     .accountDetails{
         display:block;
         .det{
+            flex-wrap:wrap;
         margin:10px 0;
         label, input, span{
             color:$sec;
@@ -4247,9 +4249,11 @@ section.aboutCompany{
             input{ 
                 border:none;
                 outline:none;
-                font-size:$m-font -4px;
+                @include border-r(6px);
+                font-size:$m-font -2px;
                 font-family:$font-paragraph;
                 padding:7px 10px;
+                min-width: 245px;
                 &:focus{
                     border-color:none;
                     outline: 0;

@@ -48,7 +48,7 @@ editBtn.forEach(e => {
         EditAction.disabled = false;
         EditAction.focus();
         EditAction.select();
-        console.log(EditAction )
+        // console.log(EditAction )
         //  
     
         // 
@@ -61,10 +61,28 @@ editBtn.forEach(e => {
          e.parentNode.querySelector('.action_edit').style.display = 'block'
          const  EditAction = e.parentNode.querySelector('.inp');
          EditAction.disabled = true;
-        console.log(EditAction )
+        // console.log(EditAction )
    
          
      
      });
  });
 
+// remove notification content
+const noti_remove = document.querySelectorAll('.noti_remove');
+noti_remove.forEach((btn) => {
+    btn.addEventListener("click" , (e) =>{
+      e.preventDefault()
+       e.target.parentNode.parentElement.closest('.item').remove();
+    })
+})
+
+
+// remove favorites content
+const remove_favor = document.querySelectorAll('.remove_fav');
+remove_favor.forEach((btnR) => {
+    btnR.addEventListener("click" , (e) =>{
+        e.preventDefault()
+       e.target.parentNode.parentElement.closest('.item').remove();
+    })
+})
