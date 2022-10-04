@@ -20,142 +20,38 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 />
+<!--magnify css  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/css/magnify.css" integrity="sha512-JxBFHHd+xyHl++SdVJYCCgxGPJKCTTaqndOl/n12qI73hgj7PuGuYDUcCgtdSHTeXSHCtW4us4Qmv+xwPqKVjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!--  -->
-
+  <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/bbbootstrap/libraries/main/xzoom.css" media="all" />
+  
     <title>single product</title>
 </head>  
 <body>
-
-
-    <div class="singlePruct">
-        <div class="card">
-               <div class="form">
-                   <div class="left-side">
-                     
-                      
-                       <div class="images">
-                           <div class="img_girl_left">
-                               <i class="fa fa-angle-up"></i>
-                               <span><img src="./imgs/advertisement/ad1.jpg"></span>
-                               <span><img src="./imgs/advertisement/ad2.jpg"></span>
-                               <span><img src="./imgs/advertisement/ad3.jpg"></span>
-                               <i class="fa fa-angle-down"></i>
-                           </div>
-                           <span><img src="./imgs/advertisement/ad4.jpg"></span>
-                       </div>
-                       <!-- <div class="right_women_img m_top">
-                           <span><img src="https://imgur.com/k6xMg7h.jpg"></span>
-                           <span><img src="https://imgur.com/cEi4yel.jpg"></span>
-                       </div>
-                        -->
-       
-                       
-                   </div>
-                   <div class="right-side">
-                       
-                       <div class="indexing">
-                           <span><i class="fa fa-angle-left"></i> Prev</span>
-                           <small>2 of 210</small>
-                           <span>Next <i class="fa fa-angle-right"></i></span>
-                       </div>
-                       <h3>Pastel Jacket With Bejewelled Collar</h3>
-                       <h4>79.99 GBP</h4>
-                       <div class="designer">
-                           <h5>Designer : </h5>
-                           <p>Mademoiselle Tambour</p>
-                       </div>
-                       <div class="logo">
-                               <p>melle</p>
-                               <h3>TAMBOUR</h3>
-                               <h5>Mademoiselle Tambour</h5>
-                       </div>
-                       <div class="designer">
-                           <h5>Color : </h5>
-                           <p>Tobacco Brown</p>
-                           
-                       </div>
-                       <div class="color">
-                           <span></span>
-                           <span></span>
-                           <span></span>
-                       </div>
-                       <div class="options">
-                           <div class="size">
-                               <select>
-                                   <option>Size : S</option>
-                                   <option>Size : M</option>
-                                   <option>Size : L</option>
-                                   <option>Size : XL</option>
-                               </select>
-                           </div>
-                           <div class="quantity">
-                               <i class="fa fa-minus"></i>
-                               <span class="qty">1</span>
-                               <i class="fa fa-plus"></i>
-                           </div>
-                           <button>Add to cart</button>
-                       </div>
-                       <div class="open_wish">
-                           <p>Open sizes guide</p>
-                           <div class="wishlist">
-                               <i class="fa fa-heart-o"></i>
-                               <p>Add to Wishlist</p>
-                           </div>
-                       </div>
-                       <div class="description">
-                           <h4>Description</h4>
-                           <p>Pastel Jacket with Bejewelled collar exclusive pattern by John Malkovich and printed on soft cotton fabric.Made in Italy. </p>
-                           <ul class="features">
-                               <li>Quilted Design</li>
-                               <li>Contrasted faux-fur collar </li>
-                               <li>Loops on the shoulder</li>
-                               <li>Side zip pockets</li>
-                               <li>Two side pockets with one press stud fasteneing</li>
-                               <li>Long sleeve with elastic cuff's</li>
-                               <li>Zip fasteneing on the front section</li>
-                           </ul>
-                           <p>Side length 31.5cm</p>
-                           <p1>Back length 56.5cm</p1>
-                       </div>
-                       <div class="share">
-                           <h4>Share</h4>
-                           <div class="social">
-                               <i class="fa fa-facebook"></i>
-                               <i class="fa fa-twitter"></i>
-                               <i class="fa fa-pinterest"></i>
-                               <i class="fa fa-google-plus"></i>
-                           </div>
-                           
-                       </div>
-                       <div class="right_women_img">
-                           <span><img src="./imgs/advertisement/ad1.jpg"></span>
-                           <span><img src="./imgs/advertisement/ad2.jpg"></span>
-                       </div>
-       
-                   
-       
-                   </div>
-               </div>
-        </div>
-       </div>
-
-
-
-<!-- start scroll to top button -->
-
-<div class="scroll_to_top">
-    <a href="#"> <img src="./imgs/hom_header/scroll.png" alt="scroll to top "></a>
-   </div>
-   
-   
-   
-
+    <div class="container mt-5 mb-5">	<div class="card">	<div class="row g-0">	<div class="col-md-6 border-end">	<div class="d-flex flex-column justify-content-center">	
+        <div class="main_image">
+            <img src="./imgs/home_new-arrival/pr15.jpg" class="zoom" data-magnify-src="./imgs/home_new-arrival/pr15.jpg" id="main_product_image" width="350"> 
+        	</div>	
+            <div class="thumbnail_images">	
+                <ul id="thumbnail">
+                    	<li><img onMouseenter="changeImage(this)"src="./imgs/home_new-arrival/pr15.jpg" class="zoom" data-magnify-src="./imgs/home_new-arrival/pr15.jpg" width="70"></li>	
+                        <li><img onMouseenter="changeImage(this)"src="./imgs/home_new-arrival/pr16.jpg" class="zoom" data-magnify-src="/./imgs/home_new-arrival/pr16.jpg" width="70"></li>
+                        <li><img onMouseenter="changeImage(this)"src="/images/product.jpg" class="zoom" data-magnify-src="/images/product-large.jpg" width="70"></li>
+                        <li><img onMouseenter="changeImage(this)"src="/images/product.jpg" class="zoom" data-magnify-src="/images/product-large.jpg" width="70"></li>
+                        </ul>	</div>	</div>	</div>	<div class="col-md-6">	<div class="p-3 right-side">	<div class="d-flex justify-content-between align-items-center">	<h3>IIlana</h3>	<span class="heart"><i class='bx bx-heart'></i></span>	</div>	<div class="mt-2 pr-3 content">	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>	</div>	<h3>$430.99</h3>	<div class="ratings d-flex flex-row align-items-center">	<div class="d-flex flex-row">	<i class='bx bxs-star' ></i>	<i class='bx bxs-star' ></i>	<i class='bx bxs-star' ></i>	<i class='bx bxs-star' ></i>	<i class='bx bx-star' ></i>	</div>	<span>441 reviews</span>	</div>	<div class="mt-5">	<span class="fw-bold">Color</span>	<div class="colors">	<ul id="marker">	<li id="marker-1"></li>	<li id="marker-2"></li>	<li id="marker-3"></li>	<li id="marker-4"></li>	<li id="marker-5"></li>	</ul>	</div>	</div>	<div class="buttons d-flex flex-row mt-5 gap-3">	<button class="btn btn-outline-dark">Buy Now</button>	<button class="btn btn-dark">Add to Basket</button>	</div>	<div class="search-option">	<i class='bx bx-search-alt-2 first-search'></i>	<div class="inputs">	<input type="text" name="">	</div>	<i class='bx bx-share-alt share'></i>	</div>	</div>	</div>	</div>	</div> </div>
 
 
         <!-- jquery -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js" integrity="sha512-OKuL2kpi8zfeXcqSXnGbL6tKc9JxWmppJY4mOSn1EsngRb7fx1N5+7wOTGqu2bI5OAYL3Og7/Beg7EsWG2OBKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <!-- jquery ui -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+<!-- magnify -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.js" integrity="sha512-+8UjzErRT0NC6aEUwkW8TrucGEUHaq1pXSNiZz+WcE3iO6a+Y5joy6OdsS+VTkFGGkazVn35Xm5I+dksnjBlEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- magnify-mobile -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.0/js/jquery.magnify-mobile.js" integrity="sha512-c4nn0tYA6CqgF8nQZqysAS9lu+tegNtXt0gTwFI5smPpuODc+DJk8HDm/cjaUP6HRAqLKUPIAVnnK9llAKa0+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- AOS.js CDN -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- font-awesome js -->

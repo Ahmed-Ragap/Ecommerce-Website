@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imgs/hom_header/logo.png" type="image/x-icon" />
+<!-- owl-carousel slider  CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome  CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.css" rel="stylesheet" media="all">
+    <!-- Bootstrap 5 CDN-->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <!-- AOS.js css CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- css styles -->
+<link rel="stylesheet" href="./css/style.css">
+    <title>all product</title>
+</head>  
+<body>
+
+
+
+    <section class="shopAllProduct cartOrder allProductPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="cartTopHeadingLink">
+                        <a href="./index.html" target='_self'> home</a>
+                        <a href="#"> products</a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mt-5">
+              
+                <div class="col-md-5 col-lg-3 colMin" data-aos="fade-in"  data-aos-duration="500" data-aos-delay="100">
+                 <div class="filterlinks">
+                    <h3>women:</h3>
+                    <hr class="custom">
+                    <h5>sub categories</h5>
+                    <a href="#"> woman clothes</a>
+                    <a href="#"> woman clothes</a>
+                    <a href="#"> woman accessories</a> 
+                    <a href="#"> woman phons</a> 
+                    <a href="#"> woman gallery</a> 
+                    <a href="#"> woman watches</a>
+                 </div>
+                    <h5>filter by price</h5>
+    
+                    <h5>filter by color</h5>
+                    <div class="colorFilter">
+                       <div class='top'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                       </div>
+                       <div class='bottom'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                       </div>
+                    </div>
+                   
+                    <!-- 
+                     filter here
+                     -->
+                
+                </div>
+                <div class="col-md-7 col-lg-9 colMin " data-aos="fade-in"  data-aos-duration="500" data-aos-delay="300">
+                    <div class="minColParent ">
+                       <!-- search -->
+                   <div class="input-group mb-3 w-50 searchItem">
+                    <input type="text" class="form-control " placeholder="Product Name" aria-label="Recipient's username" aria-describedby="basic-addon2" id='search'>
+                    <span class="input-group-text" ><a href="#"><i class="fa-solid fa-magnifying-glass" for='#search'></i></a></span>
+                  </div>
+                  <div class="right">
+    
+                 
+                    <span class='inlinTit me-2'>sort by:  </span>
+                    <!-- select -->
+                    <select class="form-select  d-inline selectItem" aria-label="Default select example">
+                        <option selected>all</option>
+                        <option value="1">small</option>
+                        <option value="2">large</option>
+                        <option value="3">medium</option>
+                      </select>
+                      <!-- pagination -->
+                    <nav class='pageLinkItem' aria-label="Page navigation example d-inline-flex w-50">
+                        <ul class="pagination">
+                          <!-- <li class="page-item"><a class="page-link" href="#">Previous</a></li> -->
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angles-right"></i></a></li>
+                        </ul>
+                      </nav>
+                </div>
+              </div>
+                <hr>
+                <!-- start gallery images -->
+              <div class="imgFilter priceContent my-4">
+                <div class="item"> 
+                  <div class="topImg">
+                    <span class="discount">-33%</span>
+                    <div class="over"> 
+                      <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h6>33.45 egp <span>55.29 egp</span></h6>
+                    <div class="rate d-flex">
+                     <span> product name </span>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="action d-flex">
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 2 -->
+                <div class="item">
+                  <div class="topImg">
+                    <span class="discount">-33%</span>
+                    <div class="over"> 
+                      <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h6>33.45 egp <span>55.29 egp</span></h6>
+                    <div class="rate d-flex">
+                     <span> product name </span>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="action d-flex">
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 3 -->
+                <div class="item">
+                  <div class="topImg">
+                    <span class="discount">-33%</span>
+                    <div class="over"> 
+                      <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h6>33.45 egp <span>55.29 egp</span></h6>
+                    <div class="rate d-flex">
+                     <span> product name </span>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="action d-flex">
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="imgFilter priceContent my-4">
+                <div class="item"> 
+                  <div class="topImg">
+                    <span class="discount">-33%</span>
+                    <div class="over"> 
+                      <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h6>33.45 egp <span>55.29 egp</span></h6>
+                    <div class="rate d-flex">
+                     <span> product name </span>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="action d-flex">
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 2 -->
+                <div class="item">
+                  <div class="topImg">
+                    <span class="discount">-33%</span>
+                    <div class="over"> 
+                      <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h6>33.45 egp <span>55.29 egp</span></h6>
+                    <div class="rate d-flex">
+                     <span> product name </span>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="action d-flex">
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- item 3 -->
+                <div class="item">
+                  <div class="topImg">
+                    <span class="discount">-33%</span>
+                    <div class="over"> 
+                      <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h6>33.45 egp <span>55.29 egp</span></h6>
+                    <div class="rate d-flex">
+                     <span> product name </span>
+                      <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="action d-flex">
+                      <button><i class="fa-solid fa-heart"></i></button>
+                      <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            </div>
+                <hr data-aos="fade-in"  data-aos-duration="500" data-aos-delay="100"> 
+               <!-- start second filter section  -->
+               <div class="row">
+                <div class="col-lg-3 colMin" data-aos="fade-in"  data-aos-duration="500" data-aos-delay="100">
+                  <h5>filter by size</h5>
+                   
+                  <div class="sizeFilter">
+                      <button>xs</button>
+                      <button>sm</button>
+                      <button>sl</button>
+                      <button>xl</button>
+                      <button>2x</button>
+                      <button>3x</button>
+                  </div>
+                  <div class="moreSizeFilter">
+                    <h6>more: </h6>
+                      <!--  -->
+                     <div class="item mt-1">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label " for="exampleCheck1"> xxxxxl</label>
+                     </div>
+                      <!--  -->  
+                       <div class="item">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label " for="exampleCheck1"> xxxxxxl</label>
+                     </div>
+                      <!--  -->
+                       <div class="item">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label " for="exampleCheck1"> xxxxxxxl</label>
+                     </div>
+                      <!--  -->
+                       <div class="item">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label " for="exampleCheck1"> xxxx</label>
+                     </div>
+                       <!--  -->
+                       <div class="item">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label " for="exampleCheck1"> xxxx</label>
+                       </div>
+                         <!--  -->
+                       <div class="item">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label " for="exampleCheck1"> xxxx</label>
+                     </div>
+                       <!--  -->
+                       <div class="item">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label " for="exampleCheck1"> xxxx</label>
+                     </div>
+                       <!--  -->
+                       <div class="item">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label " for="exampleCheck1"> xxxx</label>
+                       </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 colMin" data-aos="fade-in"  data-aos-duration="500" data-aos-delay="300">
+         <!-- start gallery images -->
+         <div class="imgFilter priceContent slideImage menContent my-4">
+          <div class="item"> 
+            <div class="topImg">
+              <span class="discount">-33%</span>
+              <div class="over"> 
+                <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+              </div>
+            </div>
+            <div class="info">
+              <h6>33.45 egp <span>55.29 egp</span></h6>
+              <div class="rate d-flex">
+               <span> product name </span>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="action d-flex">
+                <button><i class="fa-solid fa-heart"></i></button>
+                <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="item">
+            <div class="topImg">
+              <span class="discount">-33%</span>
+              <div class="over"> 
+                <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+              </div>
+            </div>
+            <div class="info">
+              <h6>33.45 egp <span>55.29 egp</span></h6>
+              <div class="rate d-flex">
+               <span> product name </span>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="action d-flex">
+                <button><i class="fa-solid fa-heart"></i></button>
+                <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="item">
+            <div class="topImg">
+              <span class="discount">-33%</span>
+              <div class="over"> 
+                <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+              </div>
+            </div>
+            <div class="info">
+              <h6>33.45 egp <span>55.29 egp</span></h6>
+              <div class="rate d-flex">
+               <span> product name </span>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="action d-flex">
+                <button><i class="fa-solid fa-heart"></i></button>
+                <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+         <div class="imgFilter priceContent slideImage menContent my-4">
+          <div class="item"> 
+            <div class="topImg">
+              <span class="discount">-33%</span>
+              <div class="over"> 
+                <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+              </div>
+            </div>
+            <div class="info">
+              <h6>33.45 egp <span>55.29 egp</span></h6>
+              <div class="rate d-flex">
+               <span> product name </span>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="action d-flex">
+                <button><i class="fa-solid fa-heart"></i></button>
+                <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="item">
+            <div class="topImg">
+              <span class="discount">-33%</span>
+              <div class="over"> 
+                <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+              </div>
+            </div>
+            <div class="info">
+              <h6>33.45 egp <span>55.29 egp</span></h6>
+              <div class="rate d-flex">
+               <span> product name </span>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="action d-flex">
+                <button><i class="fa-solid fa-heart"></i></button>
+                <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="item">
+            <div class="topImg">
+              <span class="discount">-33%</span>
+              <div class="over"> 
+                <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+              </div>
+            </div>
+            <div class="info">
+              <h6>33.45 egp <span>55.29 egp</span></h6>
+              <div class="rate d-flex">
+               <span> product name </span>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="action d-flex">
+                <button><i class="fa-solid fa-heart"></i></button>
+                <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+    
+        </div>
+    
+    </section>
+
+
+
+
+
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <!-- jquery ui -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <!-- AOS.js CDN -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- font-awesome js -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+            <!-- Bootstrap 5 CDN -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        
+          <!-- Swiper JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- owl-carousel slider  CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- custom js style -->
+            <script src="./js/min.js"></script>
+            <!-- <script src="./js/cart.js"></script> -->
+        </body>
+        </html> 

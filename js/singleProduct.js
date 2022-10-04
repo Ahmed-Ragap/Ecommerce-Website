@@ -1,33 +1,19 @@
-var plus = document.querySelector(".fa-plus");
-var minus = document.querySelector(".fa-minus");
-var qty = document.querySelector(".qty");
+  const main_prodcut_image = document.getElementById('main_product_image');
+function changeImage(element) {
+    main_prodcut_image.src = element.src;
 
-plus.addEventListener('click',function(){
-    var increment=parseInt(qty.innerHTML);
-    if(increment<9){
-        increment=increment+1;
-        qty.innerHTML=increment;
-    }
-});
+}
 
-minus.addEventListener('click',function(){
-    var decrement=parseInt(qty.innerHTML);
-    if(decrement>1){
-        decrement=decrement-1;
-        qty.innerHTML=decrement;
-    }
-});
-
-var heart=document.querySelector(".fa-heart-o");
-
-heart.addEventListener('click',function(){
-    if(heart.classList.contains('fa-heart-o')){
-        heart.classList.remove('fa-heart-o');
-        heart.classList.add('fa-heart');
-    }
-    else{
-        heart.classList.add('fa-heart-o');
-        heart.classList.remove('fa-heart');
-    }
+main_prodcut_image.addEventListener('onMouseenter' , () => {
+     $('.zoom').magnify({
+        speed: 500,
+        src: '../imgs/home_new-arrival/pr15.jpg'
+     });
    
-});
+ })
+
+
+
+$(document).ready(function() {
+    $('.zoom').magnify();
+  });

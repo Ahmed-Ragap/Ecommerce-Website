@@ -13,14 +13,9 @@
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
   <!-- AOS.js css CDN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <!-- swiper CDN-->
-   <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
- />
 <!-- css styles -->
 <link rel="stylesheet" href="./css/style.css">
-    <title>login</title>
+    <title>my cart</title>
 </head>  
 <body>
 
@@ -121,7 +116,7 @@
              </div>
              <!-- cart -->
              <div class="flexed_chiled my_cart d-flex justify-content-center align-items-center ms-3">
-              <a class="style_ afte" href="./cart page.html" target="_self">
+                 <a class="style_ afte" href="./cart page.html" target="_self">
                      <i class="fa-solid fa-cart-shopping "></i>
                      </a>
                      <div class="cart_info ms-2 ">
@@ -384,7 +379,7 @@
            <li><a class="dropdown-item" href="#">view all </a></li>
          </ul>
        </li>
-       <li class="nav-item "> <a class="nav-link ms-lg-5 ps-lg-5 fix" href="./index.html">home</a> </li>
+       <li class="nav-item "> <a class="nav-link ms-lg-5 ps-lg-5 fix" href="#">home</a> </li>
        <li class="nav-item fix"><a class="nav-link" href="./shop.html" target="_self"> shop  </a></li>
 
        <li class="nav-item has-submenu fix">
@@ -566,169 +561,520 @@
 <!--  -->
 
 
-<!-- start login_page -->
-<section class='login_page'>
-<div class="container">
-    <div class="pages my-3">   
-        <a href="./index.html" target="_self">home</a>
-        <span>/</span>
-        <a id="activePageLink" href="#">login</a>
-    </div>
-    <hr>
-    <div class="row mt-5">
-
-        <div class="col-lg-6 my-2 min_col">
-          <div class="form-outline mb-4">
-            <h3 class='login'>login</h3>
-            <form>
-            <div class="mb-3">
-              <label for="inputEmail" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-            </div>
-            <!-- <div class="mb-3">
-              <label for="inputPass" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPass">
-            </div> -->
-            <!-- <i class="fa-solid fa-eye-slash"></i> -->
-             <label for="inputPass" class="form-label">Password</label>
-            <div class="input-group mb-3">
-                <input type="password" class="form-control " placeholder="Password" aria-label="password"  aria-describedby="basic-addon1" id="inputPass">
-                <span class="input-group-text text-right"  id="basic-addon1">
-                    <i class="fa-solid fa-eye-slash "></i> 
-                    <i class="fa-solid fa-eye toggle_show_pass d-none"></i>
-
-                </span>
-              </div>
-            <div class="mb-3 form-check d-flex justify-content-between">
-              <div class="left">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <div class="right">
-                <a href="#">? forget password</a>
-              </div>
-            </div>
-          <!-- Submit button -->
-      <button id="submit_button" type="submit" class="btn btn-primary btn-block mb-3 w-100">Sign in</button>
-      <!-- log with another account -->
-           <button class="btn btn-primary btn-block mb-4 w-100"> <a href="">login with facebook</a> </button>
-          </form>
-      </div>
-
-      <!-- Submit button -->
-    </div>
-    <div class="col-lg-6 my-2 min_col">
-       <div class="create_acc">
-        <div class="overlay"></div>
-        <div class="details">
-
+<!-- start cart page -->
+<section class="cartOrder"  data-aos="fade-in"  data-aos-duration="500" data-aos-delay="100">
+    <div class="container">
       
-        <h3 class='registration '>create new account </h3>
-        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis iusto reprehenderit, delectus amet laborum eum? Voluptate labore, reprehenderit quasi magni vel sint ipsum vitae error? Illum alias earum ex veritatis!</span>
-        <button type="submit" class="btn btn-primary btn-block mb-3 w-100"><a href="./register.html" target="_self">create account with email</a></button>
-        <!-- log with another account -->
-             <button class="btn btn-primary btn-block mb-4 w-100"> <a href="">login with facebook</a> </button>
+        <div class="row">
+            <div class="col-4">
+            <div class="cartTopHeadingLink">
+                <a href="./index.html" target='_self'> home</a>
+                <a href="#"> order</a>
+            </div>
+            <hr>
+        </div>
+        <!--  -->
+        <h5>order review</h5> 
+        <div class="col-12">
+            <div class="headingDetails d-flex">
+                <span>product</span>
+                <span>price</span>
+                <span>quantity</span>
+                <span>total</span>
+            </div>
+        </div>
+        <div class="col-12"> 
+                <!-- cart item -->
+    <div class="cartItem">
+        <div class="min">
+        <img src="./imgs/hom_header/bg10.jpg" alt="cs1.webp">
+        <!--  -->
+        <div class="productInfo">
+            <h5>back page</h5>
+            <span class="size">size <span>xxl</span></span>
+            <span class="color">color <span>orange</span></span>
+        </div>
+        <!-- price -->
+        <div class="productPrice">
+          <h5>45.32 egp</h5>
+          <span class="oldPrice">77.43 egp</span>
+        </div>
+    </div>
+    <div class="min">
+        <!-- productAmount -->
+        <div class="productAmount">
+            <button class="decrees"> - </button>
+            <!-- <input type="number" class="inpAmount"> -->
+            <span class="inpAmount">1</span>
+            <button class="increes"> + </button>
+        </div>
+        <!-- totalPrice -->
+        <div class="totalPrice">
+            <span class="total">45.32 egp</span>
+        </div>
+        <!-- actionRemove -->
+        <button class="removeBtn"><i class="fa-solid fa-trash "></i></button>
        </div>
-    </div>
-    </div>
-</div>
-</div>
-    </section>
-
-    <!-- start suggested_product -->
-
-    <section class='suggested_product mt-5'>
-        <div class="container">
-            <h3>suggested product</h3>
-            <div class="row">
-                <div class="col-12 min_col">
-                    <div class="owl-carousel suggested_product owl-theme">
-                       <a class="dir" href="#">
-                        <div class="item_slide">
-                            <img src="./imgs/home_new-arrival/pr4.jpg" alt="home_new-arrival/pr4.jpg"> 
-                                <h5>99.56 $ </h5>
-                                   <span>
-                                       Lorem ipsum, dolor <br>sit amet  </span> 
-                                </div>
-                       </a>
-
-                      <a class="dir" href="#">
-                <div class="item_slide">         
-                <img src="./imgs/home_new-arrival/pr3.jpg" alt="home_new-arrival/pr3.jpg">                     
-                    <h5>99.56 $ </h5>
-                       <span>
-                           Lorem ipsum, dolor <br>sit amet  </span> 
-            </div>
-            </a>
-           <a class="dir" href="#">
-            <div class="item_slide">         
-            <img src="./imgs/home_new-arrival/pr4.jpg" alt="home_new-arrival/pr4.jpg">                     
-                <h5>99.56 $ </h5>
-                   <span>
-                       Lorem ipsum, dolor <br>sit amet  </span> 
-            
+      </div>
+      <div class="cartItem">
+        <div class="min">
+        <img src="./imgs/hom_header/bg9.jpg" alt="cs1.webp">
+        <!--  -->
+        <div class="productInfo">
+            <h5>back page</h5>
+            <span class="size">size <span>xxl</span></span>
+            <span class="color">color <span>orange</span></span>
         </div>
-    </a>
-   <a class="dir" href="#">
-        <div class="item_slide">         
-        <img src="./imgs/home_new-arrival/pr5.jpg" alt="home_new-arrival/pr5.jpg">                     
-            <h5>99.56 $ </h5>
-               <span>
-                   Lorem ipsum, dolor <br>sit amet  </span> 
-    </div>
-</a>
-<a class="dir" href="#">
-    <div class="item_slide">         
-    <img src="./imgs/home_new-arrival/pr6.jpg" alt="home_new-arrival/pr6.jpg">                     
-        <h5>99.56 $ </h5>
-           <span>
-               Lorem ipsum, dolor <br>sit amet  </span> 
-</div>
-</a>
-<a class="dir" href="#">
-<div class="item_slide">         
-<img src="./imgs/home_new-arrival/pr9.jpg" alt="home_new-arrival/pr9.jpg">                     
-    <h5>99.56 $ </h5>
-       <span>
-           Lorem ipsum, dolor <br>sit amet  </span> 
-</div>
-</a>
-<a class="dir" href="#">
-<div class="item_slide">         
-    <img src="./imgs/home_new-arrival/pr12.jpg" alt="home_new-arrival/pr12.jpg">                     
-        <h5>99.56 $ </h5>
-           <span>
-               Lorem ipsum, dolor <br>sit amet  </span> 
-             </div>
-            </a>
-           <a class="dir" href="#">
-    <div class="item_slide">         
-        <img src="./imgs/home_new-arrival/pr20.jpg" alt="home_new-arrival/pr20.jpg">                     
-            <h5>99.56 $ </h5>
-               <span>
-                   Lorem ipsum, dolor <br>sit amet  </span> 
+        <!-- price -->
+        <div class="productPrice">
+          <h5>76.32 egp</h5>
+          <span class="oldPrice">102.43 egp</span>
         </div>
-    </a>
-   <a class="dir" href="#">
-        <div class="item_slide">         
-            <img src="./imgs/home_new-arrival/pr21.jpg" alt="home_new-arrival/pr21.jpg">                     
-                <h5>99.56 $ </h5>
-                   <span>
-                       Lorem ipsum, dolor <br>sit amet  </span> 
-                       </div>
-                    </a>
-                 
-                         
-                    </div>
+    </div>
+    <div class="min">
+        <!-- productAmount -->
+        <div class="productAmount">
+            <button class="decrees"> - </button>
+            <span class="inpAmount">1</span>
+            <button class="increes"> + </button>
+        </div>
+        <!-- totalPrice -->
+        <div class="totalPrice">
+            <span class="total">76.32 egp</span>
+        </div>
+        <!-- actionRemove -->
+        <button class="removeBtn"><i class="fa-solid fa-trash "></i></button>
+       </div>
+      </div>
+      <div class="cartItem">
+        <div class="min">
+        <img src="./imgs/hom_header/bg8.jpg" alt="cs1.webp">
+        <!--  -->
+        <div class="productInfo">
+            <h5>back page</h5>
+            <span class="size">size <span>xxl</span></span>
+            <span class="color">color <span>orange</span></span>
+        </div>
+        <!-- price -->
+        <div class="productPrice">
+          <h5>48.32 egp</h5>
+          <span class="oldPrice">67.43 egp</span>
+        </div>
+    </div>
+    <div class="min">
+        <!-- productAmount -->
+        <div class="productAmount">
+            <button class="decrees"> - </button>
+            <span class="inpAmount">1</span>
+            <button class="increes"> + </button>
+        </div>
+        <!-- totalPrice -->
+        <div class="totalPrice">
+            <span class="total">48.32 egp</span>
+        </div>
+        <!-- actionRemove -->
+        <button class="removeBtn"><i class="fa-solid fa-trash "></i></button>
+       </div>
+      </div>
+      <div class="cartItem">
+        <div class="min">
+        <img src="./imgs/hom_header/bg6.jpg" alt="cs1.webp">
+        <!--  -->
+        <div class="productInfo">
+            <h5>back page</h5>
+            <span class="size">size <span>xxl</span></span>
+            <span class="color">color <span>orange</span></span>
+        </div>
+        <!-- price -->
+        <div class="productPrice">
+          <h5>22.35 egp</h5>
+          <span class="oldPrice">44.48 egp</span>
+        </div>
+    </div>
+    <div class="min">
+        <!-- productAmount -->
+        <div class="productAmount">
+            <button class="decrees"> - </button>
+            <span class="inpAmount">1</span>
+            <button class="increes"> + </button>
+        </div>
+        <!-- totalPrice -->
+        <div class="totalPrice">
+            <span class="total">22.35 egp</span>
+        </div>
+        <!-- actionRemove -->
+        <button class="removeBtn"><i class="fa-solid fa-trash "></i></button>
+       </div>
+      </div>
+      <div class="cartItem">
+        <div class="min">
+        <img src="./imgs/hom_header/bg7.jpg" alt="cs1.webp">
+        <!--  -->
+        <div class="productInfo">
+            <h5>back page</h5>
+            <span class="size">size <span>xxl</span></span>
+            <span class="color">color <span>orange</span></span>
+        </div>
+        <!-- price -->
+        <div class="productPrice">
+          <h5>33.32 egp</h5>
+          <span class="oldPrice">56.43 egp</span>
+        </div>
+    </div>
+    <div class="min">
+        <!-- productAmount -->
+        <div class="productAmount">
+            <button class="decrees"> - </button>
+            <span class="inpAmount">1</span>
+            <button class="increes"> + </button>
+        </div>
+        <!-- totalPrice -->
+        <div class="totalPrice">
+            <span class="total">33.32 egp</span>
+        </div>
+        <!-- actionRemove -->
+        <button class="removeBtn"><i class="fa-solid fa-trash "></i></button>
+       </div>
+      </div>
+     </div>
+     <div class="col-12">
+        <div class="totalPriceAmount">
+            <ul>
+                <li class="item"><span>sup total</span> <span id="supTotla">100.0 EGP</span></li>
+                <li class="item"><span>shipping</span> <span id="shipping">60.0 EGP</span></li>
+                <li class="item tot"><span> total</span> <span id="totalPrice">150.0 EGP</span></li>
+            </ul>
+       
+            <input id="getOrder" type="submit" value="confirm order">
+         </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+<!-- section last order -->
+<section class=" new_arrival custom_arrival pb-5 mt-3" data-aos="fade-in"  data-aos-duration="500" data-aos-delay="100"> 
+    <div class="container">
+       <h5>last orders</h5> 
+    <hr>
+         <!-- last order -->
+   <div class="row row_slider">
+   
+       <div class="col-md-7 col-lg-4 main_col d-flex" data-aos="fade-in"  data-aos-duration="500" data-aos-delay="100">
+                  <div class="img">
+                      <div class="overlay"> 
+                          <div class="info px-3" >
+                              <h3 class=" ">last daley<span class="ms-2">order</span></h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem alias sint perspiciatis provident delectus necessitatibus blanditiis ad magni <br>odit inventore fuga explicabo, earum </p>  
+                              <button class="order"><a href="#"> get now</a></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-5 col-lg-8 main_col mt-4 mt-lg-0"   data-aos="fade-in-right"  data-aos-duration="500" >
+                  <!-- slick_slid -->
+              <div class="owl-carousel owl-theme">
+              <div class="item_slid">
+                 <a href="#">
+                  <img src="./imgs/home_new-arrival/pr2.jpg" alt=""></a>
+                
+              <div class="info">
+              <button>  <i class="fa-solid fa-share-nodes"></i></button>
+              <button>  <i class="fa-solid fa-retweet"></i> </button> 
+              <button>  <i class="fa-solid fa-heart"></i> </button> 
+              </div>
+              <div class="footer_info mt-3 text-center">  
+                <h5>T-shirt </h5>
+               <span>
+                  Nike unisex club fleece <br>t-shirt </span>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
                 </div>
-            </div>
+                <h6 class="price">$66.00</h6>
+                <button><a href="#">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+              </div>
+              </div>
+              
+               <!-- second slide item -->
+               <div class="item_slid">
+                  <a href="#">
+                      <img src="./imgs/home_new-arrival/pr3.jpg" alt=""></a>
+              <div class="info">
+              <button>  <i class="fa-solid fa-share-nodes"></i></button>
+              <button>  <i class="fa-solid fa-retweet"></i> </button> 
+              <button>  <i class="fa-solid fa-heart"></i> </button> 
+              </div>
+              <div class="footer_info mt-3 text-center">  
+                <h5>men's craft </h5>
+                <span>
+                  Nike unisex club fleece men's craft in citron blue</span>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h6 class="price">$28.00</h6>
+                <button><a href="#">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+              </div>
+              </div>
+                   <!-- item number 3 -->
+                   <div class="item_slid">
+                      <a href="#">
+                          <img src="./imgs/home_new-arrival/pr4.jpg" alt=""></a>
+                  <div class="info">
+                  <button>  <i class="fa-solid fa-share-nodes"></i></button>
+                  <button>  <i class="fa-solid fa-retweet"></i> </button> 
+                  <button>  <i class="fa-solid fa-heart"></i> </button> 
+                  </div>
+                  <div class="footer_info mt-3 text-center">  
+                    <h5>T-shirt </h5>
+                    <span>
+                      Nike unisex club fleece t-shirt in citron yellow</span>
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <h6 class="price">$74.00</h6>
+                    <button><a href="#">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                  </div>
+                  </div>
+                   <!-- item number 4 -->
+                   <div class="item_slid">
+                      <a href="#">
+                          <img src="./imgs/home_new-arrival/pr5.jpg" alt=""></a>
+                  <div class="info">
+                  <button>  <i class="fa-solid fa-share-nodes"></i></button>
+                  <button>  <i class="fa-solid fa-retweet"></i> </button> 
+                  <button>  <i class="fa-solid fa-heart"></i> </button> 
+                  </div>
+                  <div class="footer_info mt-3 text-center">  
+                    <h5>Men's jeans </h5>
+                    <span>
+                      Nike unisex club fleece Men's jeans in citron blue</span>
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="price">$23.00</h6>
+                    <button><a href="#">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                  </div>
+                  </div>
+                   <!-- item number 5 -->
+                   <div class="item_slid">
+                      <a href="#">
+                          <img src="./imgs/home_new-arrival/pr6.jpg" alt=""></a>
+                  <div class="info">
+                  <button>  <i class="fa-solid fa-share-nodes"></i></button>
+                  <button>  <i class="fa-solid fa-retweet"></i> </button> 
+                  <button>  <i class="fa-solid fa-heart"></i> </button> 
+                  </div>
+                  <div class="footer_info mt-3 text-center">  
+                    <h5>T-shirt </h5>
+                    <span>
+                      Nike unisex club fleece t-shirt in citron yellow</span>
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <h6 class="price">$50.00</h6>
+                    <button><a href="#">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                  </div>
+                  </div>
+                   <!-- item number 6 -->
+                   <div class="item_slid">
+                      <a href="#">
+                          <img src="./imgs/home_new-arrival/pr8.jpg" alt=""> </a>
+                  <div class="info">
+                  <button>  <i class="fa-solid fa-share-nodes"></i></button>
+                  <button>  <i class="fa-solid fa-retweet"></i> </button> 
+                  <button>  <i class="fa-solid fa-heart"></i> </button> 
+                  </div>
+                  <div class="footer_info mt-3 text-center">  
+                    <h5>T-shirt </h5>
+                    <span>
+                      Nike unisex club fleece t-shirt in citron black</span>
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <h6 class="price">$99.00</h6>
+                    <button><a href="#">add to cart &nbsp;  <i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                  </div>
+                  </div>
+              </div> 
+              </div>
+          </div>
+    </div>
+  </section>
+  <!--  -->
+
+
+
+
+
+
+
+
+
+   <!-- start svaedItem images -->
+   <section class="shopAllProduct savedItem"  data-aos="fade-in"  data-aos-duration="500" data-aos-delay="100"> 
+    <div class="container">
+        <h5 class='savedi'>your saved item</h5>
+        <hr class='mb-0'>
+        <div class="row">
+            <div class="col-12 colMin">
+   <div class="imgFilter priceContent my-4">
+    <div class="item"  data-aos="fade-in"  data-aos-duration="500" data-aos-delay="200"> 
+      <div class="topImg">
+        <span class="discount">-33%</span>
+        <div class="over"> 
+          <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
         </div>
-    </section>
+      </div>
+      <div class="info">
+        <h6>33.45 egp <span>55.29 egp</span></h6>
+        <div class="rate d-flex">
+         <span> product name </span>
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <div class="action d-flex">
+          <button><i class="fa-solid fa-heart"></i></button>
+          <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- item 2 -->
+    <div class="item"  data-aos="fade-in"  data-aos-duration="500" data-aos-delay="400">
+      <div class="topImg">
+        <span class="discount">-33%</span>
+        <div class="over"> 
+          <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+        </div>
+      </div>
+      <div class="info">
+        <h6>33.45 egp <span>55.29 egp</span></h6>
+        <div class="rate d-flex">
+         <span> product name </span>
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <div class="action d-flex">
+          <button><i class="fa-solid fa-heart"></i></button>
+          <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- item 3 -->
+    <div class="item"  data-aos="fade-in"  data-aos-duration="500" data-aos-delay="600">
+      <div class="topImg">
+        <span class="discount">-33%</span>
+        <div class="over"> 
+          <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+        </div>
+      </div>
+      <div class="info">
+        <h6>33.45 egp <span>55.29 egp</span></h6>
+        <div class="rate d-flex">
+         <span> product name </span>
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <div class="action d-flex">
+          <button><i class="fa-solid fa-heart"></i></button>
+          <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- item 4 -->
+    <div class="item"  data-aos="fade-in"  data-aos-duration="500" data-aos-delay="800">
+      <div class="topImg">
+        <span class="discount">-33%</span>
+        <div class="over"> 
+          <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+        </div>
+      </div>
+      <div class="info">
+        <h6>33.45 egp <span>55.29 egp</span></h6>
+        <div class="rate d-flex">
+         <span> product name </span>
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="action d-flex">
+          <button><i class="fa-solid fa-heart"></i></button>
+          <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+     <!-- item 5 -->
+     <div class="item">
+        <div class="topImg">
+          <span class="discount">-33%</span>
+          <div class="over"> 
+            <a href="#">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h6>33.45 egp <span>55.29 egp</span></h6>
+          <div class="rate d-flex">
+           <span> product name </span>
+            <div class="review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="action d-flex">
+            <button><i class="fa-solid fa-heart"></i></button>
+            <button><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
 
 
-<section class='footer_content'>  
+
+
+
+
  <!-- start footer end info  -->
+ <section class='footer_content mt-5'   data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="0"> 
  <svg class='chape' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#31313c" fill-opacity="1"
       d="M0,128L30,149.3C60,171,120,213,180,240C240,267,300,277,360,277.3C420,277,480,267,540,261.3C600,256,660,256,720,234.7C780,213,840,171,900,170.7C960,171,1020,213,1080,229.3C1140,245,1200,235,1260,234.7C1320,235,1380,245,1410,250.7L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z" >
@@ -850,46 +1196,43 @@
 </section>
 
 
+<!-- start scroll to top button -->
+<div class="scroll_to_top">
+ <a href="#"> <img src="./imgs/hom_header/scroll.png" alt="scroll to top "></a>
+</div>
+
 <!-- page loading ____________________________________-->
 <div class="loading_container">
-    <div class="loading-spinner">
-        <div class="main_content">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-     </div>
-    </div>
-    
+<div class="loading-spinner">
+    <div class="main_content">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+ </div>
+</div>
 
 
 
 
-
-
- <!-- jquery -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<!-- jquery ui -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- jquery ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <!-- AOS.js CDN -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- font-awesome js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-    <!-- Bootstrap 5 CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- font-awesome js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+        <!-- Bootstrap 5 CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+      <!-- Swiper JS CDN-->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Swiper JS CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <!-- owl-carousel slider  CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- import swiper js plugin  CDN-->
-<!-- import swiper js plugin  CDN-->
-<script>
-    var swiper = new Swiper();
- </script>
-<!-- custom js style -->
-    <script src="./js/min.js"></script>
-    <!-- add custom script to this page -->
-    <script src="./js/login.js"></script>
-</body>
-</html> 
+    <!-- custom js style -->
+        <script src="./js/min.js"></script>
+        <script src="./js/cart.js"></script>
+    </body>
+    </html> 
