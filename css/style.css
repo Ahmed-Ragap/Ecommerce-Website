@@ -143,24 +143,31 @@ section.footer_content .contact_us .container h2::after, section.team_member .co
   background-color: #82a344;
   position: relative;
 }
-.header .top_info .container .row .left_content svg, .header .top_info .container .row .left_content span {
+.header .top_info span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Halant", serif;
+}
+.header .top_info .left_content {
+  align-items: baseline;
+}
+.header .top_info .left_content svg, .header .top_info .left_content span {
   color: #ffffff;
 }
-.header .top_info .container .row .left_content svg span, .header .top_info .container .row .left_content span span {
-  text-transform: uppercase;
-  font-size: 12px;
+.header .top_info .right_content {
+  align-items: center;
 }
-.header .top_info .container .row .right_content .item a {
+.header .top_info .right_content .item a {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   font-size: 13px;
 }
-.header .top_info .container .row .right_content .item .dropdown ul {
+.header .top_info .right_content .item .dropdown ul {
   background-color: #ffffff;
   z-index: 10;
 }
-.header .top_info .container .row .right_content .item .dropdown ul li a.dropdown-item {
+.header .top_info .right_content .item .dropdown ul li a.dropdown-item {
   color: #82a344;
 }
 .header .middle_top_navbar {
@@ -2148,22 +2155,9 @@ section.footer_content .contact_us .container .row .min_col .contact_info form b
   -ms-transform: translateY(0) scale(2);
   -o-transform: translateY(0) scale(2);
 }
-section.footer_content svg.chape {
-  margin-top: -30px;
-}
-@media (max-width: 575px) {
-  section.footer_content svg.chape {
-    margin-top: 0;
-  }
-}
-@media (min-width: 992px) {
-  section.footer_content svg.chape {
-    margin-top: -60px;
-  }
-}
 section.footer_content footer {
   background-color: #31313c;
-  padding-top: 50px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -2197,7 +2191,7 @@ section.footer_content footer .main_pairent .pairent h3::before {
 section.footer_content footer .main_pairent .pairent a.footer_logo img {
   height: 60px;
 }
-section.footer_content footer .main_pairent .pairent span.logo_info {
+section.footer_content footer .main_pairent .pairent span, section.footer_content footer .main_pairent .pairent span.logo_info {
   display: block;
   width: 150px;
   color: rgba(255, 255, 255, 0.5);
@@ -2206,6 +2200,11 @@ section.footer_content footer .main_pairent .pairent span.logo_info {
 }
 section.footer_content footer .main_pairent .pairent .chiled .main h3, section.footer_content footer .main_pairent .pairent .chiled .main span {
   text-transform: capitalize;
+}
+section.footer_content footer .main_pairent .pairent .chiled .main span {
+  text-transform: capitalize;
+  font-family: "Halant", serif;
+  font-weight: 100;
 }
 section.footer_content footer .main_pairent .pairent .chiled .main h3 {
   font-weight: bold;
@@ -2220,7 +2219,8 @@ section.footer_content footer .main_pairent .pairent .chiled .main h3.custom::be
   display: none;
 }
 section.footer_content footer .main_pairent .pairent .chiled .main span {
-  max-width: 300px;
+  width: 300px;
+  max-width: 350px;
   display: block;
   color: rgba(255, 255, 255, 0.5);
   font-family: "Halant", serif;
@@ -2235,6 +2235,10 @@ section.footer_content footer .main_pairent .pairent .chiled .main form .main {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 15px;
+}
+section.footer_content footer .main_pairent .pairent .chiled .main form .main label, section.footer_content footer .main_pairent .pairent .chiled .main form .main input {
+  text-transform: capitalize;
+  font-family: "Halant", serif;
 }
 section.footer_content footer .main_pairent .pairent .chiled .main form .main input {
   height: 40px;
@@ -2268,6 +2272,7 @@ section.footer_content footer .main_pairent .pairent .chiled .main form input[ty
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px;
+  font-family: "Halant", serif;
 }
 section.footer_content footer .main_pairent .pairent .chiled .social {
   text-align: center;
@@ -2894,18 +2899,16 @@ section.register_page .container .row .min_col button {
   background-image: url("../imgs/coming_soon/cs1.webp");
 }
 
-section.shopAllProduct .colMin .filterlinks h3 {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: capitalize;
-}
 section.shopAllProduct .colMin .filterlinks .custom {
   margin-top: 36px;
 }
 section.shopAllProduct .colMin .filterlinks a {
   text-decoration: none;
+  color: #31313c;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
   text-transform: capitalize;
   display: block;
-  color: rgba(49, 49, 60, 0.8);
   margin: 4px 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -2916,17 +2919,30 @@ section.shopAllProduct .colMin .filterlinks a {
 section.shopAllProduct .colMin .filterlinks a:hover {
   margin-left: 8px;
 }
+section.shopAllProduct .colMin .fill:hover h5:after {
+  width: 70px;
+}
+section.shopAllProduct .colMin .fill h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
 section.shopAllProduct .colMin h5 {
-  margin: 25px 0 10px 0;
+  margin: 35px 0 10px 0;
   text-transform: capitalize;
   font-family: "Josefin Sans", sans-serif;
   position: relative;
+  display: block;
 }
 section.shopAllProduct .colMin h5:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: absolute;
   content: "";
   border: 2px solid #82a344;
-  width: 60px;
+  width: 15px;
   left: 0;
   bottom: -4px;
   -webkit-border-radius: 5px;
@@ -2939,6 +2955,7 @@ section.shopAllProduct .colMin .colorFilter {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 60px;
 }
 section.shopAllProduct .colMin .colorFilter div {
   display: flex;
@@ -3005,6 +3022,18 @@ section.shopAllProduct .colMin .sizeFilter button {
   background-color: transparent;
   border: 1px solid #31313c;
   font-size: 13px;
+}
+section.shopAllProduct .colMin .filterSideBar {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+section.shopAllProduct .colMin .filterSideBar label {
+  color: #31313c;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
 }
 section.shopAllProduct .colMin .moreSizeFilter {
   height: 100px;
@@ -3930,26 +3959,216 @@ section.savedItem .item:nth-of-type(5) .topImg {
   background-image: url("../imgs/home_new-arrival/pr12.jpg");
 }
 
-section.allProductPage .item .topImg {
-  background-image: url("../imgs/home_ad/ad4.jpg") !important;
+section.allProductPage .item:nth-of-type(1) .topImg {
+  background-image: url("../imgs/home_ad/ad4.jpg");
 }
 section.allProductPage .item:nth-of-type(2) .topImg {
-  background-image: url("../imgs/home_ad/ad2.jpg") !important;
+  background-image: url("../imgs/home_ad/ad2.jpg");
 }
 section.allProductPage .item:nth-of-type(3) .topImg {
-  background-image: url("../imgs/home_ad/ad3.jpg") !important;
-}
-section.allProductPage .item:nth-of-type(5) .topImg {
-  background-image: url("../imgs/advertisement/ad2.jpg") !important;
+  background-image: url("../imgs/home_ad/ad3.jpg");
 }
 section.allProductPage .menContent .item .topImg {
-  background-image: url("../imgs/home_new-arrival/pr8.jpg") !important;
+  background-image: url("../imgs/home_new-arrival/pr8.jpg");
 }
 section.allProductPage .menContent .item:nth-of-type(2) .topImg {
-  background-image: url("../imgs/home_new-arrival/pr18.jpg") !important;
+  background-image: url("../imgs/home_new-arrival/pr18.jpg");
 }
 section.allProductPage .menContent .item:nth-of-type(3) .topImg {
-  background-image: url("../imgs/home_new-arrival/pr16.jpg") !important;
+  background-image: url("../imgs/home_new-arrival/pr16.jpg");
+}
+
+.m_1 {
+  background-image: url("../imgs/coming_soon/cs1.webp") !important;
+}
+
+.m_2 {
+  background-image: url("../imgs/coming_soon/cs2-2.webp") !important;
+}
+
+.m_3 {
+  background-image: url("../imgs/coming_soon/cs7-7.webp") !important;
+}
+
+.me_1 {
+  background-image: url("../imgs/home_new-arrival/pr12.jpg") !important;
+}
+
+.me_2 {
+  background-image: url("../imgs/home_new-arrival/pr15.jpg") !important;
+}
+
+.me_3 {
+  background-image: url("../imgs/home_new-arrival/pr6.jpg") !important;
+}
+
+.price-field {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  box-sizing: border-box;
+  background: #82a344;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.price-filter .min {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.price-filter .min input {
+  width: 50px;
+  border: none;
+  background-color: #eee;
+  padding: 4px 7px;
+  text-transform: capitalize;
+  font-family: "Halant", serif;
+  color: #82a344;
+}
+
+.price-field input[type=range] {
+  position: absolute;
+}
+
+/* Reset style for input range */
+.price-field input[type=range] {
+  width: 188px;
+  height: 2px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+
+.price-field input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.price-field input[type=range]:active,
+.price-field input[type=range]:focus {
+  outline: 0;
+}
+
+.price-field input[type=range]::-ms-track {
+  width: 188px;
+  height: 2px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  pointer-events: none;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Style toddler input range */
+.price-field input[type=range]::-webkit-slider-thumb {
+  /* WebKit/Blink */
+  position: relative;
+  -webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: -4px;
+  background-color: #fff;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.price-field input[type=range]::-moz-range-thumb {
+  /* Firefox */
+  position: relative;
+  appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: -5px;
+  background-color: #fff;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.price-field input[type=range]::-ms-thumb {
+  /* IE */
+  position: relative;
+  appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: -5px;
+  background-color: #fff;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+/* Style track input range */
+.price-field input[type=range]::-webkit-slider-runnable-track {
+  /* WebKit/Blink */
+  width: 188px;
+  height: 2px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.price-field input[type=range]::-moz-range-track {
+  /* Firefox */
+  width: 188px;
+  height: 2px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.price-field input[type=range]::-ms-track {
+  /* IE */
+  width: 188px;
+  height: 2px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.custom-shape {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  height: 60px;
+  width: 100%;
+  background: #31313c;
+  position: relative;
+}
+
+.custom-shape svg {
+  position: relative;
+  display: block;
+  width: calc(167% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape .shape-fill {
+  fill: #FFFFFF;
 }
 
 .card {
