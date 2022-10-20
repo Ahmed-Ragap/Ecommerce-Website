@@ -228,8 +228,8 @@
 	-o-border-radius:50%;
 }
 #wowslider-container1 .ws_bullets a.ws_overbull > span{
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    -webkit-rotate :Y 180deg;
+    rotate :Y 180deg;
 	background-color: #82a344;
 }
 #wowslider-container1 .ws_bullets a.ws_selbull > span{
@@ -274,14 +274,14 @@
 #wowslider-container1 a.ws_next:hover > span{
 	background-color: #82a344;
 	color: #252525;
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
+     rotate: y 360deg;
+	 -webkit-rotate: y 360deg;
 }
 #wowslider-container1 a.ws_prev:hover > span{
 	background-color: #82a344;
 	color: #252525;
-    -webkit-transform: rotateY(-360deg);
-    transform: rotateY(-360deg);
+    -webkit-rotate: y -360deg;
+    rotate: y -360deg;
 }
 #wowslider-container1 a.ws_next > span,
 #wowslider-container1 a.ws_prev > span {
@@ -324,10 +324,13 @@
   	transition: all 0.5s ease;
 }
 #wowslider-container1 .ws_playpause:hover > span {
-	background-color: #82a344;
-	color: #252525;
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
+    background-color: #82a344;
+    color: #252525;
+    -webkit-rotate:X -180deg;
+     rotate:X -180deg;
+    -moz-rotate:X -180deg;
+    -ms-rotate:X -180deg;
+    -o-rotate:X -180deg;
 }
 #wowslider-container1 .ws_pause > span:before{
 	content:"\e801";
@@ -380,7 +383,7 @@
 
 	bottom:-10px;
 	margin-left:-7px;
-	left:$ThumbWidthHalf$px;
+	/* left:$ThumbWidthHalf$px; */
 }
 #wowslider-container1 .ws-title{
 	font: 1.3em 'PT Sans', sans-serif;
