@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
   //start owl-carousel (slider custom style)
    $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
+       autoplayHoverPause:true,
       lazyLoad:true,
          mobileFirst:true,
           infinite: true,
@@ -108,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //start team_member (slider custom style)
     $(document).ready(function(){
       $('.team_slide').owlCarousel({
+        autoplayHoverPause:true,
         lazyLoad:true,
            mobileFirst:true,
             infinite: true,
@@ -144,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //start team_member (slider custom style)
     $(document).ready(function(){
       $('.suggested_product').owlCarousel({
-        // items : 7,
+        autoplayHoverPause:true,
         lazyLoad:true,
            mobileFirst:true,
             infinite: true,
@@ -197,15 +199,35 @@ document.addEventListener("DOMContentLoaded", function(){
       });
       
     });
+ 
+
+
+
   //  start AOS Animation----------------
   AOS.init();
 
- 
+
+  // 
+  const arrowDown = document.querySelector('.down_show');
+  const showHidden = document.querySelector('.hidden_');
+// console.log(arrowDown)
+// console.log(showHidden)
+//   arrowDown.addEventListener('onmouseenter', () => {
+//     showHidden.style.display = 'block';
+//     console.log(arrowDown)
+// console.log(showHidden)
+//   })downHide
+ function downShow(){
+  showHidden.style.visibility = 'visible';
+ }
+ function downHide(){
+  showHidden.style.visibility = 'hidden';
+ }
   /* --------------------------
  * GLOBAL VARS
  * -------------------------- */
 // The date you want to count down to
-var targetDate = new Date("2022/10/16 00:00:00");   
+var targetDate = new Date("2022/11/7 00:00:00");   
 
 // Other date related variables
 var days;
