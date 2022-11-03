@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function(){
  * GLOBAL VARS
  * -------------------------- */
 // The date you want to count down to
-var targetDate = new Date("2022/11/7 00:00:00");   
+var targetDate = new Date("2022/12/3 00:00:00");   
 
 // Other date related variables
 var days;
@@ -315,10 +315,9 @@ function numberTransition(id, endPoint, transitionDuration, transitionEase){
 // start all product page 
 var lowerSlider = document.querySelector('#lower');
 var  upperSlider = document.querySelector('#upper');
-
-document.querySelector('#two').value=upperSlider.value;
 document.querySelector('#one').value=lowerSlider.value;
-
+document.querySelector('#two').value=upperSlider.value;
+// console.log(lowerSlider.value)
 var  lowerVal = parseInt(lowerSlider.value);
 var upperVal = parseInt(upperSlider.value);
 

@@ -10,7 +10,7 @@
     <!-- font awesome  CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.css" rel="stylesheet" media="all">
     <!-- Bootstrap 5 CDN-->
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
   <!-- AOS.js css CDN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- css styles -->
@@ -28,7 +28,7 @@
     <title>single product</title>
 </head>  
 <body>
-  
+
 <!-- start coding  -->
 <section class="header"> 
   <div class="top_info p-1 pb-2">
@@ -68,7 +68,7 @@
                </ul>
              </div>
         </div>
-        <div class="item currncy   ms-3">
+        <div class="item currncy   mx-3">
            <div class="dropdown ">
                <a class="outline-none dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                    <span class=" d-none d-lg-inline"> usd</span>
@@ -127,8 +127,8 @@
            <div class="flexed_chiled my_cart d-flex justify-content-center align-items-center ms-3">
             <a class="style_ afte" href="./cart page.html"   target="_self">
                    <i class="fa-solid fa-cart-shopping "></i>
-                   </a>
-                   <div class="cart_info ms-2 ">
+                   </a> 
+                   <div class="cart_info mx-2">
                    <span class="cart">my cart</span>
                    <span class="price d-block">43.6 egp</span>
                </div>
@@ -551,15 +551,15 @@
     <div class="container">
 <div class="row">
   <!-- top links -->
-  <div class="col-12 mb-5">
+  <div class="col-12 mb-5" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
 <ul class='singlePageTopLinks'>
   <li><a href="./index.html" target="_self">home 	&nbsp;/</a></li>
   <li><a href="./all-product.html" target="_self">products 	&nbsp;/</a></li>
   <li><a href="./index.html" target="_self">category	&nbsp;</a></li>
-  <li><a class='style' href="./singel product.html" target="_self"> / product home</a></li>
+  <li><a class='style' href="./singel product.html" target="_self"> /  home details</a></li>
 </ul>
   </div>
-  <div class="col-lg-5">
+  <div class="col-lg-5" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="100">
 		<div class="min">
 			<div id="img-container">
 				<div id="lens"></div>
@@ -573,19 +573,14 @@
 					<img class="thumbnail" src="./imgs/coming_soon/cs6.webp">
 					<img class="thumbnail" src="./imgs/coming_soon/cs5.webp">
           <img class="thumbnail" src="./imgs/coming_soon/cs7.webp">
-		
 				</div>
-
-				
-          <button id="slideRight" class="arrow"><i class="fa-solid fa-angle-right"></i> </button>
-		
+       <button id="slideRight" class="arrow"><i class="fa-solid fa-angle-right"></i> </button>
 		</div>
   </div>
 </div>
 <!-- second column -->
-  <div class="col-lg-7">
+  <div class="col-lg-7" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
     <div class="min d-flex">
-			
 		<div class="rightContent r1">
       <div class="topAction">
         <div class="left">
@@ -622,11 +617,28 @@
           <button>2x</button>
           <button>3x</button>
         </div>
-        <!-- <input value=1 type="number"> -->
-        <div class="productAction">
+        <div class="productAction mt-3">
           <ul>
             <li>
-              <img class="" src="./imgs/coming_soon/cs6.webp">
+              <img class="" src="./imgs/coming_soon/cs6.webp" alt="shopping product">
+              <span id='priceQuantity'> 180.32 egp </span>
+              <div class="actionBt">
+                <button id="minus">-</button>
+                <input type="number" id="numberValue" value='1'>
+                <button id="plus">+</button>
+              </div>
+            </li>
+            <li>
+              <img class="" src="./imgs/coming_soon/cs5.webp" alt="shopping product">
+              <span id='priceQuantity'> 180.32 egp </span>
+              <div class="actionBt">
+                <button id="minus">-</button>
+                <input type="number" id="numberValue" value='1'>
+                <button id="plus">+</button>
+              </div>
+            </li>
+             <li>
+              <img class="" src="./imgs/coming_soon/cs7.webp" alt="shopping product">
               <span id='priceQuantity'> 180.32 egp </span>
               <div class="actionBt">
                 <button id="minus">-</button>
@@ -636,14 +648,14 @@
             </li>
           </ul>
         </div>
-
       </div>
     </div>
+
     <div class="rightContent r2">
-      <h5><i class="fa-solid fa-cart-arrow-down"></i> cart total</h5>
-    <li>sup total <span>180.32 egp</span> </li>
-    <li>shippng <span>20. egp</span> </li>
-    <h5>total <span>200.32 egp</span></h5>
+    <h5><i class="fa-solid fa-cart-arrow-down"></i> cart total</h5>
+    <li>sup total: <span>180.32 egp</span> </li>
+    <li>shippng: <span>20. egp</span> </li>
+    <h6>total <span class="total">200.32 egp</span></h6>
     <button><a href="./cart page.html" target='_self'>checkout</a></button>
     </div>
 
@@ -652,6 +664,603 @@
   </div>
 </div>
 </div>
+<!-- start singlePageReview section -->
+<section class="singlePageReview review" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="100">
+  <div class="container">
+
+    <div class="tabset minCol">
+      <!-- Tab 1 -->
+      <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+      <label for="tab1">reviews</label>
+      <!-- Tab 2 -->
+      <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+      <label for="tab2">details</label>
+      <!-- Tab 3 -->
+      <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+      <label for="tab3">description</label>
+      
+      <div class="tab-panels">
+        <section id="marzen" class="tab-panel">
+     <div class="parent d-flex">
+      <div class="child">
+        <div class="details d-flex">
+          <!--  -->
+          <div class="item"><i class="fa-solid fa-lock"></i> <span>alex</span></div>
+          <!--  -->
+          <div class="item"><i class="fa-solid fa-clock"></i> <span>17 jan 2022 / 06.11 pm</span></div>
+          <!--  -->
+          <div class="item">
+           <div class="rev">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           </div>
+          </div>
+        </div>
+        <p class="disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis, aperiam maxime tempore quae harum minus voluptates iusto mollitia, maiores culpa perferendis corporis iure, totam molestias cum modi inventore error?</p>
+        <div class="details d-flex">
+          <!--  -->
+          <div class="item"><i class="fa-solid fa-lock"></i> <span>sara</span></div>
+          <!--  -->
+          <div class="item"><i class="fa-solid fa-clock"></i> <span>11 jan 2020 / 04.11 am</span></div>
+          <!--  -->
+          <div class="item">
+           <div class="rev">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           </div>
+          </div>
+        </div>
+        <p class="disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis, aperiam maxime tempore quae harum minus voluptates iusto mollitia, maiores culpa perferendis corporis iure, totam molestias cum modi inventore error?</p>
+        <div class="details d-flex">
+          <!--  -->
+          <div class="item"><i class="fa-solid fa-lock"></i> <span>alexander</span></div>
+          <!--  -->
+          <div class="item"><i class="fa-solid fa-clock"></i> <span>27 jan 2021 / 09.11 am</span></div>
+          <!--  -->
+          <div class="item">
+           <div class="rev">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           </div>
+          </div>
+        </div>
+        <p class="disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis, aperiam maxime tempore quae harum minus voluptates iusto mollitia, maiores culpa perferendis corporis iure, totam molestias cum modi inventore error?</p>
+        <div class="details d-flex">
+          <!--  -->
+          <div class="item"><i class="fa-solid fa-lock"></i> <span>tomas</span></div>
+          <!--  -->
+          <div class="item"><i class="fa-solid fa-clock"></i> <span>27 oct 2022 / 11.41 pm</span></div>
+          <!--  -->
+          <div class="item">
+           <div class="rev">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+           </div>
+          </div>
+        </div>
+        <p class="disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis, aperiam maxime tempore quae harum minus voluptates iusto mollitia, maiores culpa perferendis corporis iure, totam molestias cum modi inventore error?</p>
+      </div>
+      <div class="child">
+        <form action="#">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Email Address">
+          <textarea placeholder="Your Review"></textarea>
+          <div class="inlineItem d-flex">
+            <span>your rating</span>
+            <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          </div>
+          
+          <input type="submit" value="submit">
+        </form>
+      </div>
+     </div>
+      </section>
+        <section id="rauchbier" class="tab-panel">
+          <table class="rwd-table">
+            <tr>
+              <th>product name</th>
+              <th>review</th>
+              <th> currant</th>
+              <th>id</th>
+              <th>img</th>
+
+            </tr>
+            <tr>
+              <td data-th="product name">t-shirt</td>
+              <td data-th="review">4</td>
+              <td data-th="currant">22</td>
+              <td data-th="id">1</td>
+              <td data-th="image"> <img class="" src="./imgs/coming_soon/cs7.webp" alt=" product image"></td>
+            </tr>
+            <tr>
+              <td data-th="product name">bags</td>
+              <td data-th="review">5</td>
+              <td data-th="currant">43</td>
+              <td data-th="id">2</td>
+              <td data-th="image"> <img class="" src="./imgs/coming_soon/cs5.webp" alt=" product image"></td>
+            </tr>
+            <tr>
+              <td data-th="product name">shoes</td>
+              <td data-th="review">3.7</td>
+              <td data-th="currant">12</td> 
+              <td data-th="id">3</td>
+              <td data-th="image"> <img class="" src="./imgs/coming_soon/cs6.webp" alt=" product image"></td>
+            </tr>
+          </table>
+        </section>
+        <section id="dunkles" class="tab-panel">
+          <table class="rwd-table" >
+            <tr>
+              <td data-th="kind">technics</td>
+              <td data-th="rev">review</td>
+              <td data-th="state"> prised</td>
+              <td data-th="price">last price</td>
+        
+
+            </tr>
+            <tr>
+              <td data-th="product name">place or origin</td>
+              <td data-th="review">chins</td>
+              <td data-th="currant">brand name</td>
+              <td data-th="id">moo print</td>
+             
+            <tr>
+              <td data-th="product name">model of number</td>
+              <td data-th="review">ap0984-7</td>
+              <td data-th="currant">features</td>
+              <td data-th="id">ast-545-5x</td>
+            
+            </tr>
+            <tr>
+              <td data-th="product name">coller</td>
+              <td data-th="review">c-neck</td>
+              <td data-th="currant">fabric weight</td> 
+              <td data-th="id">200 grams</td>
+          
+            </tr>
+          </table>
+        </section>
+      </div>
+      
+    </div>
+</div>
+</section>
+
+
+<!-- start singleRelatedProduct  -->
+
+<section class="singleRelatedProduct new_arrival" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
+  <div class="container">
+    <h3 class='title'>related product</h3>
+    <hr>
+
+      <div class="row row_2 my-1">
+            <div class="col-md-6 col-lg-3  mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="100">
+                <div class="min">
+                    <div class="topImg">
+                        <div class="over"></div>
+                        <div class="discount">
+                            <span>new</span>
+                            <span>-30%</span>
+                        </div>
+                        <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                        <img src="./imgs/home_new-arrival/p1.jpg"  alt="p1.jpg" title='offer card img'>
+                    </div>
+                    <div class="footerInfo">
+                        <div class="disc d-flex">
+                            <h5 title='product price'>34.34 egp</h5>
+                            <span>product name</span>
+                        </div>
+                        <div class="action">
+                            <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                            <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                          <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-4"  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="200">
+                <div class="min">
+                    <div class="topImg">
+                        <div class="over"></div>
+                        <div class="discount">
+                            <span>new</span>
+                            <span>-35%</span>
+                        </div>
+                        <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                        <img src="./imgs/home_new-arrival/p2.jpg"  alt="p2.jpg" title='offer card img'>
+                    </div>
+                    <div class="footerInfo">
+                        <div class="disc d-flex">
+                            <h5 title='product price'>34.34 egp</h5>
+                            <span>product name</span>
+                        </div>
+                        <div class="action">
+                            <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                            <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                          <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-4"  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
+                <div class="min">
+                    <div class="topImg">
+                        <div class="over"></div>
+                        <div class="discount">
+                            <span>new</span>
+                            <span>-25%</span>
+                        </div>
+                        <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                        <img src="./imgs/home_new-arrival/p3.jpg"  alt="p3.jpg" title='offer card img'>
+                    </div>
+                    <div class="footerInfo">
+                        <div class="disc d-flex">
+                            <h5 title='product price'>34.34 egp</h5>
+                            <span>product name</span>
+                        </div>
+                        <div class="action">
+                            <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                            <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                          <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-4"  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="400">
+                <div class="min">
+                    <div class="topImg">
+                        <div class="over"></div>
+                        <div class="discount">
+                            <span>new</span>
+                            <span>-17%</span>
+                        </div>
+                        <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                        <img src="./imgs/home_new-arrival/p4.jpg"  alt="p4.jpg" title='offer card img'>
+                    </div>
+                    <div class="footerInfo">
+                        <div class="disc d-flex">
+                            <h5 title='product price'>34.34 egp</h5>
+                            <span>product name</span>
+                        </div>
+                        <div class="action">
+                            <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                            <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                          <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="100">
+                <div class="min">
+                    <div class="topImg">
+                        <div class="over"></div>
+                        <div class="discount">
+                            <span>new</span>
+                            <span>-28%</span>
+                        </div>
+                        <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                        <img src="./imgs/home_new-arrival/p1.jpg"  alt="p1.jpg" title='offer card img'>
+                    </div>
+                    <div class="footerInfo">
+                        <div class="disc d-flex">
+                            <h5 title='product price'>34.34 egp</h5>
+                            <span>product name</span>
+                        </div>
+                        <div class="action">
+                            <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                            <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                          <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="200">
+                <div class="min">
+                    <div class="topImg">
+                        <div class="over"></div>
+                        <div class="discount">
+                            <span>new</span>
+                            <span>-29%</span>
+                        </div>
+                        <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                        <img src="./imgs/home_new-arrival/p2.jpg"  alt="p2.jpg" title='offer card img'>
+                    </div>
+                    <div class="footerInfo">
+                        <div class="disc d-flex">
+                            <h5 title='product price'>34.34 egp</h5>
+                            <span>product name</span>
+                        </div>
+                        <div class="action">
+                            <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                            <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                          <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
+                <div class="min">
+                    <div class="topImg">
+                        <div class="over"></div>
+                        <div class="discount">
+                            <span>new</span>
+                            <span>-38%</span>
+                        </div>
+                        <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                        <img src="./imgs/home_new-arrival/p6.jpg"  alt="p6.jpg" title='offer card img'>
+                    </div>
+                    <div class="footerInfo">
+                        <div class="disc d-flex">
+                            <h5 title='product price'>34.34 egp</h5>
+                            <span>product name</span>
+                        </div>
+                        <div class="action">
+                            <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                            <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                          <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="400">
+                <div class="min">
+                    <div class="topImg">
+                        <div class="over"></div>
+                        <div class="discount">
+                            <span>new</span>
+                            <span>-21%</span>
+                        </div>
+                        <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                        <img src="./imgs/home_new-arrival/p5.jpg"  alt="p5.jpg" title='offer card img'>
+                    </div>
+                    <div class="footerInfo">
+                        <div class="disc d-flex">
+                            <h5 title='product price'>34.34 egp</h5>
+                            <span>product name</span>
+                        </div>
+                        <div class="action">
+                            <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                            <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                            <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+         </div>
+  </div>
+</section>
+
+<!-- start youMayAlsoLike -->
+<section class="youMayAlsoLike best_offers new_arrival my-4"  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="100"> 
+  <div class="container">
+    <section class="youMayAlsoLike best_offers">
+      <div class="container">
+        <h3 class="title"> you may also like </h3>
+        <hr>
+        <div class="row row_2 my-0">
+          <div class="col-md-6 col-lg-3  mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="100">
+              <div class="min">
+                  <div class="topImg">
+                      <div class="over"></div>
+                      <div class="discount">
+                          <span>new</span>
+                          <span>-30%</span>
+                      </div>
+                      <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                      <img src="./imgs/home_new-arrival/p1.jpg"  alt="p1.jpg" title='offer card img'>
+                  </div>
+                  <div class="footerInfo">
+                      <div class="disc d-flex">
+                          <h5 title='product price'>34.34 egp</h5>
+                          <span>product name</span>
+                      </div>
+                      <div class="action">
+                          <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                          <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                        <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-4"  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="200">
+              <div class="min">
+                  <div class="topImg">
+                      <div class="over"></div>
+                      <div class="discount">
+                          <span>new</span>
+                          <span>-35%</span>
+                      </div>
+                      <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                      <img src="./imgs/home_new-arrival/p2.jpg"  alt="p2.jpg" title='offer card img'>
+                  </div>
+                  <div class="footerInfo">
+                      <div class="disc d-flex">
+                          <h5 title='product price'>34.34 egp</h5>
+                          <span>product name</span>
+                      </div>
+                      <div class="action">
+                          <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                          <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                        <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300">
+              <div class="min">
+                  <div class="topImg"> 
+                      <div class="over"></div>
+                      <div class="discount">
+                          <span>new</span>
+                          <span>-25%</span>
+                      </div>
+                      <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                      <img src="./imgs/home_new-arrival/p3.jpg"  alt="p3.jpg" title='offer card img'>
+                  </div>
+                  <div class="footerInfo">
+                      <div class="disc d-flex">
+                          <h5 title='product price'>34.34 egp</h5>
+                          <span>product name</span>
+                      </div>
+                      <div class="action">
+                          <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                          <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                        <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-4" data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="400">
+              <div class="min">
+                  <div class="topImg">
+                      <div class="over"></div>
+                      <div class="discount">
+                          <span>new</span>
+                          <span>-17%</span>
+                      </div>
+                      <button><a href="./singel product.html" target="_self">view more <i class="fa-solid fa-magnifying-glass-plus"></i></a></button>
+                      <img src="./imgs/home_new-arrival/p4.jpg"  alt="p4.jpg" title='offer card img'>
+                  </div>
+                  <div class="footerInfo">
+                      <div class="disc d-flex">
+                          <h5 title='product price'>34.34 egp</h5>
+                          <span>product name</span>
+                      </div>
+                      <div class="action">
+                          <button class='sty' title='share it'>  <i class="fa-solid fa-share-nodes"></i></button>
+                          <button class='sty'  title='add to favorite'>  <i class="fa-solid fa-heart"></i> </button>
+                        <button class="addToCart"><a href="./all-product.html" target='_self'> <i class="fa-solid fa-cart-arrow-down"></i>add to cart  </a></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      </section>
+  </div>
+</section>
+
+
+<!-- start footer end info  -->
+<section class='footer_content mt-0'   data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="0">
+
+  <footer> 
+  <div class="container mt-0">
+            
+    <div class="card mx-5">
+        <div class="row mb-4 ">
+            
+            <div class="col-sm-6 col-lg-4 mt-3 min">
+                <div class="footer-text pull-left">
+                  <img src="./imgs/hom_header/logo.png"  alt="logo" title='logo img'>
+                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.</p>
+
+                     <div class="social mt-2 mb-1">
+
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                       
+
+                     </div>
+                 
+                 </div>
+            </div>
+            
+                        
+            <div class="col-sm-6 col-lg-3 mt-3 min">
+         
+                <h5 class="heading">Services</h5>
+                <ul  class="card-text">
+                    <li><a href="#">home</a> </li>
+                    <li><a href="#">all product </a> </li>
+                    <li><a href="#">account</a> </li>
+                </ul>
+         
+            </div>
+         
+         
+            <div class="col-sm-6 col-lg-3 mt-3 min">
+         
+                <h5 class="heading">Industries</h5>
+                <ul class="card-text">
+                  <li><a href="#">Finance</a></li>
+                  <li><a href="#">Public Sector</a></li>
+                  <li><a href="#">Smart Office</a></li>
+                  <li><a href="#">Retail</a></li>
+                </ul>
+         
+            </div>
+
+         
+             <div class="col-sm-6 col-lg-2 mt-3 min">
+
+                <h5 class="heading">Company</h5>
+                <ul class="card-text">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+
+             </div>
+
+        </div>
+        
+        
+        <div class="divider mb-2" >   
+        </div>
+
+       
+        <div class="row" >
+        
+        <div class="col-12  col-md-5">
+            
+            <div class="pull-left "> 
+                
+                <p class='copy'><i class="fa fa-copyright"></i> 2022 Ecommerce website</p>
+                
+            </div>
+             
+        </div>
+
+        <div class="col-12 col-md-7">
+           
+            <div class="pull-right pull-right2 mr-4  policy"> 
+                <ul class='d-flex'> 
+                  <li><a href="#">Terms of Use</a> </li>
+                  <li><a href="#">Privacy Policy</a> </li>
+                  <li><a href="#">Cookie Policy</a></li>
+                </ul>
+               
+            </div>
+        </div>
+   </div>
+    </div>
+
+</div>
+</footer>   
+</section>
+
+
+
 
 <!-- start scroll to top button -->
 <div class="scroll_to_top">
@@ -672,26 +1281,27 @@
 
 
         <!-- jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js" integrity="sha512-OKuL2kpi8zfeXcqSXnGbL6tKc9JxWmppJY4mOSn1EsngRb7fx1N5+7wOTGqu2bI5OAYL3Og7/Beg7EsWG2OBKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js" ></script>
 <!-- jquery ui -->
-<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
 
 <!-- magnify -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.js" integrity="sha512-+8UjzErRT0NC6aEUwkW8TrucGEUHaq1pXSNiZz+WcE3iO6a+Y5joy6OdsS+VTkFGGkazVn35Xm5I+dksnjBlEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.js" referrerpolicy="no-referrer"></script>
 <!-- magnify-mobile -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.0/js/jquery.magnify-mobile.js" integrity="sha512-c4nn0tYA6CqgF8nQZqysAS9lu+tegNtXt0gTwFI5smPpuODc+DJk8HDm/cjaUP6HRAqLKUPIAVnnK9llAKa0+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.0/js/jquery.magnify-mobile.js"></script>
   <!-- AOS.js CDN -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- font-awesome js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <!-- Bootstrap 5 CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS CDN-->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <!-- owl-carousel slider  CDN-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- import swiper js plugin  CDN-->
 <script>
    var swiper = new Swiper();

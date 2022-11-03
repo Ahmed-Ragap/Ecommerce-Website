@@ -556,7 +556,7 @@
         <div class="menu">             
              
                     <ul class="mega-menu">
-                      <li class='tit'><a href="./index.html" target='_self'><i class="fa-solid fa-house "></i> <span>home</span></a>
+                      <li class='tit' title="home"><a href="./index.html" target='_self'><i class="fa-solid fa-house "></i> <span>home</span></a>
                         <ul class="mega-menu-inner">
                             <li><a href="">mega-menu 1</a></li>
                             <li><a href="">mega-menu 2</a></li>
@@ -576,7 +576,7 @@
                             <li><a href="">mega-menu 16</a></li>
                         </ul>
                       </li>
-                      <li class='tit'><a  href="./all-product.html" target='_self'><i class="fa-sharp fa-solid fa-shirt"></i> <span>clothes</span></a>
+                      <li class='tit' title="clothes"><a  href="./all-product.html" target='_self'><i class="fa-sharp fa-solid fa-shirt"></i> <span>clothes</span></a>
                         <ul class="mega-menu-inner">
                             <li><a href="">sub menu 1</a></li>
                           <li><a href="">sub menu 2</a></li>
@@ -596,7 +596,7 @@
                           <li><a href="">sub menu 16</a></li>
                         </ul>
                       </li>
-                      <li class='tit'><a  href="./shop.html" target='_self'><i class="fa-solid fa-shoe-prints"></i> <span>shoes</span></a>
+                      <li class='tit' title="shoes"><a  href="./shop.html" target='_self'><i class="fa-solid fa-shoe-prints"></i> <span>shoes</span></a>
                          <ul class="mega-menu-inner">
                             <li><a href="">mega-menu 1</a></li>
                             <li><a href="">mega-menu 2</a></li>
@@ -616,7 +616,7 @@
                             <li><a href="">mega-menu 16</a></li>
                         </ul>
                       </li>
-                      <li class='tit'><a href="./all-product.html" target='_self'><i class="fa-sharp fa-solid fa-gifts"></i> <span>gifts</span></a>
+                      <li class='tit' title="gifts"><a href="./all-product.html" target='_self'><i class="fa-sharp fa-solid fa-gifts"></i> <span>gifts</span></a>
                          <ul class="mega-menu-inner test">
                           <li><a href="">sub menu 1</a></li>
                           <li><a href="">sub menu 2</a></li>
@@ -1689,6 +1689,10 @@
 </div>
 </section>
 
+<!-- start scroll to top button -->
+<div class="scroll_to_top">
+    <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
+   </div>
 
 <!-- start footer section -->
 <section class='footer_content mt-5'   data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="0">
@@ -1777,12 +1781,8 @@
                     <li><a href="#">Smart Office</a></li>
                     <li><a href="#">Retail</a></li>
                   </ul>
-           
-              </div>
-  
-           
+              </div>      
                <div class="col-sm-6 col-lg-2 mt-3 min">
-  
                   <h5 class="heading">Company</h5>
                   <ul class="card-text">
                       <li><a href="#">About Us</a></li>
@@ -1790,52 +1790,32 @@
                       <li><a href="#">Contact</a></li>
                       <li><a href="#">Join Us</a></li>
                   </ul>
-  
                </div>
-  
-          </div>
-          
-          
+          </div>          
           <div class="divider mb-2" >   
-          </div>
-  
-         
+          </div>         
           <div class="row" >
-          
           <div class="col-12  col-md-5">
-              
               <div class="pull-left "> 
-                  
                   <p class='copy'><i class="fa fa-copyright"></i> 2022 Ecommerce website</p>
-                  
               </div>
-               
           </div>
-  
           <div class="col-12 col-md-7">
-             
               <div class="pull-right pull-right2 mr-4  policy"> 
                   <ul class='d-flex'> 
                     <li><a href="#">Terms of Use</a> </li>
                     <li><a href="#">Privacy Policy</a> </li>
                     <li><a href="#">Cookie Policy</a></li>
                   </ul>
-                 
               </div>
           </div>
      </div>
-      </div>
-  
+   </div>
   </div>
   </footer>   
   </section>
 
 
-
-<!-- start scroll to top button -->
-<div class="scroll_to_top">
-    <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
-   </div>
 
 <!-- page loading ____________________________________-->
 
@@ -1854,6 +1834,9 @@
       <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
       <!-- jquery ui -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+          <!-- Swiper JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
           <!-- AOS.js CDN -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- font-awesome js -->
@@ -1861,8 +1844,6 @@
             <!-- Bootstrap 5 CDN -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         
-          <!-- Swiper JS CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <!-- owl-carousel slider  CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- custom js style -->
