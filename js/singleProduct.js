@@ -18,16 +18,16 @@ for (var i=0; i < thumbnails.length; i++){
 }
 
 
-let buttonRight = document.getElementById('slideRight');
-let buttonLeft = document.getElementById('slideLeft');
+// let buttonRight = document.getElementById('slideRight');
+// let buttonLeft = document.getElementById('slideLeft');
 
-buttonLeft.addEventListener('click', function(){
-	document.getElementById('slider').scrollLeft -= 180
-})
+// buttonLeft.addEventListener('click', function(){
+// 	document.getElementById('slider').scrollLeft -= 180
+// })
 
-buttonRight.addEventListener('click', function(){
-	document.getElementById('slider').scrollLeft += 180
-})
+// buttonRight.addEventListener('click', function(){
+// 	document.getElementById('slider').scrollLeft += 180
+// })
 
 /*singlePageReview*/ 
 // $('.tabgroup > div').hide();

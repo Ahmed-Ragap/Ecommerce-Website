@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
   //start owl-carousel (slider custom style)
    $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
+      navigation : true,
        autoplayHoverPause:true,
       lazyLoad:true,
          mobileFirst:true,
@@ -109,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //start team_member (slider custom style)
     $(document).ready(function(){
       $('.team_slide').owlCarousel({
+        navigation : true,
         autoplayHoverPause:true,
         lazyLoad:true,
            mobileFirst:true,
@@ -146,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //start team_member (slider custom style)
     $(document).ready(function(){
       $('.suggested_product').owlCarousel({
+        navigation : true,
         autoplayHoverPause:true,
         lazyLoad:true,
            mobileFirst:true,
@@ -204,19 +207,15 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
   //  start AOS Animation----------------
-  AOS.init();
-
+  AOS.init({
+    offset:200,
+  });
+  AOS.refresh();
 
   // 
   const arrowDown = document.querySelector('.down_show');
   const showHidden = document.querySelector('.hidden_');
-// console.log(arrowDown)
-// console.log(showHidden)
-//   arrowDown.addEventListener('onmouseenter', () => {
-//     showHidden.style.display = 'block';
-//     console.log(arrowDown)
-// console.log(showHidden)
-//   })downHide
+
  function downShow(){
   showHidden.style.visibility = 'visible';
  }
@@ -227,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function(){
  * GLOBAL VARS
  * -------------------------- */
 // The date you want to count down to
-var targetDate = new Date("2022/12/3 00:00:00");   
+var targetDate = new Date("2022/12/5 00:00:00");   
 
 // Other date related variables
 var days;
@@ -311,37 +310,9 @@ function numberTransition(id, endPoint, transitionDuration, transitionEase){
       }
    }); 
 };
-// --------------------------
-// start all product page 
-var lowerSlider = document.querySelector('#lower');
-var  upperSlider = document.querySelector('#upper');
-document.querySelector('#one').value=lowerSlider.value;
-document.querySelector('#two').value=upperSlider.value;
-// console.log(lowerSlider.value)
-var  lowerVal = parseInt(lowerSlider.value);
-var upperVal = parseInt(upperSlider.value);
 
-upperSlider.oninput = function () {
-    lowerVal = parseInt(lowerSlider.value);
-    upperVal = parseInt(upperSlider.value);
 
-    if (upperVal < lowerVal + 4) {
-        lowerSlider.value = upperVal - 4;
-        if (lowerVal == lowerSlider.min) {
-        upperSlider.value = 4;
-        }
-    }
-    document.querySelector('#two').value=this.value
-};
+/* 
+contact page 
+*/
 
-lowerSlider.oninput = function () {
-    lowerVal = parseInt(lowerSlider.value);
-    upperVal = parseInt(upperSlider.value);
-    if (lowerVal > upperVal - 4) {
-        upperSlider.value = lowerVal + 4;
-        if (upperVal == upperSlider.max) {
-            lowerSlider.value = parseInt(upperSlider.max) - 4;
-        }
-    }
-    document.querySelector('#one').value=this.value
-};

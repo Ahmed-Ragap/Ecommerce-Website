@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imgs/hom_header/logo.png" type="image/x-icon" />
+    <!-- font awesome  CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.css" rel="stylesheet" media="all">
     <!-- Bootstrap 5 CDN-->
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <!-- AOS.js css CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- css styles -->
 <link rel="stylesheet" href="./css/style.css">
-    <title>register</title>
+    <title>contact us</title>
 </head>  
 <body>
+
 <!-- start coding  -->
 <section class="header"> 
     <div class="top_info p-1 pb-2">
@@ -532,86 +536,76 @@
 </nav>
 <!--  -->
 
-<!-- start register_page -->
-<section class='register_page'>
-<div class="container">
-    <div class="pages mt-3">   
-        <a href="./index.html" target="_self">home</a>
-        <span>/</span>
-        <a href="#" id="activePageLink">create account</a>
-    </div>
-    <hr>
 
-    <div class="row">
+
+
+
+<div class="contact_us_page">
+    <div class="overlay"></div>
+    <div class='container'>
+        <div class='row'>
+            <div class="col-12 ">
+                     <div class="contact" id="contact"   data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="200" data-aos-offset="50">
+                        <h2>Contact us</h2>
+                        <div id="map-canvas"  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="200"></div>
+                      </div>
+                      <form method="post" action="contact.php" name="contactform" id="contactform">
+                          <div class="row">
+                        <div class="col-12 col-md-6"   data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300" data-aos-offset="50">
+                          <fieldset>
+                            <input name="name" type="text" id="name" size="30" placeholder="Name">
+                            <br>
+                       
+                            <input name="email" type="email" id="email" size="30" placeholder="Email" value="" required>
+                            <br>
+                            <input name="phone" type="text" id="phone" size="30" placeholder="Phone">
+                            <br>
+                            <input name="human" type="text" id="human" size="30" placeholder="Prove your not a robot... What is 2+2?">
+                            <br>
+                          </fieldset> 
+                        </div>
+                        <div class="col-md-6"  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="400" data-aos-offset="50">
+                          <fieldset>
+                            <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
+                          </fieldset>
+                        </div>
+                        <div class="col-12 "  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300" data-aos-offset="50">
+                          <fieldset>
+                            <button type="submit" class="btn btn-md" id="submit" >Send Message</button>
+                          </fieldset>
+                        </div>
+                    </div>
+                      </form>
+                    </div>
+                  </div>
       
-        <div class="col-md-6 min_col my-2">
-            <form action="">
-            <label for="FirstName" class="form-label">first name</label>
-            <input type="text"  class="form-control valid" id="FirstName" placeholder="First name" aria-label="First name">
-          </div>
-          <div class="col-md-6 min_col my-2">
-            <label for="lastName" class="form-label">last name</label>  
-            <input type="text" class="form-control valid" id="lastName" placeholder="Last name" aria-label="Last name">
-          </div>
-   
-        <div class="col-md-6 min_col my-2">
-            <label for="exampleInputEmail1" class="form-label ">Email </label>
-            <input type="email" class="form-control valid" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
-          </div>
-          <div class="col-md-6 min_col my-2">
-            <label for="country" class="form-label">country</label>
-            <input type="text" class="form-control valid" id="country" placeholder="Country" aria-label="country">
-          </div>
-          <div class="col-md-6 min_col my-2">
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control valid" id="exampleInputPassword1" placeholder="Password" aria-label="password">
-          </div>
-          <div class="col-md-6 min_col my-2">
-               <label class="form-label" for="form6Example6">Phone</label>
-            <input type="number" id="form6Example6" class="form-control valid" placeholder="Enter Phone Number" />
-         
-          </div>
-          <div class="col-md-6 min_col my-2">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control valid" id="inputCity" placeholder="City">
-          </div>
-          <div class="col-md-4 min_col my-2">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col-md-2 min_col my-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control valid" id="inputZip" placeholder="xxxx">
-          </div>
-          <div class="col-12 min_col ">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-           <label class="form-check-label " for="exampleCheck1"> i accepted <a href="#">terms & condations</a></label>
-           
-            <div class='d-block'>
-                <input type="checkbox" class="form-check-input" id="exampleCheck2">
-            <label class="form-check-label " for="exampleCheck2"> i want to receive time mail newsletters</label>
-            <span class="haveAccount">I have an account<a href="./login.html" target="_self">login</a></span>
-            <button type="submit" class="btn d-block my-2" id="submit">create account</button>
-            <button class="btn d-block my-2 mb-4">redister with facebook</button>
+        <!--  -->
+        <hr style='backgroundColor:rgba(255, 255, 255, 0.2)'/>
+        <div class='row row-2 pb-3'  data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="300" data-aos-offset="50">
+            <div class="col-12  col-md-4"> 
+                <div class='item'>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h3>phone <span>+0123 456 789</span></h3>
+                </div>
+                
             </div>
-          </div>
-          <!-- <div class="col-4 min_col ">
-           
-            
-          </div>  -->
-        </form>
+            <div class="col-12 col-md-4 ">
+                <div class='item'>
+                    <i class="fa-solid fa-envelope"></i>
+                <h3>mail <span>mail@example.com</span></h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class='item d-flex'>
+                    <i class="fa-solid fa-location-dot"></i>
+                <h3>address<span>1234 North Luke Lane, South Bend,<br /> IN 360001</span></h3>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-    </section>
+ </div>
 
-    <!-- start suggested_product -->
 
-<!-- js function  -->
-<div id="congrat">congratulation 😎 you create an email</div>
- 
  <!-- start footer end info  -->
  <section class='footer_content mt-0'   data-aos="fade-in-up"  data-aos-duration="500" data-aos-delay="0">
     <footer> 
@@ -679,37 +673,67 @@
   </div>
   </footer>   
   </section>
+  
+<!-- start scroll to top button -->
+<div class="scroll_to_top">
+  <a href="#"> <i class="fa-solid fa-angles-up"></i></a>
+ </div>
 
+ 
 <!-- page loading ____________________________________-->
 <div class="loading_container">
-    <div class="loading-spinner">
-        <div class="main_content"> 
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-     </div>
+  <div class="loading-spinner">
+      <div class="main_content">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    
+   </div>
+  </div>
+  
 
 
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js" ></script>
-    <!-- jquery ui -->
-    <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
-    <!-- AOS.js CDN -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- font-awesome js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-    <!-- Bootstrap 5 CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Swiper JS CDN-->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<!-- owl-carousel slider  CDN-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <!-- jquery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js" ></script>
+ <!-- jquery ui -->
+ <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
+ <!-- AOS.js CDN -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <!-- font-awesome js -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+ <!-- Bootstrap 5 CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Swiper JS CDN-->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <!-- owl-carousel slider  CDN-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+ <!-- google map -->
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <!-- custom js style -->
     <script src="./js/min.js"></script>
-    <!-- add custom script to this page -->
-    <script src="./js/register.js"></script>
+    <script>
+        let submitBtn = document.querySelector('#submit');
+        /* stop page reload*/ 
+        submitBtn.addEventListener('click', e => e.preventDefault() );
+         //google map
+        function initialize() {
+  var mapOptions = {
+    center: new google.maps.LatLng(28.1823295, -82.352912),
+    zoom: 9,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
+    scrollwheel: false,
+    draggable: false,
+    panControl: true,
+    zoomControl: true,
+    mapTypeControl: true,
+    scaleControl: true,
+    streetViewControl: true,
+    overviewMapControl: true,
+    rotateControl: true,
+  };
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </body>
 </html> 
