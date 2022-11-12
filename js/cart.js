@@ -6,13 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let removeBtn = document.querySelector(".removeBtn");
     // handel remove btn
     item.querySelector(".removeBtn").addEventListener("click" , (e) => {
+      runTot()
       e.target.parentNode.parentElement.closest('.cartItem').remove();
+      runTot()
     })
   
     // decrees quantity
     item.querySelector(".decrees").addEventListener("click", () => {
     if(item.querySelector(".inpAmount").innerHTML > 0){
       item.querySelector(".inpAmount").innerHTML--;
+      item.querySelector(".inpAmount").innerHTML = 1
       //run total price for single product
       item.querySelector(".total").innerHTML = 
     item.querySelector(".inpAmount").innerHTML * item.querySelector(".price").innerHTML ;
@@ -27,16 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
      //start increase function 
-    // item.querySelector(".increase").addEventListener("click", () => {
-    //   alert('ok')
-    //   item.querySelector(".inpAmount").innerHTML++;
-    //   item.querySelector(".total").innerHTML = item.querySelector(".inpAmount").innerHTML * item.querySelector(".price").innerHTML + " egp";
-    //   document.querySelector("#supTotla").innerHTML = 
-    //   Number(document.querySelector("#supTotla").innerHTML) +
-    //   Number(item.querySelector(".price").innerHTML);
+    item.querySelector(".increase").addEventListener("click", () => {
+      // alert('ok')
+      item.querySelector(".inpAmount").innerHTML++;
+      item.querySelector(".total").innerHTML = item.querySelector(".inpAmount").innerHTML * item.querySelector(".price").innerHTML ;
+      document.querySelector("#supTotla").innerHTML = 
+      Number(document.querySelector("#supTotla").innerHTML) +
+      Number(item.querySelector(".price").innerHTML);
      
-    //   runTot()
-    // });
+      runTot()
+    });
 
   })
 
@@ -48,12 +51,12 @@ function runTot(){
      allPrices.forEach((allPrice) => {
      tot = tot + parseFloat(allPrice.innerHTML) ;
      })
-     document.querySelector('#supTotla').innerHTML = tot.toFixed(2) + ' EGP';
+     document.querySelector('#supTotla').innerHTML = tot.toFixed(2) ;
    if(tot < 1){
     document.querySelector('#totalPrice').innerHTML = tot
     document.querySelector("#getOrder").style.display = "none"
    } else {
-    document.querySelector('#totalPrice').innerHTML = tot + parseFloat(shippingPrice.innerHTML )+ ' EGP';
+    document.querySelector('#totalPrice').innerHTML = tot + parseFloat(shippingPrice.innerHTML );
     document.querySelector("#getOrder").style.display = "block"
    }
 }

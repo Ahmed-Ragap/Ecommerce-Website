@@ -4673,6 +4673,9 @@ section.cartOrder .productAmount span.inpAmount {
   display: grid;
   place-items: center;
 }
+section.cartOrder .totalPrice {
+  min-width: 100px;
+}
 section.cartOrder .totalPrice span {
   color: #82a344;
   text-transform: uppercase;

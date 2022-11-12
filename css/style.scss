@@ -5059,6 +5059,7 @@ h5{
         }
     }
     .totalPrice{
+        min-width: 100px;
         span{
             color:$pry;
             text-transform:uppercase;
