@@ -29,7 +29,7 @@ body button {
 }
 
 /*start fixed variable's*/
-.acountPage_heading_discount .overlay, section.shopAllProduct .colMin .imgFilter .over, .shopHomeSlider .minCol .cardImg .over, .shopHomeSlider .minCol #carouselExampleControls .over, .login_page .container .row .min_col .create_acc .overlay, .contact_us_page .overlay, section.team_member .container .row .min_col .parent .overlay, .coming_soon .container .row .min_parent .min .img_preview .overContent, .advertisement .container .row .min .min_content .over, .pest_price .overlay, .new_arrival .container .row_2 .min .topImg .over, .new_arrival .container .row .main_col .owl-carousel .item_slid .overlay, .new_arrival .container .row .main_col .img .overlay, .swiper-slide-active:hover, .advertise .container .row .col-md-6 .min .overlay, #carouselExampleFade .carousel-inner .dark-overlay:after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .img-fluid::after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .min .card .over {
+.acountPage_heading_discount .overlay, section.shopAllProduct .colMin .imgFilter .over, .shopHomeSlider .minCol .cardImg .over, .shopHomeSlider .minCol #carouselExampleControls .over, .login_page .container .row .min_col .create_acc .overlay, section.team_member .container .row .min_col .parent .overlay, .coming_soon .container .row .min_parent .min .img_preview .overContent, .advertisement .container .row .min .min_content .over, .pest_price .overlay, .new_arrival .container .row_2 .min .topImg .over, .new_arrival .container .row .main_col .owl-carousel .item_slid .overlay, .new_arrival .container .row .main_col .img .overlay, .swiper-slide-active:hover, .advertise .container .row .col-md-6 .min .overlay, #carouselExampleFade .carousel-inner .dark-overlay:after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .img-fluid::after, nav.navbar .container .collapse ul.navbar-nav li .list_paralex .container .row .min .card .over {
   position: absolute;
   top: 0;
   left: 0;
@@ -2655,15 +2655,11 @@ section.team_member .container .row .min_col .team_slide .owl-nav {
 .contact_us_page {
   margin-bottom: -1px;
   position: relative;
-  background-image: url("../imgs/shop/contact1.jpg");
+  background-color: #464343;
   background-size: cover;
   background-position: 100%;
   background-attachment: fixed;
   /* start contact block */
-}
-.contact_us_page .overlay {
-  background-color: rgba(49, 49, 60, 0.6) !important;
-  z-index: 0;
 }
 .contact_us_page .container {
   position: relative;
@@ -2740,6 +2736,7 @@ section.team_member .container .row .min_col .team_slide .owl-nav {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   color: #ffffff;
+  margin: 70px 0 30px 0;
 }
 .contact_us_page #contactform input {
   margin-bottom: 14px;
@@ -2785,7 +2782,7 @@ section.team_member .container .row .min_col .team_slide .owl-nav {
 }
 .contact_us_page #map-canvas {
   width: 100%;
-  height: 200px;
+  height: 450px;
   margin-bottom: 15px;
   border: 2px solid #fff;
 }
