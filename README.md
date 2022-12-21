@@ -22,7 +22,8 @@
 # 8. Swiper js 
 # 9. owl carousel
 # 10. Responsive Design
-# 11. Local Storage
+# 12. google Font
+# 13. Google Map
      
   
 
