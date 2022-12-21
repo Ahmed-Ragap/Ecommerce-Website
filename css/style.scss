@@ -1,12 +1,5 @@
  
-/*
-ready box-shadow
-box-shadow: inset 5px 5px 5px #0000000d, inset -5px -5px 5px #ffffff94, 5px 5px 5px #0000000d, -5px -5px 5px #ffffff94;
 
-*/
-/*
-start javascript  classes
-*/
 
 @import './global';
 
@@ -4911,10 +4904,6 @@ section.aboutCompany{
 }
 
 
-
-
-
-
 /*scroll_to_top */ 
 .scroll_to_top{
     position: fixed !important;
@@ -4939,8 +4928,6 @@ section.aboutCompany{
 
    }
 }
-
-
  /*start cart page content */  
 
 section.cartOrder{
@@ -5357,38 +5344,6 @@ section.allProductPage{
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slider-box { background:none repeat scroll 0 0 #FAFAFA; border-radius:5px 5px 5px 5px; box-shadow:0 0 3px #333333; margin:0 auto; width:675px; overflow:hidden; }
 #slider-wrapper { margin:0 auto; padding:10px; }
 #jslider-container { border:2px solid #FFFFFF; max-width:550px; position:relative; text-align:left; z-index:90; }
@@ -5464,21 +5419,18 @@ _______________________
             background-repeat: no-repeat;
             @include border-r(50%);
             cursor: none;
-            // box-shadow: 0 0 25px 4px $pry;
         
         }
         #featured{
             height: 100%;
             max-width: 370px;
             cursor: pointer;
-            // min-height: 400px;
             border: 2px solid $pry;
         
         }
         
     }
     #slide-wrapper{
-        // margin-top: 30px;
         max-width: 500px;
         display: flex;
         min-height: 60px;
@@ -5533,7 +5485,6 @@ _______________________
     justify-content: center;
     flex-wrap: wrap;
 .rightContent{
-    // background-color:red;
     p, span, li, a, h5, h6, h4{
         text-transform:capitalize;
             font-family:$font-title;
@@ -5916,9 +5867,6 @@ input[type=submit]{
     th, td:before {
       color: $pry;
     } 
- 
-    
-   
     
     td {
       display: block; 

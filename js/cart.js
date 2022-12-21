@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#supTotla").innerHTML = 
       Number(document.querySelector("#supTotla").innerHTML) +
       Number(item.querySelector(".price").innerHTML);
-     
+      
       runTot()
     });
 
