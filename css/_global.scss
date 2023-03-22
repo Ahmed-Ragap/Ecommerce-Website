@@ -17,7 +17,6 @@ a{
   }
   body button{
    outline-color: transparent;
-
   }
   
 
@@ -84,7 +83,6 @@ a{
       }
 } 
 }
-
   %button{
    
     background-color:transparent;
@@ -120,7 +118,6 @@ a{
           position: relative;
        }
   }
-  
   }
   
   @mixin transition($t){
@@ -130,7 +127,6 @@ a{
      -o-transition:all $t ease-in-out;
      transition:all $t ease-in-out; 
   }
-  
   @mixin border-r($b){
      -webkit-border-radius:$b;
      -moz-border-radius:$b;

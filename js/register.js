@@ -6,7 +6,6 @@ activePageLink = docTitle === 'register' ? activePageLink.classList.add('current
 // select email and password input 
 var email=document.getElementById("exampleInputEmail1");
 var psw =document.getElementById("exampleInputPassword1");
-
   var Submit = document.querySelector('#submit');
   Submit.addEventListener('click', (e)=>{
       e.preventDefault();

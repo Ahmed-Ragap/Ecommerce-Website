@@ -7,6 +7,7 @@ activePageLink = docTitle ==='login' ? activePageLink.classList.add('current_pag
 // import email and password  from localstorage 
 let getEmail = localStorage.getItem('email')
 let getPass = localStorage.getItem('psw')
+
 // verifiy user   
 let inputEmail = document.querySelector("#inputEmail");
 let inputPass = document.querySelector("#inputPass");

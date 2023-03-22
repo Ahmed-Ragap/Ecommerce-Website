@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else{
       alert('no item added')
     }
-    })
+    }) 
 
      //start increase function 
     item.querySelector(".increase").addEventListener("click", () => {
@@ -60,5 +60,5 @@ function runTot(){
     document.querySelector("#getOrder").style.display = "block"
    }
 }
-//end runTot
+ //end runTot
 })

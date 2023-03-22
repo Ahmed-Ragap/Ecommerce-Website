@@ -902,7 +902,6 @@ button.navbar-toggler{
     @media(max-width:767px){
         display:none;
     }
-
     span.down_show{
         color:$h-color;
         font-size: $m-font + 15px;
@@ -919,7 +918,7 @@ button.navbar-toggler{
     text-shadow: 15px 0 0 $h-color;
     opacity:.7;
 }
-100%{
+100%{ 
     text-shadow: 25px 0 0 $h-color;
     opacity:.2;
 }
@@ -933,7 +932,7 @@ button.navbar-toggler{
         }
     } 
     span{
-        color:$h-color;
+        color:$h-color; 
         text-align:center;
         text-transform:capitalize;
         font-family:$font-title;
