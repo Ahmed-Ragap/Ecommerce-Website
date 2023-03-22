@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function(){
  * GLOBAL VARS
  * -------------------------- */
 // The date you want to count down to
-var targetDate = new Date("2022/12/5 00:00:00");   
+var targetDate = new Date("2023/3/20 00:00:00");   
 
 // Other date related variables
 var days;
